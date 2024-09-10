@@ -4,11 +4,18 @@
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>林子健</title>
-      <link>https://example.org/</link>
+      <link>http://localhost:1313/</link>
       <description>Recent content on 林子健</description>
       <generator>Hugo</generator>
       <language>en-us</language>
-      <lastBuildDate></lastBuildDate>
-      <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+      <lastBuildDate>Tue, 10 Sep 2024 21:04:58 +0800</lastBuildDate>
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title>My First Post</title>
+        <link>http://localhost:1313/posts/my-first-post/</link>
+        <pubDate>Tue, 10 Sep 2024 21:04:58 +0800</pubDate>
+        <guid>http://localhost:1313/posts/my-first-post/</guid>
+        <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xD;&#xA;&#xD;&#xA;  Introduction&#xD;&#xA;&#xD;&#xA;  &lt;a &#xD;&#xA;    class=&#34;anchor&#34;&#xD;&#xA;    href=&#34;#introduction&#34;&gt;&#xD;&#xA;&#xD;&#xA;    &lt;i class=&#34;icon&#34;&gt;&#xD;&#xA;      link&#xD;&#xA;    &lt;/i&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;span&gt;&#xD;&#xA;      h2&#xD;&#xA;    &lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;  &#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;</description>
+      </item>
     </channel>
   </rss>
