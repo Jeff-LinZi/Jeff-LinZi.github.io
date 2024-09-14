@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>林子健的个人网站</title>
-    <link>https://jeff-linzi.github.io/</link>
+    <link>https://jeff-linzi.github.io/zh-cn/</link>
     <description>Recent content on 林子健的个人网站</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>zh-CN</language>
     <managingEditor>minecraft.1009@outlook.com (林子健)</managingEditor>
     <webMaster>minecraft.1009@outlook.com (林子健)</webMaster>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jeff-linzi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jeff-linzi.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://jeff-linzi.github.io/about/</link>
+      <link>https://jeff-linzi.github.io/zh-cn/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>minecraft.1009@outlook.com (林子健)</author>
-      <guid>https://jeff-linzi.github.io/about/</guid>
-      <description>&lt;h2 id=&#34;this-is-about&#34;&gt;This is about&lt;/h2&gt;</description>
+      <guid>https://jeff-linzi.github.io/zh-cn/about/</guid>
+      <description>&lt;h2 id=&#34;这是关于&#34;&gt;这是关于&lt;/h2&gt;</description>
     </item>
   </channel>
 </rss>

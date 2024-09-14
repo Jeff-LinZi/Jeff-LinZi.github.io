@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 林子健的个人网站</title>
-    <link>https://jeff-linzi.github.io/categories/</link>
-    <description>Recent content in Categories on 林子健的个人网站</description>
+    <title>Series on 林子健的个人网站</title>
+    <link>https://jeff-linzi.github.io/series/</link>
+    <description>Recent content in Series on 林子健的个人网站</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>minecraft.1009@outlook.com (林子健)</managingEditor>
     <webMaster>minecraft.1009@outlook.com (林子健)</webMaster>
-    <atom:link href="https://jeff-linzi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jeff-linzi.github.io/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

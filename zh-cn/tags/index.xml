@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 林子健的个人网站</title>
-    <link>https://jeff-linzi.github.io/tags/</link>
+    <link>https://jeff-linzi.github.io/zh-cn/tags/</link>
     <description>Recent content in Tags on 林子健的个人网站</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>zh-CN</language>
     <managingEditor>minecraft.1009@outlook.com (林子健)</managingEditor>
     <webMaster>minecraft.1009@outlook.com (林子健)</webMaster>
-    <atom:link href="https://jeff-linzi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jeff-linzi.github.io/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
