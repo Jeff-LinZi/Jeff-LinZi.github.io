@@ -2,13 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 林子健的个人网站</title>
-    <link>https://jeff-linzi.github.io/zh-cn/post/</link>
+    <link>http://localhost:1313/zh-cn/post/</link>
     <description>Recent content in Posts on 林子健的个人网站</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <managingEditor>minecraft.1009@outlook.com (林子健)</managingEditor>
     <webMaster>minecraft.1009@outlook.com (林子健)</webMaster>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://jeff-linzi.github.io/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Sep 2024 13:59:40 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>学习Markdown</title>
+      <link>http://localhost:1313/zh-cn/post/learn_md/</link>
+      <pubDate>Sun, 15 Sep 2024 13:59:40 +0800</pubDate><author>minecraft.1009@outlook.com (林子健)</author>
+      <guid>http://localhost:1313/zh-cn/post/learn_md/</guid>
+      <description>&lt;h1 id=&#34;这是一级标题&#34;&gt;这是一级标题&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;我要引用&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;我什么也不是————林子健&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;再写代码&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import time&#xD;&#xA;&#xA;start_time = time.time()&#xD;&#xA;#输入&#xD;&#xA;&#xA;#代码键入下方&#xD;&#xA;code = &amp;#34;&amp;#34;&amp;#34;&#xD;&#xA;&#xA;&amp;#34;&amp;#34;&amp;#34;&#xD;&#xA;for i in range(500):&#xD;&#xA;  i-=1&#xD;&#xA;  exec(code)&#xD;&#xA;end_time = time.time()&#xD;&#xA;print(f&amp;#34;执行时间: {end_time - start_time} 秒&amp;#34;)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;无序列表&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;我是谁&lt;/li&gt;&#xA;&lt;li&gt;你是谁&lt;/li&gt;&#xA;&lt;li&gt;她是谁&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;一级标题&#34;&gt;一级标题&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;我&lt;strong&gt;不知道&lt;/strong&gt;在干嘛&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;写个&lt;strong&gt;薛定谔方程&lt;/strong&gt;&#xA;$$&#xA;i\hslash\frac{\partial}{\partial t}\psi \left( \boldsymbol{r},t \right) =-\frac{\hslash^2}{2m}\varDelta \psi \left( r,t \right) +V\left( \boldsymbol{r},t \right) \psi \left( \boldsymbol{r},t \right)&#xA;$$&#xA;效果很好&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;二级标题&#34;&gt;二级标题&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;图片与&lt;a href=&#34;https://www.baidu.com//&#34;&gt;链接&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.4399.com//&#34;&gt;&lt;img alt=&#34;一个黑的图片&#34; src=&#34;http://localhost:1313/images/profile.png&#34;&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>A Post</title>
+      <link>http://localhost:1313/zh-cn/post/a-post/</link>
+      <pubDate>Sat, 14 Sep 2024 22:08:24 +0800</pubDate><author>minecraft.1009@outlook.com (林子健)</author>
+      <guid>http://localhost:1313/zh-cn/post/a-post/</guid>
+      <description>&lt;h2 id=&#34;什么情况&#34;&gt;什么情况&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;哈哈哈&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The First Post</title>
+      <link>http://localhost:1313/zh-cn/post/the-first-post/</link>
+      <pubDate>Sat, 14 Sep 2024 21:10:07 +0800</pubDate><author>minecraft.1009@outlook.com (林子健)</author>
+      <guid>http://localhost:1313/zh-cn/post/the-first-post/</guid>
+      <description>&lt;h2 id=&#34;什么东西&#34;&gt;什么东西&lt;/h2&gt;&#xA;&lt;p&gt;这是&lt;strong&gt;粗体&lt;/strong&gt;，这是&lt;em&gt;斜体&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What can I say&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

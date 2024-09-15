@@ -2,19 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>林子健的个人网站</title>
-    <link>https://jeff-linzi.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on 林子健的个人网站</description>
     <generator>Hugo</generator>
     <language>en</language>
     <managingEditor>minecraft.1009@outlook.com (林子健)</managingEditor>
     <webMaster>minecraft.1009@outlook.com (林子健)</webMaster>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jeff-linzi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Sep 2024 21:10:07 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The First Post</title>
+      <link>http://localhost:1313/post/the-first-post/</link>
+      <pubDate>Sat, 14 Sep 2024 21:10:07 +0800</pubDate><author>minecraft.1009@outlook.com (林子健)</author>
+      <guid>http://localhost:1313/post/the-first-post/</guid>
+      <description>&lt;h2 id=&#34;什么东西&#34;&gt;什么东西&lt;/h2&gt;&#xA;&lt;p&gt;这是&lt;strong&gt;粗体&lt;/strong&gt;，这是&lt;em&gt;斜体&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;What can I say&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title></title>
-      <link>https://jeff-linzi.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>minecraft.1009@outlook.com (林子健)</author>
-      <guid>https://jeff-linzi.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h2 id=&#34;this-is-about&#34;&gt;This is about&lt;/h2&gt;</description>
     </item>
   </channel>
