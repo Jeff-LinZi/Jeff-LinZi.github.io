@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jeff-linzi.github.io/posts/</loc>
+    <loc>https://jeff-linzi.github.io/post/</loc>
     <lastmod>2024-09-14T21:10:07+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://jeff-linzi.github.io/zh-cn/posts/"
+                href="https://jeff-linzi.github.io/zh-cn/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jeff-linzi.github.io/posts/"
+                href="https://jeff-linzi.github.io/post/"
                 />
   </url><url>
     <loc>https://jeff-linzi.github.io/</loc>
