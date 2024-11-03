@@ -43,40 +43,5 @@
       <guid>http://localhost:1313/tags/%E9%AB%98%E5%88%86%E5%AD%90%E5%8C%96%E5%AD%A6/</guid>
       <description></description>
     </item>
-    <item>
-      <title>Blogdown</title>
-      <link>http://localhost:1313/tags/blogdown/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/blogdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Markdown</title>
-      <link>http://localhost:1313/tags/markdown/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/markdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MathJax</title>
-      <link>http://localhost:1313/tags/mathjax/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mathjax/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pandoc</title>
-      <link>http://localhost:1313/tags/pandoc/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/pandoc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>RStudio</title>
-      <link>http://localhost:1313/tags/rstudio/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/rstudio/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
