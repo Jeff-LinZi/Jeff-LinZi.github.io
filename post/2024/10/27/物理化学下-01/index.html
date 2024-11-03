@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>物理化学下 01 | A minimal Hugo website</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Post</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">物理化学下 01</span></h1>
+<h2 class="author">Linzi Jian</h2>
+<h2 class="date">2024/10/27</h2>
+</div>
+
+<main>
+<h1 id="第6章-相平衡">第6章 相平衡</h1>
+<h2 id="1-相平衡条件">1 相平衡条件</h2>
+<p>设在多组分系统中，仅有\(\alpha\)和\(\beta\)两相且彼此处于平衡状态。有\(dn_B\)的物质\(B\)从\(\alpha\)相转移到\(\beta\)相：</p>
+$$dG = dG^{\alpha}_B + dG^{\beta}_B = \mu^{\alpha}_{B}dn^{\alpha}_B + \mu^{\beta}_{B}dn^{\beta}_B$$<p>因为</p>
+$$ -dn_B^{\alpha} = dn_B^{\beta} $$<p>所以</p>
+$$ dG = (\mu^{\beta}_{B}-\mu^{\alpha}_{B})dn^{\beta}_B = 0 $$<p>又因 \(dn^{\beta}_B > 0\) ， \(dG = 0\) 则</p>
+$$ \mu^{\beta}_{B} = \mu^{\alpha}_{B} $$<p>对于多相体系上述结论可以推广。</p>
+<h2 id="2-相律">2 相律</h2>
+<p>相律是用来描述一个体系<strong>相互独立</strong>的强度性质(<strong>自由度</strong>\(\boldsymbol{f}\))的个数与<strong>独立</strong>组分数(\(\boldsymbol{C}\))，相数(\(\boldsymbol{\phi}\))之间的关系，我们用以下公式表示：</p>
+\[ f = C- \phi + 2 \]<p>需要注意的是，其中“2”代表的是体系中外界因素控制的相互独立的强度性质有两个，一般取压力(\(\boldsymbol{p}\))和温度(\(\boldsymbol{T}\))。</p>
+<p>独立组分数（也可简称组分数）是为了确定独立物种数目，由以下公式确定：</p>
+\[C \xlongequal{def} S-R-R'\]<p>其中\(C\)为独立组分数，\(S\)为物种数，\(R\)为独立反应数，\(R'\)为<strong>同相中</strong>的物质的浓度关系数（浓度限制条件，归一化条件不算）。</p>
+<p>下面举一个例子：</p>
+<blockquote>
+<p>求氯化钠溶液的自由度。</p>
+<p>\(S=3\) (\(Cl^-\), \(Na^+\), \(H_2O\))</p>
+<p>\(R=0\) (完全电离，不存在\(NaCl\)电离反应)</p>
+<p>\(R'=1\) (\(c(Na^+)=c(Cl^-)\))</p>
+<p>\(C=3-0-1=2\)</p>
+<p>\(f=C-\phi+2=2-1+2=3\)</p>
+</blockquote>
+<p>注意，如果加入水的电离反应，对独立组分数是没有影响的（一个电离反应，一个浓度关系，同时加入两个物种）。仔细想想，若不考虑\(NaCl\)的电离反应，物种数为 \(2\)（氯化钠和水），\(R=0\)，\(R'=0\)，同样得到正确的组分数 \(2\)。<strong>由此可知</strong>，在同一相的情况下，求组分数时我们可以省略物质的电离反应。</p>
+<p>再举一个例子：</p>
+<blockquote>
+</blockquote>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+  
+  <hr/>
+  © <a href="https://yihui.org">Linzi Jian</a> 2024 &ndash; 2024 | <a href="https://github.com/Jeff-Linzi">Github</a>
+  
+  </footer>
+  </body>
+</html>
+
