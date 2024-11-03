@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on A minimal Hugo website</title>
-    <link>http://localhost:1313/</link>
+    <link>https://jeff-linzi.github.io/</link>
     <description>Recent content in Home on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jeff-linzi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>有机合成 03</title>
-      <link>http://localhost:1313/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-03/</link>
+      <link>https://jeff-linzi.github.io/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-03/</link>
       <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-03/</guid>
-      <description>&lt;h1 id=&#34;03-羰基活化和烯醇式用于碳碳键形成&#34;&gt;03 羰基活化和烯醇式用于碳碳键形成&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-烯醇化&#34;&gt;1 烯醇化&lt;/h2&gt;&#xA;&lt;p&gt;羰基烯醇化，结果电子离域，活化邻位连有氢的碳原子：&lt;/p&gt;&#xA;&lt;p&gt;很多其他基团都可以烯醇化，如硝基（\(NO_2\)），亚砜（\(S\xlongequal{}O\)），砜（\(SO_2\)），膦酸酯（\(P(O)(OR)_2\)），亚胺（\(C\xlongequal{}NH\)），腈（\(CN\)）。&lt;/p&gt;&#xA;&lt;h3 id=&#34;11-烯醇酯&#34;&gt;1.1 烯醇酯&lt;/h3&gt;&#xA;&lt;p&gt;强碱处理，动力学控制产物；弱碱处理，热力学控制产物。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/organicSynthe/03-4.png&#34; alt=&#34;与三甲基氯硅烷生成烯醇酯&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;12-两类模板物质&#34;&gt;1.2 两类模板物质&lt;/h3&gt;&#xA;&lt;p&gt;乙酰乙酸乙酯，丙二酸二酯，与卤代烃在碱性（\(K_2CO_3\) 即可）条件下反应，酸性条件下脱羧（若强碱条件将脱去醛基，也就是乙酰乙酸乙酯会留下乙酸酯而非甲基酮），分别生成甲基酮和乙酸酯。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-羟醛缩合claisen酯缩合michael加成&#34;&gt;2 羟醛缩合、Claisen酯缩合、Michael加成&lt;/h2&gt;&#xA;&lt;p&gt;这三个反应都是羰基活化的碳负离子进攻羰基的反应，被进攻的羰基分别为醛酮羰基、酯羰基、不饱和醛酮。产物分别为 \(\beta-\) 羟基醛酮、\(\beta-\) 羰基酯、\(1,5-\)二酮。&lt;/p&gt;&#xA;&lt;h3 id=&#34;21-henry-反应&#34;&gt;2.1 Henry 反应&lt;/h3&gt;&#xA;&lt;p&gt;硝基烷作为碳负进攻醛的类羟醛缩合反应。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;苯甲醛与硝基甲烷反应，碱性条件下生成 \(\alpha-\)烯硝基，加氢（氢气）生成苯乙胺。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;苯甲醛与唑酮反应，最终生成苯丙氨酸。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-缩合反应的立体化学&#34;&gt;3 缩合反应的立体化学&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/organicSynthe/03-1.png&#34; alt=&#34;缩合反应的立体化学示意图&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;有两个过程，一个是进攻试剂变为烯醇式的 \(Z/E\) 构型；二是椅式中间体被进攻醛酮的位阻大的基团位于平伏键。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;总的来说，碱处理形成烯醇盐的 \(Z/E\) 构型决定产物构型。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;\(R1\) 体积大，\(Z\) 式多；&lt;/li&gt;&#xA;&lt;li&gt;碱体积大，\(E\) 式多。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Reformatsky 反应，当金属锌存在，溴代酯和酮反应：&lt;/p&gt;</description>
+      <guid>https://jeff-linzi.github.io/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-03/</guid>
+      <description>&lt;h1 id=&#34;03-羰基活化和烯醇式用于碳碳键形成&#34;&gt;03 羰基活化和烯醇式用于碳碳键形成&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-烯醇化&#34;&gt;1 烯醇化&lt;/h2&gt;&#xA;&lt;p&gt;羰基烯醇化，结果电子离域，活化邻位连有氢的碳原子：&lt;/p&gt;&#xA;&lt;p&gt;很多其他基团都可以烯醇化，如硝基（\(NO_2\)），亚砜（\(S\xlongequal{}O\)），砜（\(SO_2\)），膦酸酯（\(P(O)(OR)_2\)），亚胺（\(C\xlongequal{}NH\)），腈（\(CN\)）。&lt;/p&gt;&#xA;&lt;h3 id=&#34;11-烯醇酯&#34;&gt;1.1 烯醇酯&lt;/h3&gt;&#xA;&lt;p&gt;强碱处理，动力学控制产物；弱碱处理，热力学控制产物。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jeff-linzi.github.io/organicSynthe/03-4.png&#34; alt=&#34;与三甲基氯硅烷生成烯醇酯&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;12-两类模板物质&#34;&gt;1.2 两类模板物质&lt;/h3&gt;&#xA;&lt;p&gt;乙酰乙酸乙酯，丙二酸二酯，与卤代烃在碱性（\(K_2CO_3\) 即可）条件下反应，酸性条件下脱羧（若强碱条件将脱去醛基，也就是乙酰乙酸乙酯会留下乙酸酯而非甲基酮），分别生成甲基酮和乙酸酯。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-羟醛缩合claisen酯缩合michael加成&#34;&gt;2 羟醛缩合、Claisen酯缩合、Michael加成&lt;/h2&gt;&#xA;&lt;p&gt;这三个反应都是羰基活化的碳负离子进攻羰基的反应，被进攻的羰基分别为醛酮羰基、酯羰基、不饱和醛酮。产物分别为 \(\beta-\) 羟基醛酮、\(\beta-\) 羰基酯、\(1,5-\)二酮。&lt;/p&gt;&#xA;&lt;h3 id=&#34;21-henry-反应&#34;&gt;2.1 Henry 反应&lt;/h3&gt;&#xA;&lt;p&gt;硝基烷作为碳负进攻醛的类羟醛缩合反应。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;苯甲醛与硝基甲烷反应，碱性条件下生成 \(\alpha-\)烯硝基，加氢（氢气）生成苯乙胺。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;苯甲醛与唑酮反应，最终生成苯丙氨酸。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-缩合反应的立体化学&#34;&gt;3 缩合反应的立体化学&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jeff-linzi.github.io/organicSynthe/03-1.png&#34; alt=&#34;缩合反应的立体化学示意图&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;有两个过程，一个是进攻试剂变为烯醇式的 \(Z/E\) 构型；二是椅式中间体被进攻醛酮的位阻大的基团位于平伏键。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;总的来说，碱处理形成烯醇盐的 \(Z/E\) 构型决定产物构型。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;\(R1\) 体积大，\(Z\) 式多；&lt;/li&gt;&#xA;&lt;li&gt;碱体积大，\(E\) 式多。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Reformatsky 反应，当金属锌存在，溴代酯和酮反应：&lt;/p&gt;</description>
     </item>
     <item>
       <title>有机合成 04</title>
-      <link>http://localhost:1313/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-04/</link>
+      <link>https://jeff-linzi.github.io/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-04/</link>
       <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-04/</guid>
+      <guid>https://jeff-linzi.github.io/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-04/</guid>
       <description>&lt;h1 id=&#34;04-碳正离子&#34;&gt;04 碳正离子&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-碳正离子形成&#34;&gt;1 碳正离子形成&lt;/h2&gt;&#xA;\[R_3CX \to R_3C^+ + X^-\]\[R_2C\xlongequal{}CR_2 \xrightarrow{H^+} R_2CH-\overset{+}{C}R_2\]\[R_2COH \xrightarrow{H^+} R_2C-\overset{+}{O}H_2 \xrightarrow{-H_2O}R_2C^+\]\[RCOCl \to R\overset{+}{C}O + Cl^-\]\[R_2CO \xrightarrow{H^+} [R_2C\xlongequal{}\overset{+}{O}H \leftrightarrow R_2\overset{+}C-OH]\]\[(CH_2)_2O \xrightarrow{H^+} HOCH_2\overset{+}{C}H_2\]&lt;h2 id=&#34;2-mannich-反应&#34;&gt;2 Mannich 反应&lt;/h2&gt;&#xA;&lt;p&gt;Mannich 反应需要三个反应物：醛、酮、仲胺。类羟醛缩合，仲胺会与醛反应，取代氧原子生成碳正离子。最终生成 \(\beta\) 仲胺基酮：&lt;/p&gt;&#xA;&lt;p&gt;相比于羟醛缩合：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;没有副产物；&lt;/li&gt;&#xA;&lt;li&gt;仲胺基酮比羟基酮更稳定，易于储存；（如果变为双键会聚合）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-friedel-crafts&#34;&gt;3 Friedel-Crafts&lt;/h2&gt;&#xA;&lt;p&gt;用聚磷酸（\(PPA\)）或浓硫酸处理酸酐，生成碳正离子：&lt;/p&gt;&#xA;&lt;p&gt;\(PPA\) 作用：提供质子，脱水，溶剂。&lt;/p&gt;</description>
     </item>
     <item>
       <title>物理化学 03</title>
-      <link>http://localhost:1313/post/2024/11/03/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6-03/</link>
+      <link>https://jeff-linzi.github.io/post/2024/11/03/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6-03/</link>
       <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/11/03/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6-03/</guid>
+      <guid>https://jeff-linzi.github.io/post/2024/11/03/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6-03/</guid>
       <description>&lt;h1 id=&#34;03-电池&#34;&gt;03 电池&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-可逆电池&#34;&gt;1 可逆电池&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;化学平衡&lt;/li&gt;&#xA;&lt;li&gt;可逆反应&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;可逆过程 \(Q_R\) 会不一样？（我也不知道在哪提出来的，记得是一些推导或习题，请看PPT，电极电势能斯特方程）&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-氢标还原电极电势&#34;&gt;2 氢标还原电极电势&lt;/h2&gt;&#xA;&lt;h2 id=&#34;3-双电层与电势&#34;&gt;3 双电层与电势&lt;/h2&gt;</description>
     </item>
     <item>
       <title>材料化学</title>
-      <link>http://localhost:1313/note/2024/11/02/%E6%9D%90%E6%96%99%E5%8C%96%E5%AD%A6/</link>
+      <link>https://jeff-linzi.github.io/note/2024/11/02/%E6%9D%90%E6%96%99%E5%8C%96%E5%AD%A6/</link>
       <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/note/2024/11/02/%E6%9D%90%E6%96%99%E5%8C%96%E5%AD%A6/</guid>
+      <guid>https://jeff-linzi.github.io/note/2024/11/02/%E6%9D%90%E6%96%99%E5%8C%96%E5%AD%A6/</guid>
       <description>&lt;p&gt;溶液生长法：质量控制，慢；&lt;/p&gt;&#xA;&lt;p&gt;熔体生长法：热量控制，快。&lt;/p&gt;</description>
     </item>
     <item>
       <title>物理化学 02</title>
-      <link>http://localhost:1313/post/2024/11/02/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6-02/</link>
+      <link>https://jeff-linzi.github.io/post/2024/11/02/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6-02/</link>
       <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/11/02/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6-02/</guid>
+      <guid>https://jeff-linzi.github.io/post/2024/11/02/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6-02/</guid>
       <description>&lt;h1 id=&#34;第8章-电解质溶液&#34;&gt;第8章 电解质溶液&lt;/h1&gt;&#xA;&lt;h2 id=&#34;电解质的平均活度和平均活度因子&#34;&gt;电解质的平均活度和平均活度因子&lt;/h2&gt;&#xA;&lt;p&gt;非电解质的化学势：&lt;br&gt;&#xA;&lt;/p&gt;&#xA;\[\mu_B = \mu_B^\ominus + RT\ln{a_B}\]&lt;p&gt;强电解质的化学势：&lt;/p&gt;&#xA;\[\begin{cases} &#xA;    B \to \nu_+M^{Z+}+\nu_-A^{Y-}\\&#xA;    \mu_+ = \mu_+^\ominus + RT\ln{a_+}\\&#xA;    \mu_- = \mu_-^\ominus + RT\ln{a_-}&#xA;    \end{cases}&#xA;\]&lt;p&gt;令：&lt;/p&gt;&#xA;&lt;p&gt;\(\mu_B=\nu_+\mu_++\nu_-\mu_-\)&lt;/p&gt;&#xA;&lt;p&gt;\(\mu_B^\ominus=\nu_+\mu_+^\ominus+\nu_-\mu_-^\ominus\)&lt;/p&gt;&#xA;&lt;p&gt;\(a_B=a_+^{\nu_+}\times a_-^{\nu_-}\)&lt;/p&gt;&#xA;&lt;p&gt;则获得与非电解质一样的形式：&lt;/p&gt;&#xA;\[\mu_B = \mu_B^\ominus+RT\ln{a_B}\]&lt;p&gt;活度系数加入：&lt;/p&gt;&#xA;\[a_+=\gamma_+(m_+/m^\ominus)=\gamma_+(\nu_+m_B/m^\ominus)\]\[a_-=\gamma_-(m_-/m^\ominus)=\gamma_-(\nu_-m_B/m^\ominus)\]\[a_B=a_+^{\nu_+}\times a_-^{\nu_-}=\gamma_+^{\nu_+}\nu_+^{\nu_+}(m_B/m^\ominus)^{\nu_+}\gamma_-^{\nu_-}\nu_-^{\nu_-}(m_B/m^\ominus)^{\nu_-}\]\[=(\gamma_+^{\nu_+}\gamma_-^{\nu_-})(\nu_+^{\nu_+}\nu_-^{\nu_-})(m_B/m^\ominus)^{\nu_++\nu_-} \ne \gamma_B\times(m_B/m^\ominus)\]&lt;p&gt;为了创造一个统一的形式，等式两边对 \(\nu_++\nu_-\) 开根号：&lt;/p&gt;&#xA;\[a_\pm = \gamma_\pm \times \nu_\pm \times m_B/m^\ominus = \gamma_\pm \times m_\pm/m^\ominus\]&lt;p&gt;定义了离子平均活度 \(a_\pm\)，离子平均活度系数 \(\gamma_\pm\)，离子平均化学计量数？\(\nu_\pm\)，离子平均质量摩尔浓度 \(m_\pm\)，相应定义请对照开根号前后两式。&lt;/p&gt;</description>
     </item>
     <item>
       <title>有机合成 02</title>
-      <link>http://localhost:1313/post/2024/11/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-02/</link>
+      <link>https://jeff-linzi.github.io/post/2024/11/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-02/</link>
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/11/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-02/</guid>
+      <guid>https://jeff-linzi.github.io/post/2024/11/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-02/</guid>
       <description>&lt;h1 id=&#34;02-金属有机化合物和叶立德用于碳碳键形成&#34;&gt;02 金属有机化合物和叶立德用于碳碳键形成&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-金属有机化合物&#34;&gt;1 金属有机化合物&lt;/h2&gt;&#xA;&lt;p&gt;金属有机化合物，如格氏试剂，有机铜锂试剂等，产生碳负离子，用于碳碳键的形成。&lt;/p&gt;&#xA;&lt;h3 id=&#34;11-制备&#34;&gt;1.1 制备&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由卤代烃与金属在乙醚或四氢呋喃溶液中制备：&lt;/p&gt;&#xA;\[Mg+RX \xrightarrow{ether} RMgX\]&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由其他强金属有机化合物制备：&lt;/p&gt;&#xA;\[2RMgI+CdCl_2 \xrightarrow{Et_2O} R_2Cd+2MgICl\]&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由金属与炔烃反应得到&lt;/p&gt;&#xA;\[CH \equiv CH \xrightarrow[Fe^{3+}]{Na,NH_3(l)} CH \equiv CNa\]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;12-一般反应&#34;&gt;1.2 一般反应&lt;/h3&gt;&#xA;&lt;p&gt;反应能力弱：热力学控制；&lt;/p&gt;&#xA;&lt;p&gt;反应能力强：动力学控制。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;取代&lt;/p&gt;&#xA;\[MeI+RM \rightarrow RMe+M^++I^-\]&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;加成&lt;/p&gt;&#xA;\[R_2C\xlongequal{} O+R&#39;M \rightarrow R_2CR&#39;-O^-+M^+\]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;13-格氏试剂&#34;&gt;1.3 格氏试剂&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;与醛、酮、酯、环氧化物反应生成醇&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;与腈、酰胺反应生成醛酮&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;与二氧化碳反应生成羧酸（与干冰反应）&lt;/p&gt;</description>
     </item>
     <item>
       <title>结构化学 04</title>
-      <link>http://localhost:1313/post/2024/10/31/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-04/</link>
+      <link>https://jeff-linzi.github.io/post/2024/10/31/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-04/</link>
       <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/10/31/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-04/</guid>
+      <guid>https://jeff-linzi.github.io/post/2024/10/31/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-04/</guid>
       <description>&lt;h1 id=&#34;第4章-分子的对称性&#34;&gt;第4章 分子的对称性&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-对称动作和对称元素&#34;&gt;1 对称动作和对称元素&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-旋转操作和旋转轴&#34;&gt;1.1 旋转操作和旋转轴&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;分子绕某轴旋转一定角度 \(\alpha\) 后分子复原，则该轴为旋转轴 \(C_n\)，\(n\) 称为轴次，\(n=360^{\circ}/{\alpha}\)；&lt;/li&gt;&#xA;&lt;li&gt;对称操作 \(C_n^m\) (\(m &lt; n\))代表分子用该轴旋转 \(m\) 个 \(\alpha\)，\(C_n^n=E\) 为复原操作；&lt;/li&gt;&#xA;&lt;li&gt;若存在多个旋转轴，轴次最高的为主轴，其余为副轴。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;12-反演操作和对称中心&#34;&gt;1.2 反演操作和对称中心&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;把分子对称中心称为 \(i\)，反演即是将分子中心对称的操作，同样称作 \(i\)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;13-反映操作和镜面&#34;&gt;1.3 反映操作和镜面&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;把分子中对称面称为镜面 \(\sigma\)，反映操作即是分子通过面对称的操作，同样称作 \(\sigma\)；&lt;/li&gt;&#xA;&lt;li&gt;根据镜面与主轴在空间中的排布，分为 \(\sigma_v,\sigma_h,\sigma_d\)，分别代表通过主轴的面（vertical），垂直主轴的面（horizontal），通过主轴同时平分副轴的面（diagonal）。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;14-旋转反演操作和反轴&#34;&gt;1.4 旋转反演操作和反轴&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;操作：\(I_n^1=iC_n^1\)，反轴：旋转轴加对称点 \(I_n\)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;15-旋转反映操作和映轴&#34;&gt;1.5 旋转反映操作和映轴&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;操作：\(S_n^1=\sigma C_n^1\)，映轴：旋转轴加镜面 \(S_n\)&lt;/li&gt;&#xA;&lt;li&gt;反轴与映轴是相互联系的，旋转反演与旋转反映可以根据一定关系互换。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-点群&#34;&gt;2 点群&lt;/h2&gt;&#xA;&lt;p&gt;对称元素系中全部对称动作称为对称动作群，由于分子等有限图形中的所有对称元素至少通过一个公共点，对称动作群亦称为点群。所有对称动作数量称为点群的&lt;strong&gt;阶次&lt;/strong&gt;。一个对称元素在另一个对称元素内，则并非相互独立的。阶次由各独立对称元素组合数。&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;名称&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;阶次&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;描述&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(C_n\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(n\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;一个 \(C_n\) 轴&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(C_{nh}\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(2n\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;一个 \(C_n\) 轴和一个与之垂直的镜面 \({\sigma}_h\)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(C_{nv}\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(2n\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;一个 \(C_n\) 轴和 \(n\) 个通过轴的镜面 \({\sigma}_v\)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(D_n\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(2n\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;一个 \(C_n\) 轴和 \(n\) 个垂直于该轴的 \(C_2\) 轴&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(D_{nh}\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(4n\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(D_n\) 加一个与主轴垂直的镜面 \({\sigma}_h\)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(D_{nd}\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(4n\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(D_n\) 加 \(n\) 个平分 \(C_2\) 轴的镜面 \({\sigma}_d\)，例如 \(S_8\) 分子&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(T_d\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;正四面体&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\(O_h\)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;正八面体&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;苯是 \(D_{6h}\) 还是 \(C_6v\) ?&lt;/p&gt;</description>
     </item>
     <item>
       <title>物理化学下 01</title>
-      <link>http://localhost:1313/post/2024/10/30/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-01/</link>
+      <link>https://jeff-linzi.github.io/post/2024/10/30/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-01/</link>
       <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/10/30/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-01/</guid>
+      <guid>https://jeff-linzi.github.io/post/2024/10/30/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-01/</guid>
       <description>&lt;h1 id=&#34;第6章-相平衡&#34;&gt;第6章 相平衡&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-相平衡条件&#34;&gt;1 相平衡条件&lt;/h2&gt;&#xA;&lt;p&gt;设在多组分系统中，仅有\(\alpha\)和\(\beta\)两相且彼此处于平衡状态。有\(dn_B\)的物质\(B\)从\(\alpha\)相转移到\(\beta\)相：&lt;/p&gt;&#xA;$$dG = dG^{\alpha}_B + dG^{\beta}_B = \mu^{\alpha}_{B}dn^{\alpha}_B + \mu^{\beta}_{B}dn^{\beta}_B$$&lt;p&gt;因为&lt;/p&gt;&#xA;$$ -dn_B^{\alpha} = dn_B^{\beta} $$&lt;p&gt;所以&lt;/p&gt;&#xA;$$ dG = (\mu^{\beta}_{B}-\mu^{\alpha}_{B})dn^{\beta}_B = 0 $$&lt;p&gt;又因 \(dn^{\beta}_B &gt; 0\) ， \(dG = 0\) 则&lt;/p&gt;&#xA;$$ \mu^{\beta}_{B} = \mu^{\alpha}_{B} $$&lt;p&gt;对于多相体系上述结论可以推广。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-相律&#34;&gt;2 相律&lt;/h2&gt;&#xA;&lt;p&gt;相律是用来描述一个体系&lt;strong&gt;相互独立&lt;/strong&gt;的强度性质(&lt;strong&gt;自由度&lt;/strong&gt;\(\boldsymbol{f}\))的个数与&lt;strong&gt;独立&lt;/strong&gt;组分数(\(\boldsymbol{C}\))，相数(\(\boldsymbol{\phi}\))之间的关系，我们用以下公式表示：&lt;/p&gt;&#xA;\[ f = C- \phi + 2 \]&lt;p&gt;需要注意的是，其中“\(2\)”代表的是体系中外界因素控制的相互独立的强度性质有两个，一般取压力(\(\boldsymbol{p}\))和温度(\(\boldsymbol{T}\))。若还有其他条件，如半透膜存在，则体系会多一个压力强度性质，则&amp;quot;\(+3\)&amp;quot;。&lt;/p&gt;&#xA;&lt;p&gt;独立组分数（也可简称组分数）是为了确定独立物种数目，由以下公式确定：&lt;/p&gt;&#xA;\[C \xlongequal{def} S-R-R&#39;\]&lt;p&gt;其中\(C\)为独立组分数，\(S\)为物种数，\(R\)为独立反应数，\(R&#39;\)为&lt;strong&gt;同相中&lt;/strong&gt;的物质的浓度关系数（浓度限制条件，归一化条件不算）。&lt;/p&gt;&#xA;&lt;p&gt;下面举一个例子：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;例1：求氯化钠溶液的自由度。&lt;/p&gt;</description>
     </item>
     <item>
       <title>有机合成 01</title>
-      <link>http://localhost:1313/post/2024/10/29/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-01/</link>
+      <link>https://jeff-linzi.github.io/post/2024/10/29/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-01/</link>
       <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/10/29/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-01/</guid>
+      <guid>https://jeff-linzi.github.io/post/2024/10/29/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-01/</guid>
       <description>&lt;h1 id=&#34;01&#34;&gt;01&lt;/h1&gt;</description>
     </item>
     <item>
       <title>高分子化学 01</title>
-      <link>http://localhost:1313/post/2024/10/26/%E9%AB%98%E5%88%86%E5%AD%90%E5%8C%96%E5%AD%A6-01/</link>
+      <link>https://jeff-linzi.github.io/post/2024/10/26/%E9%AB%98%E5%88%86%E5%AD%90%E5%8C%96%E5%AD%A6-01/</link>
       <pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/10/26/%E9%AB%98%E5%88%86%E5%AD%90%E5%8C%96%E5%AD%A6-01/</guid>
+      <guid>https://jeff-linzi.github.io/post/2024/10/26/%E9%AB%98%E5%88%86%E5%AD%90%E5%8C%96%E5%AD%A6-01/</guid>
       <description>&lt;h1 id=&#34;第1章-绪论&#34;&gt;第1章 绪论&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-定义&#34;&gt;1 定义&lt;/h2&gt;&#xA;&lt;p&gt;许多&lt;strong&gt;原子&lt;/strong&gt;以一定&lt;strong&gt;规律&lt;/strong&gt;由&lt;strong&gt;共价键&lt;/strong&gt;连接而成的&lt;strong&gt;分子量很大&lt;/strong&gt;(10&lt;sup&gt;4&lt;/sup&gt;~10&lt;sup&gt;7&lt;/sup&gt; g/mol)的化合物。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-特性&#34;&gt;2 特性&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;粘度大&lt;/li&gt;&#xA;&lt;li&gt;高强度、高弹性&lt;/li&gt;&#xA;&lt;li&gt;多分散（分子量不均一）&lt;/li&gt;&#xA;&lt;li&gt;难溶解、无沸点（分子链之间有缠结）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;3-基本概念&#34;&gt;3 基本概念&lt;/h2&gt;&#xA;&lt;h3 id=&#34;31-单体&#34;&gt;3.1 单体&lt;/h3&gt;&#xA;&lt;p&gt;monomer：能够通过聚合反应形成高分子化合物的低分子化合物。&lt;strong&gt;至少要有两个官能度&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;32-两类重要合成高分子&#34;&gt;3.2 两类重要合成高分子&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;PMMA：聚甲基丙烯酸甲酯、有机玻璃&lt;/li&gt;&#xA;&lt;li&gt;尼龙6，6：聚己二酰己二胺&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;33-聚合度&#34;&gt;3.3 聚合度&lt;/h3&gt;&#xA;&lt;p&gt;聚合度（Degree of polymerization，\(\boldsymbol{DP}\)）：重复单元数目，一般用平均聚合度表示 \(\boldsymbol{\overline{DP}}\)&lt;/p&gt;&#xA;&lt;h3 id=&#34;34-低聚物遥爪聚合物&#34;&gt;3.4 低聚物、遥爪聚合物&lt;/h3&gt;&#xA;&lt;p&gt;低聚物（Oligomer）：重复单元数几个到十几个。&lt;br&gt;&#xA;遥爪聚合物（Telechelic polymer）：两端都含有反应基团的分子量较小的聚合物。&lt;/p&gt;&#xA;&lt;h3 id=&#34;35-平均分子量&#34;&gt;3.5 平均分子量&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;数均分子量：可以是\(M_n=\overline{DP}\times M_{重复单元}+M_{端基}\);&lt;br&gt;&#xA;\[M_n=\sum x_iM_i=\sum N_iM_i/\sum N_i\]&lt;br&gt;&#xA;其中数量分数: \(x_i=N_i/\sum N_i\)&lt;/li&gt;&#xA;&lt;li&gt;重均分子量:&lt;br&gt;&#xA;\[M_w=\sum w_iM_i=\sum ({N_iM_i}/\sum N_iM_i)M_i=\sum N_i(M_i)^2/\sum N_iM_i\]&#xA;其中重量分数: \(w_i=M_iN_i/\sum M_iN_i\)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;36-聚合物分子量分布指数&#34;&gt;3.6 聚合物分子量分布指数&lt;/h3&gt;&#xA;&lt;p&gt;\(PDI=M_w/M_n\) 凝胶渗透色谱（\(GPC\)）测定，一般d&amp;gt;1.5&lt;/p&gt;</description>
     </item>
     <item>
       <title>a-note</title>
-      <link>http://localhost:1313/note/2024/10/23/my-first-note/</link>
+      <link>https://jeff-linzi.github.io/note/2024/10/23/my-first-note/</link>
       <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/note/2024/10/23/my-first-note/</guid>
+      <guid>https://jeff-linzi.github.io/note/2024/10/23/my-first-note/</guid>
       <description>&lt;h1 id=&#34;note&#34;&gt;note&lt;/h1&gt;&#xA;&lt;p&gt;I am a undergraduated student.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://jeff-linzi.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://jeff-linzi.github.io/about/</guid>
       <description>&lt;h1 id=&#34;关于&#34;&gt;关于&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;我是华中农业大学应用化学专业学生&lt;/li&gt;&#xA;&lt;li&gt;这个网站记录学习笔记&lt;/li&gt;&#xA;&lt;li&gt;我可能要在网站上制作简历&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;联系方式&#34;&gt;联系方式&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;E-mail: &lt;a href=&#34;LinZijian@webmail.hzau.edu.cn&#34;&gt;LinZijian@webmail.hzau.edu.cn&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>结构化学 01</title>
-      <link>http://localhost:1313/post/1/01/01/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-01/</link>
+      <link>https://jeff-linzi.github.io/post/1/01/01/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/1/01/01/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-01/</guid>
+      <guid>https://jeff-linzi.github.io/post/1/01/01/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-01/</guid>
       <description>&lt;h1 id=&#34;第1章-量子力学基础&#34;&gt;第1章 量子力学基础&lt;/h1&gt;&#xA;&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;&#xA;&lt;p&gt;波函数是对电子状态的数学建模？&lt;/p&gt;&#xA;&lt;p&gt;形成分子波函数作用的三个条件：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;能量相近（h会大）&lt;/li&gt;&#xA;&lt;li&gt;轨道最大重叠&lt;/li&gt;&#xA;&lt;li&gt;对称性匹配&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;同核双原子分子轨道：&lt;/p&gt;&#xA;&lt;p&gt;\(u\)：中心反对称；\(g\)：中心对称。&lt;/p&gt;&#xA;&lt;p&gt;\(\sigma_g\) 成键轨道，\(\sigma_u\) 反键轨道；&lt;/p&gt;&#xA;&lt;p&gt;\(\pi_g\) 反键轨道，\(\pi_u\) 成键轨道。&lt;/p&gt;&#xA;&lt;p&gt;第二周期：&lt;/p&gt;&#xA;&lt;p&gt;\(N\)，\(O\)，\(F\) 的 \(2s\) 轨道与 \(2p_z\) 能量相差较大，不继续重叠，而第二周期其他原子，这两个轨道能量相近，再发生作用，\(2s\) 两个轨道能量降低，\(2p_z\) 两个轨道能量升高，其中 \(2p_z\) 成键轨道能量位于 \(2p_{x/y}\) 成键轨道上方。&lt;/p&gt;</description>
     </item>
     <item>
       <title>高分子化学 02</title>
-      <link>http://localhost:1313/post/1/01/01/%E9%AB%98%E5%88%86%E5%AD%90%E5%8C%96%E5%AD%A6-02/</link>
+      <link>https://jeff-linzi.github.io/post/1/01/01/%E9%AB%98%E5%88%86%E5%AD%90%E5%8C%96%E5%AD%A6-02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/1/01/01/%E9%AB%98%E5%88%86%E5%AD%90%E5%8C%96%E5%AD%A6-02/</guid>
+      <guid>https://jeff-linzi.github.io/post/1/01/01/%E9%AB%98%E5%88%86%E5%AD%90%E5%8C%96%E5%AD%A6-02/</guid>
       <description></description>
     </item>
   </channel>

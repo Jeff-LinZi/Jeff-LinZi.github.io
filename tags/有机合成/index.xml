@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>有机合成 on A minimal Hugo website</title>
-    <link>http://localhost:1313/tags/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90/</link>
+    <link>https://jeff-linzi.github.io/tags/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90/</link>
     <description>Recent content in 有机合成 on A minimal Hugo website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jeff-linzi.github.io/tags/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>有机合成 03</title>
-      <link>http://localhost:1313/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-03/</link>
+      <link>https://jeff-linzi.github.io/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-03/</link>
       <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-03/</guid>
-      <description>&lt;h1 id=&#34;03-羰基活化和烯醇式用于碳碳键形成&#34;&gt;03 羰基活化和烯醇式用于碳碳键形成&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-烯醇化&#34;&gt;1 烯醇化&lt;/h2&gt;&#xA;&lt;p&gt;羰基烯醇化，结果电子离域，活化邻位连有氢的碳原子：&lt;/p&gt;&#xA;&lt;p&gt;很多其他基团都可以烯醇化，如硝基（\(NO_2\)），亚砜（\(S\xlongequal{}O\)），砜（\(SO_2\)），膦酸酯（\(P(O)(OR)_2\)），亚胺（\(C\xlongequal{}NH\)），腈（\(CN\)）。&lt;/p&gt;&#xA;&lt;h3 id=&#34;11-烯醇酯&#34;&gt;1.1 烯醇酯&lt;/h3&gt;&#xA;&lt;p&gt;强碱处理，动力学控制产物；弱碱处理，热力学控制产物。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/organicSynthe/03-4.png&#34; alt=&#34;与三甲基氯硅烷生成烯醇酯&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;12-两类模板物质&#34;&gt;1.2 两类模板物质&lt;/h3&gt;&#xA;&lt;p&gt;乙酰乙酸乙酯，丙二酸二酯，与卤代烃在碱性（\(K_2CO_3\) 即可）条件下反应，酸性条件下脱羧（若强碱条件将脱去醛基，也就是乙酰乙酸乙酯会留下乙酸酯而非甲基酮），分别生成甲基酮和乙酸酯。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-羟醛缩合claisen酯缩合michael加成&#34;&gt;2 羟醛缩合、Claisen酯缩合、Michael加成&lt;/h2&gt;&#xA;&lt;p&gt;这三个反应都是羰基活化的碳负离子进攻羰基的反应，被进攻的羰基分别为醛酮羰基、酯羰基、不饱和醛酮。产物分别为 \(\beta-\) 羟基醛酮、\(\beta-\) 羰基酯、\(1,5-\)二酮。&lt;/p&gt;&#xA;&lt;h3 id=&#34;21-henry-反应&#34;&gt;2.1 Henry 反应&lt;/h3&gt;&#xA;&lt;p&gt;硝基烷作为碳负进攻醛的类羟醛缩合反应。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;苯甲醛与硝基甲烷反应，碱性条件下生成 \(\alpha-\)烯硝基，加氢（氢气）生成苯乙胺。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;苯甲醛与唑酮反应，最终生成苯丙氨酸。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-缩合反应的立体化学&#34;&gt;3 缩合反应的立体化学&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/organicSynthe/03-1.png&#34; alt=&#34;缩合反应的立体化学示意图&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;有两个过程，一个是进攻试剂变为烯醇式的 \(Z/E\) 构型；二是椅式中间体被进攻醛酮的位阻大的基团位于平伏键。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;总的来说，碱处理形成烯醇盐的 \(Z/E\) 构型决定产物构型。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;\(R1\) 体积大，\(Z\) 式多；&lt;/li&gt;&#xA;&lt;li&gt;碱体积大，\(E\) 式多。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Reformatsky 反应，当金属锌存在，溴代酯和酮反应：&lt;/p&gt;</description>
+      <guid>https://jeff-linzi.github.io/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-03/</guid>
+      <description>&lt;h1 id=&#34;03-羰基活化和烯醇式用于碳碳键形成&#34;&gt;03 羰基活化和烯醇式用于碳碳键形成&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-烯醇化&#34;&gt;1 烯醇化&lt;/h2&gt;&#xA;&lt;p&gt;羰基烯醇化，结果电子离域，活化邻位连有氢的碳原子：&lt;/p&gt;&#xA;&lt;p&gt;很多其他基团都可以烯醇化，如硝基（\(NO_2\)），亚砜（\(S\xlongequal{}O\)），砜（\(SO_2\)），膦酸酯（\(P(O)(OR)_2\)），亚胺（\(C\xlongequal{}NH\)），腈（\(CN\)）。&lt;/p&gt;&#xA;&lt;h3 id=&#34;11-烯醇酯&#34;&gt;1.1 烯醇酯&lt;/h3&gt;&#xA;&lt;p&gt;强碱处理，动力学控制产物；弱碱处理，热力学控制产物。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jeff-linzi.github.io/organicSynthe/03-4.png&#34; alt=&#34;与三甲基氯硅烷生成烯醇酯&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;12-两类模板物质&#34;&gt;1.2 两类模板物质&lt;/h3&gt;&#xA;&lt;p&gt;乙酰乙酸乙酯，丙二酸二酯，与卤代烃在碱性（\(K_2CO_3\) 即可）条件下反应，酸性条件下脱羧（若强碱条件将脱去醛基，也就是乙酰乙酸乙酯会留下乙酸酯而非甲基酮），分别生成甲基酮和乙酸酯。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-羟醛缩合claisen酯缩合michael加成&#34;&gt;2 羟醛缩合、Claisen酯缩合、Michael加成&lt;/h2&gt;&#xA;&lt;p&gt;这三个反应都是羰基活化的碳负离子进攻羰基的反应，被进攻的羰基分别为醛酮羰基、酯羰基、不饱和醛酮。产物分别为 \(\beta-\) 羟基醛酮、\(\beta-\) 羰基酯、\(1,5-\)二酮。&lt;/p&gt;&#xA;&lt;h3 id=&#34;21-henry-反应&#34;&gt;2.1 Henry 反应&lt;/h3&gt;&#xA;&lt;p&gt;硝基烷作为碳负进攻醛的类羟醛缩合反应。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;苯甲醛与硝基甲烷反应，碱性条件下生成 \(\alpha-\)烯硝基，加氢（氢气）生成苯乙胺。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;苯甲醛与唑酮反应，最终生成苯丙氨酸。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-缩合反应的立体化学&#34;&gt;3 缩合反应的立体化学&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jeff-linzi.github.io/organicSynthe/03-1.png&#34; alt=&#34;缩合反应的立体化学示意图&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;有两个过程，一个是进攻试剂变为烯醇式的 \(Z/E\) 构型；二是椅式中间体被进攻醛酮的位阻大的基团位于平伏键。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;总的来说，碱处理形成烯醇盐的 \(Z/E\) 构型决定产物构型。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;\(R1\) 体积大，\(Z\) 式多；&lt;/li&gt;&#xA;&lt;li&gt;碱体积大，\(E\) 式多。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Reformatsky 反应，当金属锌存在，溴代酯和酮反应：&lt;/p&gt;</description>
     </item>
     <item>
       <title>有机合成 04</title>
-      <link>http://localhost:1313/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-04/</link>
+      <link>https://jeff-linzi.github.io/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-04/</link>
       <pubDate>Sun, 03 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-04/</guid>
+      <guid>https://jeff-linzi.github.io/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-04/</guid>
       <description>&lt;h1 id=&#34;04-碳正离子&#34;&gt;04 碳正离子&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-碳正离子形成&#34;&gt;1 碳正离子形成&lt;/h2&gt;&#xA;\[R_3CX \to R_3C^+ + X^-\]\[R_2C\xlongequal{}CR_2 \xrightarrow{H^+} R_2CH-\overset{+}{C}R_2\]\[R_2COH \xrightarrow{H^+} R_2C-\overset{+}{O}H_2 \xrightarrow{-H_2O}R_2C^+\]\[RCOCl \to R\overset{+}{C}O + Cl^-\]\[R_2CO \xrightarrow{H^+} [R_2C\xlongequal{}\overset{+}{O}H \leftrightarrow R_2\overset{+}C-OH]\]\[(CH_2)_2O \xrightarrow{H^+} HOCH_2\overset{+}{C}H_2\]&lt;h2 id=&#34;2-mannich-反应&#34;&gt;2 Mannich 反应&lt;/h2&gt;&#xA;&lt;p&gt;Mannich 反应需要三个反应物：醛、酮、仲胺。类羟醛缩合，仲胺会与醛反应，取代氧原子生成碳正离子。最终生成 \(\beta\) 仲胺基酮：&lt;/p&gt;&#xA;&lt;p&gt;相比于羟醛缩合：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;没有副产物；&lt;/li&gt;&#xA;&lt;li&gt;仲胺基酮比羟基酮更稳定，易于储存；（如果变为双键会聚合）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-friedel-crafts&#34;&gt;3 Friedel-Crafts&lt;/h2&gt;&#xA;&lt;p&gt;用聚磷酸（\(PPA\)）或浓硫酸处理酸酐，生成碳正离子：&lt;/p&gt;&#xA;&lt;p&gt;\(PPA\) 作用：提供质子，脱水，溶剂。&lt;/p&gt;</description>
     </item>
     <item>
       <title>有机合成 02</title>
-      <link>http://localhost:1313/post/2024/11/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-02/</link>
+      <link>https://jeff-linzi.github.io/post/2024/11/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-02/</link>
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/11/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-02/</guid>
+      <guid>https://jeff-linzi.github.io/post/2024/11/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-02/</guid>
       <description>&lt;h1 id=&#34;02-金属有机化合物和叶立德用于碳碳键形成&#34;&gt;02 金属有机化合物和叶立德用于碳碳键形成&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-金属有机化合物&#34;&gt;1 金属有机化合物&lt;/h2&gt;&#xA;&lt;p&gt;金属有机化合物，如格氏试剂，有机铜锂试剂等，产生碳负离子，用于碳碳键的形成。&lt;/p&gt;&#xA;&lt;h3 id=&#34;11-制备&#34;&gt;1.1 制备&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由卤代烃与金属在乙醚或四氢呋喃溶液中制备：&lt;/p&gt;&#xA;\[Mg+RX \xrightarrow{ether} RMgX\]&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由其他强金属有机化合物制备：&lt;/p&gt;&#xA;\[2RMgI+CdCl_2 \xrightarrow{Et_2O} R_2Cd+2MgICl\]&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由金属与炔烃反应得到&lt;/p&gt;&#xA;\[CH \equiv CH \xrightarrow[Fe^{3+}]{Na,NH_3(l)} CH \equiv CNa\]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;12-一般反应&#34;&gt;1.2 一般反应&lt;/h3&gt;&#xA;&lt;p&gt;反应能力弱：热力学控制；&lt;/p&gt;&#xA;&lt;p&gt;反应能力强：动力学控制。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;取代&lt;/p&gt;&#xA;\[MeI+RM \rightarrow RMe+M^++I^-\]&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;加成&lt;/p&gt;&#xA;\[R_2C\xlongequal{} O+R&#39;M \rightarrow R_2CR&#39;-O^-+M^+\]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;13-格氏试剂&#34;&gt;1.3 格氏试剂&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;与醛、酮、酯、环氧化物反应生成醇&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;与腈、酰胺反应生成醛酮&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;与二氧化碳反应生成羧酸（与干冰反应）&lt;/p&gt;</description>
     </item>
     <item>
       <title>有机合成 01</title>
-      <link>http://localhost:1313/post/2024/10/29/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-01/</link>
+      <link>https://jeff-linzi.github.io/post/2024/10/29/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-01/</link>
       <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2024/10/29/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-01/</guid>
+      <guid>https://jeff-linzi.github.io/post/2024/10/29/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-01/</guid>
       <description>&lt;h1 id=&#34;01&#34;&gt;01&lt;/h1&gt;</description>
     </item>
   </channel>
