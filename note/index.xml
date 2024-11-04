@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notes on A Personal Website</title>
+    <title>Notes on 林子健</title>
     <link>https://jeff-linzi.github.io/note/</link>
-    <description>Recent content in Notes on A Personal Website</description>
+    <description>Recent content in Notes on 林子健</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate></lastBuildDate>
     <atom:link href="https://jeff-linzi.github.io/note/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>材料化学</title>
-      <link>https://jeff-linzi.github.io/note/2024/11/02/%E6%9D%90%E6%96%99%E5%8C%96%E5%AD%A6/</link>
-      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://jeff-linzi.github.io/note/2024/11/02/%E6%9D%90%E6%96%99%E5%8C%96%E5%AD%A6/</guid>
-      <description>&lt;p&gt;溶液生长法：质量控制，慢；&lt;/p&gt;&#xA;&lt;p&gt;熔体生长法：热量控制，快。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>a-note</title>
-      <link>https://jeff-linzi.github.io/note/2024/10/23/my-first-note/</link>
-      <pubDate>Wed, 23 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://jeff-linzi.github.io/note/2024/10/23/my-first-note/</guid>
-      <description>&lt;h1 id=&#34;note&#34;&gt;note&lt;/h1&gt;&#xA;&lt;p&gt;I am a undergraduated student.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

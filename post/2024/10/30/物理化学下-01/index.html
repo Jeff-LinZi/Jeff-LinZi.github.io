@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>物理化学下 01 | A Personal Website</title>
+    <title>物理化学下 01 | 林子健</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     
@@ -90,8 +90,41 @@ $$ \mu^{\beta}_{B} = \mu^{\alpha}_{B} $$<p>对于多相体系上述结论可以�
 <p>若为理想气体，\(V_m(g)=\frac{RT}{p}\)；</p>
 <p>则克拉贝龙方程变为克劳修斯-克拉贝龙（Clausius-Clapeyron）方程：</p>
 \[\frac{dp}{dT}=\frac{p{\Delta}_{\alpha}^{g}H_m}{RT^2}\]<p>当温度变化不大，\({\Delta}_{\alpha}^{g}H_m\) 视为定值，积分上述方程得：</p>
-\[\ln{p}=-\frac{{\Delta}_{\alpha}^{g}H_m}{RT}+C\]<h3 id="32-压力对液体蒸气压的影响">3.2 压力对液体蒸气压的影响</h3>
-<p>效率太低了</p>
+\[\ln{p}=-\frac{{\Delta}_{\alpha}^{g}H_m}{RT}+C\]<p>楚顿(Trouton)规则，对于非极性，无缔合，\(T_B \ge 150K\)的液体：</p>
+\[\frac{\Delta^g_lH_m}{T_b} \approx 88 J\cdot{K^{-1}}\cdot{mol^{-1}}\]<h3 id="32-压力对液体蒸气压的影响">3.2 压力对液体蒸气压的影响</h3>
+<p>环境压力 \(p_e\)，蒸气压 \(p_g\)，恒温条件 \(p_g=f(p_e)\):</p>
+\[p_g^*=f(p_g^*)\]\[\frac{dp_g}{dp_e}=\frac{V_m(l)}{V_m(g)}=\frac{V_m(l)p_g}{RT}\]\[ln{p_g}=\frac{V_m(l)p_e}{RT}+C\]\[ln{p_g^*}=\frac{V_m(l)p_g^*}{RT}+C\]\[ln{\frac{p_g}{p_g^*}}=\frac{V_m(l)}{RT}(p_e-p_g^*)\]<h3 id="33-相变">3.3 相变</h3>
+<p>相变过程中 \(\Delta{\mu}=0\)</p>
+<h4 id="331-一级相变">3.3.1 一级相变</h4>
+<p>化学势的一级偏微商在相变过程中发生突变：</p>
+\[V_m=\frac{\partial{\mu}}{\partial{p}} \ne 0\]\[-S_m=\frac{\partial{\mu}}{\partial{T}} \ne 0\]<p>有相变潜热：</p>
+\[\Delta{H_m}=T\Delta{S_m} \ne 0\]<h4 id="332-二级相变">3.3.2 二级相变</h4>
+<p>化学势的二级偏微商发生突变，克拉贝龙方程不适用，使用 Ehrenfest 方程：</p>
+\[\frac{dp}{dT}=\frac{\Delta{C_{p,m}}}{TV_m\Delta{\alpha}}\]<p>其中：</p>
+\[C_{p,m}=\frac{\partial{H_m}}{\partial{T}}=T\frac{\partial{S_m}}{\partial{T}}=-T\frac{\partial^2{\mu}}{\partial{T^2}}\]\[\alpha=\frac{1}{V_m}\frac{\partial{V_m}}{\partial{T}}=\frac{1}{V_m}\frac{\partial^2{\mu}}{\partial{p^2}}\]<p>也许正确的公式：</p>
+\[d^2\mu = -\frac{C_{p,m}}{T}dT^2+\alpha V_m dp^2\]<p>例子：</p>
+<ul>
+<li>超导体转变</li>
+<li>磁性转变</li>
+<li>液氦 \(\lambda\) 相变，超流态</li>
+</ul>
+<h2 id="4-相图">4 相图</h2>
+<p>内容过多，望而却步，记一点想记的。</p>
+<h3 id="41-单组分相图">4.1 单组分相图</h3>
+<h3 id="42-两组分相图">4.2 两组分相图</h3>
+<ul>
+<li>
+<p>杠杆定律
+在双相区，一个物系点对应两个相点，则二者与物系点的距离与各自摩尔分数或质量分数成反比，即：</p>
+\[n(\alpha)\times{l(\alpha)}=n(\beta)\times{l(\beta)}\]</li>
+<li>
+<p>步冷曲线
+将体系从高温降温，体系温度随时间的关系曲线，规律是：</p>
+<p>进入两相区，降温减慢，进入三相线，一段时间温度不变。</p>
+</li>
+</ul>
+<h3 id="43-三组分相图">4.3 三组分相图</h3>
+<p>三角形相图</p>
 
 </main>
 
@@ -103,7 +136,7 @@ $$ \mu^{\beta}_{B} = \mu^{\alpha}_{B} $$<p>对于多相体系上述结论可以�
 
   
   <hr/>
-  © Zijian Lin 2024 &ndash; 2024 | <a href="https://github.com/Jeff-LinZi">Github</a>
+  © <a href="https://jeff-linzi.github.io/">Zijian Lin</a> 2024 &ndash; 2024 | <a href="https://github.com/Jeff-LinZi">Github</a>
   
   </footer>
   </body>
