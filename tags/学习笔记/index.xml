@@ -6,8 +6,15 @@
     <description>Recent content in 学习笔记 on 林子健</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jeff-linzi.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>有机合成 04</title>
+      <link>https://jeff-linzi.github.io/post/2024/11/05/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-04/</link>
+      <pubDate>Tue, 05 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://jeff-linzi.github.io/post/2024/11/05/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-04/</guid>
+      <description>&lt;h1 id=&#34;04-碳正离子&#34;&gt;04 碳正离子&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-碳正离子形成&#34;&gt;1 碳正离子形成&lt;/h2&gt;&#xA;\[R_3CX \to R_3C^+ + X^-\]\[R_2C\xlongequal{}CR_2 \xrightarrow{H^+} R_2CH-\overset{+}{C}R_2\]\[R_2COH \xrightarrow{H^+} R_2C-\overset{+}{O}H_2 \xrightarrow{-H_2O}R_2C^+\]\[RCOCl \to R\overset{+}{C}O + Cl^-\]\[R_2CO \xrightarrow{H^+} [R_2C\xlongequal{}\overset{+}{O}H \leftrightarrow R_2\overset{+}C-OH]\]\[(CH_2)_2O \xrightarrow{H^+} HOCH_2\overset{+}{C}H_2\]&lt;h2 id=&#34;2-mannich-反应&#34;&gt;2 Mannich 反应&lt;/h2&gt;&#xA;&lt;p&gt;Mannich 反应需要三个反应物：醛、酮、仲胺。类羟醛缩合，&lt;strong&gt;仲胺会与醛反应&lt;/strong&gt;，取代氧原子生成碳正离子。最终生成 \(\beta\) 仲胺基酮：&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jeff-linzi.github.io/images/organicSynthe/04-6-Mannich_Reaction.png&#34; alt=&#34;Mannich反应&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;相比于羟醛缩合：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;极大减少副产物；&lt;/li&gt;&#xA;&lt;li&gt;仲胺基酮比羟基酮更稳定，易于储存；（如果变为双键会聚合）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;3-酰基化试剂&#34;&gt;3 酰基化试剂&lt;/h2&gt;&#xA;&lt;h3 id=&#34;31-酰基正离子&#34;&gt;3.1 酰基正离子&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;酰氯与路易斯酸作用生成碳正离子。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;用多聚磷酸（\(PPA\)）或浓硫酸处理酸酐，生成碳正离子：&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jeff-linzi.github.io/images/organicSynthe/04-2-Acylium_Carbocations.png&#34; alt=&#34;PPA与酸酐生成酰基正离子&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;其中 \(PPA\) 作用：提供质子，脱水，溶剂。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;酰基正离子不会重排。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;32-vilsmeier-反应&#34;&gt;3.2 Vilsmeier 反应&lt;/h3&gt;&#xA;&lt;p&gt;使用 \(N,N-\)二甲基甲酰胺（\(DMF\)）进行甲酰化反应：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>有机合成 02</title>
       <link>https://jeff-linzi.github.io/post/2024/11/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-02/</link>
