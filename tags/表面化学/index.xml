@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>表面化学 on 林子健</title>
+    <link>http://localhost:1313/tags/%E8%A1%A8%E9%9D%A2%E5%8C%96%E5%AD%A6/</link>
+    <description>Recent content in 表面化学 on 林子健</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/%E8%A1%A8%E9%9D%A2%E5%8C%96%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>表面化学 01</title>
+      <link>http://localhost:1313/post/1/01/01/%E8%A1%A8%E9%9D%A2%E5%8C%96%E5%AD%A6-01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/1/01/01/%E8%A1%A8%E9%9D%A2%E5%8C%96%E5%AD%A6-01/</guid>
+      <description>&lt;h1 id=&#34;01-液体的表面性质&#34;&gt;01 液体的表面性质&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-界面与分散度&#34;&gt;1 界面与分散度&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-界面&#34;&gt;1.1 界面&lt;/h3&gt;&#xA;&lt;p&gt;相与相之间几个分子厚度的过渡区&lt;/p&gt;&#xA;&lt;h3 id=&#34;12-分散度&#34;&gt;1.2 分散度&lt;/h3&gt;&#xA;&lt;p&gt;分散度即比表面积，用 \(A_0\) 或 \(S_0\) 表示：&lt;/p&gt;&#xA;\[S_0=\frac{A}{V} \quad或\quad S_0=\frac{A}{m}\]&lt;p&gt;其中 \(A\) 为总表面积。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;球形粒子：&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;\[S_0=\frac{A}{V}=\frac{4\pi r^2}{4/3\pi r^3}=\frac{3}{r}\]&lt;ul&gt;&#xA;&lt;li&gt;多孔固体：&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;\[S_0=\frac{A}{m}\]&lt;h2 id=&#34;2-表面自由能和表面张力&#34;&gt;2 表面自由能和表面张力&lt;/h2&gt;&#xA;&lt;p&gt;气-液界面处液体原子受到内部的原子吸引力大于气体对其的吸引力，会有收缩力，因此，增加表面积将需要做功。&lt;/p&gt;&#xA;&lt;h3 id=&#34;21-表面功和表面自由能&#34;&gt;2.1 表面功和表面自由能&lt;/h3&gt;&#xA;&lt;p&gt;恒温恒压恒组分条件下，增加表面积所需要对体系做的功，称为表面功，改变体系自由能称为表面自由能：&lt;/p&gt;&#xA;\[\delta W&#39;=dG_{surface}=\gamma dA\]&lt;p&gt;其中 \(\gamma\)（或 \(\sigma\)）为&lt;strong&gt;比表面吉布斯自由能&lt;/strong&gt;，也称作比例系数。&lt;/p&gt;&#xA;&lt;h3 id=&#34;22-表面张力&#34;&gt;2.2 表面张力&lt;/h3&gt;&#xA;&lt;p&gt;表面张力即单位界面长度的表面收缩力大小。记作 \(\gamma\) 或 \(\sigma\)。&lt;/p&gt;&#xA;&lt;p&gt;举个例子，矩形金属框，有两边是滑轨，一个边是可活动的滑杆，长 \(l\)，让肥皂液在框中形成液膜，移动可活动的一边，移动 \(dx\)，则表面积增加 \(2ldx\)（两面）：&lt;/p&gt;&#xA;\[\delta W&#39; = \gamma_1 dA = \gamma_1 2ldx\]\[\delta W&#39; = 2Fdx = 2 \gamma_2 l dx\]\[\therefore\gamma_1=\gamma_2\]&lt;p&gt;即&lt;strong&gt;表面张力大小等于比表面自由能大小&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

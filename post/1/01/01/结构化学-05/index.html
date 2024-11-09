@@ -105,7 +105,23 @@
 <li>键合轨道不全同：\(dsp^3\begin{cases}三角双锥形：sp^2+dp(d_{z^2}+p_z)\\四棱锥形：dsp^2+p_z\end{cases}\)</li>
 <li>存在孤对电子对。</li>
 </ol>
-
+<h3 id="32-推算杂化轨道中轨道成分">3.2 推算杂化轨道中轨道成分</h3>
+<p>根据相同轨道夹角推测成分，\(s, p, d, f\) 成分占比（<strong>概率密度</strong>）分别为 \(\alpha, \beta, \gamma, \delta\)：</p>
+\[\alpha+\beta\cos{\theta}+\gamma(\frac{3}{2}\cos^2{\theta}-\frac{1}{2})+\delta(\frac{5}{2}\cos^3{\theta}-\frac{3}{2}\cos{\theta})=0\]<p>则杂化轨道为：</p>
+\[\psi=\sqrt{\alpha}\;\psi_s+\sqrt{\beta}\;\psi_p+\cdots\]<p>每个杂化轨道概率密度为1，全部杂化轨道各轨道概率密度加和总数与未杂化相同且对应（即杂化前几个 \(s\)，杂化后还是几个，只不过分散到各轨道中了）。</p>
+<h2 id="4-休克尔分子轨道法">4 休克尔分子轨道法</h2>
+<h3 id="41-要点">4.1 要点</h3>
+<ol>
+<li>\(\sigma,\pi\) 分离近似</li>
+<li>共轭分子具有相对不变的 \(\sigma\) 骨架，而 \(\pi\) 电子的状态决定分子性质</li>
+<li>对 \(\pi\) 电子 \(k\) 描述为：\(\hat{H}_{\pi}\Psi_k=E\Psi_k\)</li>
+</ol>
+<h3 id="42-二丁烯">4.2 二丁烯</h3>
+\[\Psi_k=C_1\varphi_1+C_2\varphi_2+C_3\varphi_3+C_4\varphi_4\]<p>对久期方程：</p>
+\[\begin{bmatrix} H_{11}-ES_{11} & H_{12}-ES_{12} & H_{13}-ES_{13} & H_{14}-ES_{14} \\ H_{21}-ES_{21} & H_{22}-ES_{22} & H_{23}-ES_{23} & H_{24}-ES_{24} \\ H_{31}-ES_{31} & H_{32}-ES_{32} & H_{33}-ES_{33} & H_{34}-ES_{34} \\ H_{41}-ES_{41} & H_{42}-ES_{42} & H_{43}-ES_{43} & H_{44}-ES_{44} \end{bmatrix} \begin{bmatrix} C_1 \\ C_2 \\ C_3 \\ C_4 \end{bmatrix}=0\]<p>休克尔近似:</p>
+\[\begin{cases} H_{nn}=\alpha \\ H_{ij}=\begin{cases} \beta,|i-j|=1 \\ 0,|i-j|>1 \end{cases} \end{cases} \hspace{1cm} \begin{cases} S_{nn}=1 \\ S_{ij}=0,i\ne{j} \end{cases}\]<p>久期方程各项替换后除以 \(\beta\)，将 \(x=\frac{\alpha-E}{\beta}\) 带入得：</p>
+\[\begin{bmatrix} x & 1 & 0 & 0 \\ 1 & x & 1 & 0 \\ 0 & 1 & x & 1 \\ 0 & 0 & 1 & x \end{bmatrix} \begin{bmatrix} C_1 \\ C_2 \\ C_3 \\ C_4 \end{bmatrix}=0\]<p>同时因为丁二烯中心对称：</p>
+\[C_1=\pm C_4 \hspace{1cm} C_2=\pm C_3\]
 </main>
 
   <footer>
@@ -116,7 +132,7 @@
 
   
   <hr/>
-  © <a href="https://jeff-linzi.github.io/">Zijian Lin</a> 2024 &ndash; 2024 | <a href="https://github.com/Jeff-LinZi">Github</a>
+  © <a href="https://jeff-linzi.github.io/">林子健(Zijian Lin)</a> 2024 &ndash; 2024 | <a href="https://github.com/Jeff-LinZi">Github</a>
   
   </footer>
   </body>

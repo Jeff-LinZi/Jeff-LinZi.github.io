@@ -6,8 +6,15 @@
     <description>Recent content in Home on 林子健</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jeff-linzi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>物理化学下 01</title>
+      <link>https://jeff-linzi.github.io/post/2024/11/09/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-01/</link>
+      <pubDate>Sat, 09 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://jeff-linzi.github.io/post/2024/11/09/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-01/</guid>
+      <description>&lt;h1 id=&#34;第6章-相平衡&#34;&gt;第6章 相平衡&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-相平衡条件&#34;&gt;1 相平衡条件&lt;/h2&gt;&#xA;&lt;p&gt;设在多组分系统中，仅有\(\alpha\)和\(\beta\)两相且彼此处于平衡状态。有\(dn_B\)的物质\(B\)从\(\alpha\)相转移到\(\beta\)相：&lt;/p&gt;&#xA;$$dG = dG^{\alpha}_B + dG^{\beta}_B = \mu^{\alpha}_{B}dn^{\alpha}_B + \mu^{\beta}_{B}dn^{\beta}_B$$&lt;p&gt;因为&lt;/p&gt;&#xA;$$ -dn_B^{\alpha} = dn_B^{\beta} $$&lt;p&gt;所以&lt;/p&gt;&#xA;$$ dG = (\mu^{\beta}_{B}-\mu^{\alpha}_{B})dn^{\beta}_B = 0 $$&lt;p&gt;又因 \(dn^{\beta}_B &gt; 0\) ， \(dG = 0\) 则&lt;/p&gt;&#xA;$$ \mu^{\beta}_{B} = \mu^{\alpha}_{B} $$&lt;p&gt;对于多相体系上述结论可以推广。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-相律&#34;&gt;2 相律&lt;/h2&gt;&#xA;&lt;p&gt;相律是用来描述一个体系&lt;strong&gt;相互独立&lt;/strong&gt;的强度性质(&lt;strong&gt;自由度&lt;/strong&gt;\(\boldsymbol{f}\))的个数与&lt;strong&gt;独立&lt;/strong&gt;组分数(\(\boldsymbol{C}\))，相数(\(\boldsymbol{\phi}\))之间的关系，我们用以下公式表示：&lt;/p&gt;&#xA;\[ f = C- \phi + 2 \]&lt;p&gt;需要注意的是，其中“\(2\)”代表的是体系中外界因素控制的相互独立的强度性质有两个，一般取压力(\(\boldsymbol{p}\))和温度(\(\boldsymbol{T}\))。若还有其他条件，如半透膜存在，则体系会多一个压力强度性质，则&amp;quot;\(+3\)&amp;quot;。&lt;/p&gt;&#xA;&lt;p&gt;独立组分数（也可简称组分数）是为了确定独立物种数目，由以下公式确定：&lt;/p&gt;&#xA;\[C \xlongequal{def} S-R-R&#39;\]&lt;p&gt;其中\(C\)为独立组分数，\(S\)为物种数，\(R\)为独立反应数，\(R&#39;\)为&lt;strong&gt;同相中&lt;/strong&gt;的物质的浓度关系数（浓度限制条件，归一化条件不算）。&lt;/p&gt;&#xA;&lt;p&gt;下面举一个例子：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;例1：求氯化钠溶液的自由度。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>有机合成05</title>
       <link>https://jeff-linzi.github.io/post/2024/11/07/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%9005/</link>
