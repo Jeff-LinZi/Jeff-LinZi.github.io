@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>线性代数 on 林子健</title>
+    <link>http://localhost:1313/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</link>
+    <description>Recent content in 线性代数 on 林子健</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>线性代数</title>
+      <link>http://localhost:1313/post/1/01/01/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/1/01/01/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</guid>
+      <description>&lt;h1 id=&#34;线性代数mit课程笔记&#34;&gt;线性代数MIT课程笔记&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-从方程组开始&#34;&gt;1 从方程组开始&lt;/h2&gt;&#xA;&lt;h2 id=&#34;11&#34;&gt;1.1&lt;/h2&gt;&#xA;&lt;p&gt;以二元方程组为例：&lt;/p&gt;&#xA;&lt;p&gt;方程组可以用行的形式理解为直线相交，也可以理解为列的方式的向量组合。&lt;/p&gt;&#xA;&lt;h2 id=&#34;12&#34;&gt;1.2&lt;/h2&gt;&#xA;\[A\bold{X}=b\]&lt;p&gt;可以理解为对 \(A\) 每一列的线性组合：&lt;/p&gt;&#xA;\[\begin{bmatrix}1&amp;2&amp;5\\4&amp;2&amp;8\\1&amp;3&amp;6\end{bmatrix} \begin{bmatrix}2\\1\\5\end{bmatrix}=2\begin{bmatrix}1\\4\\1\end{bmatrix} + 1\begin{bmatrix}2\\2\\3\end{bmatrix} + 5\begin{bmatrix}5\\8\\6\end{bmatrix} = \begin{bmatrix}29\\50\\35\end{bmatrix}\]&lt;p&gt;也可以理解为对 \(A\) 的每一行做点乘：&lt;/p&gt;&#xA;\[\begin{bmatrix}1&amp;2&amp;5\\4&amp;2&amp;8\\1&amp;3&amp;6\end{bmatrix} \begin{bmatrix}2\\1\\5\end{bmatrix}=\begin{bmatrix}1\times2+2\times1+5\times5\\4\times2+2\times1+8\times5\\1\times2+3\times1+6\times5\end{bmatrix}=\begin{bmatrix}29\\50\\35\end{bmatrix}\]&lt;h2 id=&#34;2-消元法求方程组&#34;&gt;2 消元法求方程组&lt;/h2&gt;&#xA;&lt;h3 id=&#34;21-非矩阵语言&#34;&gt;2.1 非矩阵语言&lt;/h3&gt;&#xA;&lt;p&gt;想要求方程组，我们往往进行&lt;strong&gt;消元&lt;/strong&gt;变化，求出一个变量后再&lt;strong&gt;回代&lt;/strong&gt;。在矩阵中，消元变化是行变化，我们先写出一个方程组：&lt;/p&gt;&#xA;\[\begin{cases}x+y+z=1\\2x+3y+4z=0\\3x+y+5z=-5\end{cases}\]&lt;p&gt;然后变为矩阵形式，\(A\) 称为系数矩阵，\(b\) 为结果矩阵，它们合起来称为增广矩阵（就是系数矩阵增加加个矩阵的意思）：&lt;/p&gt;&#xA;\[\left[\begin{array}{ccc|}1&amp;1&amp;1\\2&amp;3&amp;4\\3&amp;1&amp;5\end{array}\begin{matrix}1\\0\\-5\end{matrix}\right] \\A|b\]&lt;p&gt;消元第一步，观察 \((1,1)\) 位置，即第一个主元不为 \(0\)，可以使用，消除后两行第一列的数字，将第二行减去两个第一行 \((Row2-2\times{Row1})\)，第三行减去三个第一行\((Row3-3\times{Row1})\)：&lt;/p&gt;&#xA;\[\xrightarrow{(2,1),(3,1)}\begin{bmatrix}1&amp;1&amp;1\\0&amp;1&amp;2\\0&amp;-2&amp;2\end{bmatrix}\]&lt;p&gt;然后观察 \((2,2)\) 位置，即第二主元不为数字 \(0\)，可以使用，消除第三行第二列的数字，\(Row3+2\times{Row2}\)：&lt;/p&gt;&#xA;\[\xrightarrow{(3,2)}\begin{bmatrix}1&amp;1&amp;1\\0&amp;1&amp;2\\0&amp;0&amp;6\end{bmatrix}\]&lt;p&gt;这个矩阵称作 \(U\)，表示倒三角，然后我们将增广矩阵中的 \(b\) 进行一样操作，得到 \(?\)：&lt;/p&gt;&#xA;\[\left[\begin{array}{ccc|}1&amp;1&amp;1\\0&amp;1&amp;2\\0&amp;0&amp;6\end{array}\begin{matrix}1\\-2\\-12\end{matrix}\right]\\U|?\]&lt;p&gt;至此，消元步骤完成，对角线上三个元素分别称为主元1，主元2，主元3，最终&lt;strong&gt;各个主元的值不能为\(\bold{0}\)&lt;/strong&gt;，否则无解。接下来是回代过程，从下往上，很快解得：&lt;/p&gt;&#xA;\[\begin{cases}z=-2\\y=2\\x=1\end{cases}\]&lt;h3 id=&#34;22-矩阵语言&#34;&gt;2.2 矩阵语言&lt;/h3&gt;&#xA;&lt;p&gt;刚刚的过程还是需要减法计算这样的非矩阵计算过程，我们设计一种矩阵乘法代替它，我们说将矩阵放在右边，会对它进行行变换；将矩阵放在左边，会对它进行列变换。&lt;/p&gt;&#xA;&lt;p&gt;消元过程是行变换，我们开始用矩阵表述消除第二行第三行的第一列数字：&lt;/p&gt;&#xA;\[\begin{bmatrix}1&amp;0&amp;0\\-2&amp;1&amp;0\\-3&amp;0&amp;1\end{bmatrix}\begin{bmatrix}1&amp;1&amp;1\\2&amp;3&amp;4\\3&amp;1&amp;5\end{bmatrix}=\begin{bmatrix}1&amp;1&amp;1\\0&amp;1&amp;2\\0&amp;-2&amp;2\end{bmatrix}\]&lt;p&gt;我们一行一行看：&lt;/p&gt;&#xA;&lt;p&gt;第一行表示 \(Row1&#39;=1\times{Row1}+0\times{Row2}+0\times{Row3}\);&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

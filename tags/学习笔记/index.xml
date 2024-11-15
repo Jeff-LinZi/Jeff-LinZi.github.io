@@ -6,8 +6,15 @@
     <description>Recent content in 学习笔记 on 林子健</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jeff-linzi.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>物理化学下 02</title>
+      <link>https://jeff-linzi.github.io/post/2024/11/15/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-02/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://jeff-linzi.github.io/post/2024/11/15/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-02/</guid>
+      <description>&lt;h1 id=&#34;第8章-电解质溶液&#34;&gt;第8章 电解质溶液&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-faraday-电解定律&#34;&gt;1 Faraday 电解定律&lt;/h2&gt;&#xA;&lt;p&gt;法拉第常数 \(F=e\times N_A\)（阿伏伽德罗常数）&lt;/p&gt;&#xA;&lt;p&gt;法拉第定律，电解反应中，对于离子 \(B\)：&lt;/p&gt;&#xA;\[n_B=\frac{Q}{zF}\]&lt;p&gt;其中，\(Q\) 为用于电解反应的电荷量，\(z\) 为离子所带电荷数。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-电迁移率和迁移数&#34;&gt;2 电迁移率和迁移数&lt;/h2&gt;&#xA;&lt;h3 id=&#34;21-电迁移率&#34;&gt;2.1 电迁移率&lt;/h3&gt;&#xA;&lt;p&gt;以阳离子为例：&lt;/p&gt;&#xA;\[r_+=u_+\frac{dE}{dl}\]&lt;p&gt;离子电迁移率（\(u_+\)），或叫离子淌度，为单位电场强度下的离子迁移速率（离子电迁移速率是 \(r_+\)）。数值与离子浓度有关。水溶液中 \(H^+,OH^-\) 分别是迁移最快的阳离子和阴离子。&lt;/p&gt;&#xA;&lt;h3 id=&#34;22-离子迁移数&#34;&gt;2.2 离子迁移数&lt;/h3&gt;&#xA;\[t_B=\frac{I_B}{I}=\frac{Q_B}{Q}\]\[\sum_i{t_i}=1\]&lt;ul&gt;&#xA;&lt;li&gt;注意：\(B\) 都转化为带单位电荷数的表示方式。如 \(Cu^{2+}\)表示为 \(1/2Cu^{2+}\)。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;迁移数的测定方法&#34;&gt;迁移数的测定方法&lt;/h4&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;希托夫法：分为阳极管、阴极管、中间管，电化学反应后测阳极或阴极管化学成分。以阳极管为例：&#xA;&lt;/p&gt;&#xA;\[阳极管阴离子：n(终)=n(始)+n(迁入)-n(反应)\]\[阳极管阳离子：n(终)=n(始)-n(迁出)\]&lt;p&gt;&#xA;\(n(始)\)、\(n(终)\) 可以测定，\(n(反应)\) 用库仑计测定，则可求出 \(n(迁入)\)、\(n(迁出)\)。&lt;br&gt;&#xA;&lt;/p&gt;&#xA;\[t_+=\frac{n(迁出)}{n(反应)}\]&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;界面移动法：有色指示离子的溶液能与与待测溶液形成界面。以测定 \(HCl\) 中 \(H^+\) 的离子迁移数为例：&lt;br&gt;&#xA;阳极为金属镉电极释放镉离子，阴极为铂电极析出氢气。&lt;br&gt;&#xA;观察界面移动，记录界面移动 \(l\) 的通电量 \(Q_总\)，迁移管截面积为 \(A\)，则：&lt;br&gt;&#xA;&lt;/p&gt;&#xA;\[Q_{H^+}=c_{H^+}lAF\]\[t_{H^+}=\frac{Q_{H^+}}{Q_总}\]&lt;p&gt;&#xA;界面移动法比较精确。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;电动势法：利用液接电势求离子迁移数&#xA;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>物理化学下 01</title>
       <link>https://jeff-linzi.github.io/post/2024/11/09/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-01/</link>
