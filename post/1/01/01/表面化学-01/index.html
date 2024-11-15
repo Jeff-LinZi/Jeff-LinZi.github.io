@@ -53,7 +53,36 @@
 <h3 id="22-表面张力">2.2 表面张力</h3>
 <p>表面张力即单位界面长度的表面收缩力大小。记作 \(\gamma\) 或 \(\sigma\)。</p>
 <p>举个例子，矩形金属框，有两边是滑轨，一个边是可活动的滑杆，长 \(l\)，让肥皂液在框中形成液膜，移动可活动的一边，移动 \(dx\)，则表面积增加 \(2ldx\)（两面）：</p>
-\[\delta W' = \gamma_1 dA = \gamma_1 2ldx\]\[\delta W' = 2Fdx = 2 \gamma_2 l dx\]\[\therefore\gamma_1=\gamma_2\]<p>即<strong>表面张力大小等于比表面自由能大小</strong>。</p>
+\[\delta W' = \gamma_1 dA = \gamma_1 2ldx\]\[\delta W' = 2Fdx = 2 \gamma_2 l dx\]\[\therefore\gamma_1=\gamma_2\]<p>即<strong>表面张力大小等于比表面自由能大小</strong>。（二者量纲也相同：\(N\cdot m^{-1}=J\cdot m^{-2}\)）</p>
+<h4 id="大小比较">大小比较</h4>
+<p>表面张力大小：\(\gamma(金属键)>\gamma(离子键)>\gamma(极性共价键)>\gamma(非极性共价键)\)</p>
+<h4 id="温度压力影响">温度压力影响</h4>
+<p>多组分体系：</p>
+\[dG=-SdT+Vdp+\gamma{dA}+\sum_B{\mu_Bdn_B}\]\[\left(\frac{\partial\gamma}{\partial{T}}\right)_{A,p,n_B}=\left(\frac{-\partial{S}}{\partial{A}}\right)_{T,p,n_B}\]\[\left(\frac{\partial\gamma}{\partial{p}}\right)_{A,T,n_B}=\left(\frac{\partial{V}}{\partial{A}}\right)_{T,p,n_B}\]<p>已知表面积增加，无非体积功作用，定温定压定组分的条件下，熵增加（吸热，\(dS=dH/T\)），体积略微减小（\(dV=-dU/p\)）。</p>
+<p>则当只有温度升高，表面张力下降；只有压力升高，表面张力略微下降。</p>
+<h2 id="3-弯曲表面性质">3 弯曲表面性质</h2>
+<h3 id="31-附加压力">3.1 附加压力</h3>
+<p>弯曲表面会有附加压力 \(\Delta{p}\)：</p>
+\[\Delta{p}=\frac{2\gamma}{R}=p_l-p_g\]<p>其中，\(R\) 为曲率半径，当表面凸起，曲率半径为<strong>正值</strong>，当表面凹下，曲率半径为<strong>负值</strong>。所以，当液面凸起，\(\Delta{p}>0\)，即液体表面压力大于气体压力；当液面凹下，\(\Delta{p}<0\)，即液体表面压力小于气体压力。</p>
+<h4 id="成因">成因</h4>
+<p>液体表面张力沿表面切线方向，液面凸起，表面张力分解为指向液体内部的分力和水平分力，沿水平方向的力互相抵消，合力指向液体内部，产生附加压力。</p>
+<h4 id="推导">推导</h4>
+<p>假想一个毛细管连着一个球形液滴，毛细管液体下降，液滴半径增加（可逆过程，液体下降体积 \(dV\)，液滴表面积增加 \(dA\)）：</p>
+\[W'=W_{surface}\]\[\Delta{p}dV=\gamma dA\]\[\because \begin{cases}dV=4\pi R^2dR\\dA=8\pi RdR\end{cases}\]\[\therefore \Delta{p}R=2\gamma\]\[\Delta{p}=\frac{2\gamma}{R}\]<h4 id="球形液滴">球形液滴</h4>
+<p>球形液滴，内部压力与气压的差值：</p>
+\[\Delta{p}=\frac{4\gamma}{R}\]<p>可以看作两个液面。</p>
+<h4 id="举个例子">举个例子</h4>
+<p>两个水气球用一根管子连接，\(A\) 半径大，\(B\) 半径小，问如何变化，平衡状态如何？</p>
+<p>答：\(B\) 中的水向 \(A\) 移动，最终平衡时，\(B\) 的曲率半径与 \(A\) 相同，如图所示：</p>
+<p><img src="/images/SurfaceChem/01-01-TwoWaterBall.png" alt="TwoWaterBall"></p>
+<p>解释：半径越小，附加压力越大，则水从 \(B\) 不断进入 \(A\)。</p>
+<h3 id="32-毛细现象">3.2 毛细现象</h3>
+<p>附加压力产生液面在管中上升或下降的现象：</p>
+\[\Delta{p}=\rho gh\]<h3 id="34-弯曲表面蒸气压">3.4 弯曲表面蒸气压</h3>
+<p>气液平衡时：</p>
+\[\begin{equation}\mu_{l,R}=\mu_g=\mu_{l,\infty}+RT\ln\frac{p_{g,R}}{p_{g,\infty}}\end{equation}\]<p>对于液体化学势与液体压力的关系：</p>
+\[d\mu=-S_mdT+V_mdp\]\[\begin{equation}\therefore \mu_{l,R}-\mu_{l,\infty}=\int_{p_{l,\infty}}^{p_{l,R}}V_m(l)dp=\Delta{p}V_m(l)\end{equation}\]<p>根据\((1)(2)\)得：</p>
+\[\Delta{p}V_m(l)=RT\ln\frac{p_{g,R}}{p_{g,\infty}}\]<p>注意\(V_m(l)\) 的单位为 \(m^3\,mol^{-1}\)，以及半径、理想气体常数、表面张力符号的区别。</p>
 
 </main>
 
