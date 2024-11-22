@@ -116,12 +116,79 @@
 <li>共轭分子具有相对不变的 \(\sigma\) 骨架，而 \(\pi\) 电子的状态决定分子性质</li>
 <li>对 \(\pi\) 电子 \(k\) 描述为：\(\hat{H}_{\pi}\Psi_k=E\Psi_k\)</li>
 </ol>
-<h3 id="42-二丁烯">4.2 二丁烯</h3>
+<h3 id="42-丁二烯">4.2 丁二烯</h3>
 \[\Psi_k=C_1\varphi_1+C_2\varphi_2+C_3\varphi_3+C_4\varphi_4\]<p>对久期方程：</p>
 \[\begin{bmatrix} H_{11}-ES_{11} & H_{12}-ES_{12} & H_{13}-ES_{13} & H_{14}-ES_{14} \\ H_{21}-ES_{21} & H_{22}-ES_{22} & H_{23}-ES_{23} & H_{24}-ES_{24} \\ H_{31}-ES_{31} & H_{32}-ES_{32} & H_{33}-ES_{33} & H_{34}-ES_{34} \\ H_{41}-ES_{41} & H_{42}-ES_{42} & H_{43}-ES_{43} & H_{44}-ES_{44} \end{bmatrix} \begin{bmatrix} C_1 \\ C_2 \\ C_3 \\ C_4 \end{bmatrix}=0\]<p>休克尔近似:</p>
 \[\begin{cases} H_{nn}=\alpha \\ H_{ij}=\begin{cases} \beta,|i-j|=1 \\ 0,|i-j|>1 \end{cases} \end{cases} \hspace{1cm} \begin{cases} S_{nn}=1 \\ S_{ij}=0,i\ne{j} \end{cases}\]<p>久期方程各项替换后除以 \(\beta\)，将 \(x=\frac{\alpha-E}{\beta}\) 带入得：</p>
 \[\begin{bmatrix} x & 1 & 0 & 0 \\ 1 & x & 1 & 0 \\ 0 & 1 & x & 1 \\ 0 & 0 & 1 & x \end{bmatrix} \begin{bmatrix} C_1 \\ C_2 \\ C_3 \\ C_4 \end{bmatrix}=0\]<p>同时因为丁二烯中心对称：</p>
-\[C_1=\pm C_4 \hspace{1cm} C_2=\pm C_3\]
+\[C_1=\pm C_4 \hspace{1cm} C_2=\pm C_3\]<ol>
+<li>
+<p>\(C_1=C_4,C_2=C_3\)：
+</p>
+\[\begin{bmatrix}1 & x+1\\x & 1\end{bmatrix}\begin{bmatrix}C_1\\C_2\end{bmatrix}=0\]<p>
+有非零解：
+</p>
+\[\left|\begin{matrix}1 & x+1\\x & 1\end{matrix}\right|=1-x(x+1)=0\]\[x=-1.62 \qquad x=0.62\]</li>
+<li>
+<p>\(C_1=-C_4,C_2=-C_3\)：
+</p>
+\[\begin{bmatrix}1 & x-1\\x & 1\end{bmatrix}\begin{bmatrix}C_1\\C_2\end{bmatrix}=0\]<p>
+有非零解：
+</p>
+\[\left|\begin{matrix}1 & x-1\\x & 1\end{matrix}\right|=1-x(x-1)=0\]\[x=1.62 \qquad x=-0.62\]</li>
+</ol>
+<p>归一化条件：\(C_1^2+C_2^2+C_3^2+C_4^2=1\)，可以解出各 \(x\) 对应的 \(C_1,C_2,C_3,C_4\):</p>
+\[\begin{aligned}
+x=-1.62&:C_1=C_4=0.372&,&C_2=C_3=0.602\\
+x=0.62&:C_1=C_4=0.602&,&C_2=C_3=-0.372\\
+x=1.62&:C_1=-C_4=0.372&,&C_2=-C_3=-0.602\\
+x=-0.62&:C_1=-C_4=0.602&,&C_2=-C_3=0.372\end{aligned}\]<p>原子能量 \(E=\alpha-x\beta,\beta<0\)，则 \(x\) 越大，能量越高：</p>
+\[\begin{aligned}
+E_1&=\alpha+1.62\beta\\
+\Psi_1&=0.372\varphi_1+0.602\varphi_2+0.602\varphi_3+0.372\varphi_4\\\\
+E_2&=\alpha+0.62\beta\\
+\Psi_2&=0.602\varphi_1+0.372\varphi_2-0.372\varphi_3-0.602\varphi_4\\\\
+E_3&=\alpha-0.62\beta\\
+\Psi_3&=0.602\varphi_1-0.372\varphi_2-0.372\varphi_3+0.602\varphi_4\\\\
+E_4&=\alpha-1.62\beta\\
+\Psi_4&=0.372\varphi_1-0.602\varphi_2+0.602\varphi_3-0.372\varphi_4\end{aligned}\]<p>\(\Psi_1,\Psi_2\) 成键作用多于反键作用，是成键轨道；\(\Psi_3,\Psi_4\) 反键作用多于成键作用，是反键轨道。</p>
+<p>绘制分子能级图，系数越大，画出电子云越大：</p>
+<p><img src="" alt="丁二烯轨道能级图"></p>
+<h3 id="43-共轭体系中的特征参量">4.3 共轭体系中的特征参量</h3>
+<p>\(n_k\) 为 \(k\) 能级的电子数，\(C_{ki}\) 为 \(k\) 能级 \(i\) 原子的系数。</p>
+<h4 id="pi-电荷密度">\(\pi\) 电荷密度</h4>
+<p>反映原子亲电反应活性：</p>
+\[\rho_i=\sum_k{n_kC_{ki}^2}\]<h4 id="pi-键键级">\(\pi\) 键键级</h4>
+\[P_{ij}=\sum_k{n_kC_{ki}C_{kj}}\]<h4 id="自由价">自由价</h4>
+<p>当电荷密度相同时，反映原子反应活性：</p>
+\[F_i=F_{max}-\sum_j{P_{ij}}\]<p>\(F_{max}=1.732\) 。在1949年，由假想的三亚甲基甲基（后证实存在）的自由价计算得到。</p>
+<h3 id="44-丁二烯的分子图">4.4 丁二烯的分子图</h3>
+<p>将特征参量标注在分子式中：</p>
+\[\begin{aligned}
+F_i:&0.386 && 0.388 && 0.388 && 0.836\\
+&\Big\uparrow && \Big\uparrow && \Big\uparrow && \Big\uparrow\\
+P_{ij}:& H_2C & \frac{0.896}{} & CH & \frac{0.448}{} & CH & \frac{0.896}{} & CH_2\\
+\rho_i:& 1.00 && 1.00 && 1.00 && 1.00\end{aligned}\]<h3 id="45-4m2规则">4.5 4m+2规则</h3>
+<p>4m+2的共轭体系，组态为成键轨道全充满，稳定。</p>
+<h2 id="5-分子轨道的对称性和反应机理">5 分子轨道的对称性和反应机理</h2>
+<h3 id="51-化学反应">5.1 化学反应</h3>
+<h4 id="过程">过程</h4>
+<ol>
+<li>分子轨道改组</li>
+<li>电子转移。有利于反应进行条件：从电负性低处转移至电负性高处，削弱旧键，增强新键（从成键轨道转移至反键轨道）。</li>
+</ol>
+<h4 id="条件">条件</h4>
+<ol>
+<li>加热（\(\Delta\)）：基态反应（更高能振动态）</li>
+<li>光照（\(h\nu\)）：激发态反应（可断裂 \(\sigma\) 键\(\to\)自由基）</li>
+<li>催化剂：改变反应途径</li>
+</ol>
+<h3 id="52-前线轨道理论">5.2 前线轨道理论</h3>
+\[前线轨道(FMO)\begin{cases}最高占据轨道(HOMO)\\最低空轨道(LUMO)\end{cases}\]\[双占据轨道\begin{cases}-\!-\\-\!-:LUMO\\-\!-\hspace{-15pt}\uparrow\downarrow\hspace{5pt}:HOMO\\-\!-\hspace{-15pt}\uparrow\downarrow\end{cases}\quad单占据轨道\begin{cases}-\!-\\-\!-\\-\!-\hspace{-15pt}\uparrow\hspace{10pt}:HOMO,LUMO\\-\!-\hspace{-15pt}\uparrow\downarrow\end{cases}\]<h4 id="521-反应过程">5.2.1 反应过程</h4>
+<p>\(分子1+分子2:
+{HOMO\xrightarrow{e^-}LUMO}\begin{cases}对称性匹配\\能级高低接近\\电子转移与电负性（低到高），削弱旧键一致（成键到反键）\end{cases}\)</p>
+<h4 id="522-电环化反应">5.2.2 电环化反应</h4>
+
 </main>
 
   <footer>

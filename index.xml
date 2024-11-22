@@ -6,8 +6,22 @@
     <description>Recent content in Home on 林子健</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jeff-linzi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>表面化学 01</title>
+      <link>https://jeff-linzi.github.io/post/2024/11/22/%E8%A1%A8%E9%9D%A2%E5%8C%96%E5%AD%A6-01/</link>
+      <pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://jeff-linzi.github.io/post/2024/11/22/%E8%A1%A8%E9%9D%A2%E5%8C%96%E5%AD%A6-01/</guid>
+      <description>&lt;h1 id=&#34;01-液体的表面性质&#34;&gt;01 液体的表面性质&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-界面与分散度&#34;&gt;1 界面与分散度&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-界面&#34;&gt;1.1 界面&lt;/h3&gt;&#xA;&lt;p&gt;相与相之间几个分子厚度的过渡区&lt;/p&gt;&#xA;&lt;h3 id=&#34;12-分散度&#34;&gt;1.2 分散度&lt;/h3&gt;&#xA;&lt;p&gt;分散度即比表面积，用 \(A_0\) 或 \(S_0\) 表示：&lt;/p&gt;&#xA;\[S_0=\frac{A}{V} \quad或\quad S_0=\frac{A}{m}\]&lt;p&gt;其中 \(A\) 为总表面积。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;球形粒子：&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;\[S_0=\frac{A}{V}=\frac{4\pi r^2}{4/3\pi r^3}=\frac{3}{r}\]&lt;ul&gt;&#xA;&lt;li&gt;多孔固体：&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;\[S_0=\frac{A}{m}\]&lt;h2 id=&#34;2-表面自由能和表面张力&#34;&gt;2 表面自由能和表面张力&lt;/h2&gt;&#xA;&lt;p&gt;气-液界面处液体原子受到内部的原子吸引力大于气体对其的吸引力，会有收缩力，因此，增加表面积将需要做功。&lt;/p&gt;&#xA;&lt;h3 id=&#34;21-表面功和表面自由能&#34;&gt;2.1 表面功和表面自由能&lt;/h3&gt;&#xA;&lt;p&gt;恒温恒压恒组分条件下，增加表面积所需要对体系做的功，称为表面功，改变体系自由能称为表面自由能：&lt;/p&gt;&#xA;\[\delta W&#39;=dG_{surface}=\gamma dA\]&lt;p&gt;其中 \(\gamma\)（或 \(\sigma\)）为&lt;strong&gt;比表面吉布斯自由能&lt;/strong&gt;，也称作比例系数。&lt;/p&gt;&#xA;&lt;h3 id=&#34;22-表面张力&#34;&gt;2.2 表面张力&lt;/h3&gt;&#xA;&lt;p&gt;表面张力即单位界面长度的表面收缩力大小。记作 \(\gamma\) 或 \(\sigma\)。&lt;/p&gt;&#xA;&lt;p&gt;举个例子，矩形金属框，有两边是滑轨，一个边是可活动的滑杆，长 \(l\)，让肥皂液在框中形成液膜，移动可活动的一边，移动 \(dx\)，则表面积增加 \(2ldx\)（两面）：&lt;/p&gt;&#xA;\[\delta W&#39; = \gamma_1 dA = \gamma_1 2ldx\]\[\delta W&#39; = 2Fdx = 2 \gamma_2 l dx\]\[\therefore\gamma_1=\gamma_2\]&lt;p&gt;即&lt;strong&gt;表面张力大小等于比表面自由能大小&lt;/strong&gt;。（二者量纲也相同：\(N\cdot m^{-1}=J\cdot m^{-2}\)）&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>有机合成 06</title>
+      <link>https://jeff-linzi.github.io/post/2024/11/21/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-06/</link>
+      <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://jeff-linzi.github.io/post/2024/11/21/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-06/</guid>
+      <description>&lt;h1 id=&#34;06-合成碳-氮键&#34;&gt;06 合成碳-氮键&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-亲电试剂&#34;&gt;1 亲电试剂&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-硝酰正离子&#34;&gt;1.1 硝酰正离子&lt;/h3&gt;&#xA;&lt;p&gt;硝酰正离子\((O\!\!=\!\!\overset{+}{N}\!\!=\!\!O,酸脱去羟基称为酰)\)与烯烃或芳基反应。&lt;/p&gt;&#xA;&lt;h4 id=&#34;111-硝酰正离子合成&#34;&gt;1.1.1 硝酰正离子合成：&lt;/h4&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;\(浓HNO_3 + 浓H_2SO_4\begin{cases}提供质子+\!H^+\\脱水-\!H_2O\\作溶剂\end{cases}\)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;\(浓HNO_3 + 醋酸或醋酸酐(与浓H_2SO_4功能相同，作为更好的有机溶剂)\)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;\(浓HNO_3 + Lewis酸\)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;\(anhyd(无水)HNO_3+anhyd\;HF+BF_3 \xrightarrow{\qquad} NO_2^+BF_4^-\)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;\(Cu^{2+}(NO_3^-)_2\)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h4 id=&#34;112-芳基硝化位置&#34;&gt;1.1.2 芳基硝化位置&lt;/h4&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Zeolite（沸石）对位硝化：孔道结构限制了芳环的空间位置。&lt;/li&gt;&#xA;&lt;li&gt;\(NO_2-NO_3\) 邻位硝化：实际上使用臭氧 \(NO_2+O_3 \to NO_3\)，是自由基反应&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jeff-linzi.github.io/images/organicSynthe/06-01-Kyodai_Ortho-Nitration.png&#34; alt=&#34;N2O5邻位硝化&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;12-亚硝化试剂&#34;&gt;1.2 亚硝化试剂&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;\(NaNO_2+H_2SO_4\)：与苯酚发生对位亚硝基化&lt;/li&gt;&#xA;&lt;li&gt;\(NOCl\)：与双键亲电加成，生成氯代亚硝基烃&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;2-亲核试剂&#34;&gt;2 亲核试剂&lt;/h2&gt;&#xA;&lt;p&gt;卤代烃亲核试剂，氨与卤代烃生成季铵正离子。过程中，氮的正电性和位阻都加强，因此受位阻影响，可以稳定为叔胺。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>物理化学下 02</title>
       <link>https://jeff-linzi.github.io/post/2024/11/15/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-02/</link>

@@ -35,8 +35,8 @@
 <h1 id="04-化学反应动力学">04 化学反应动力学</h1>
 <h2 id="1-化学反应表达的划分">1 化学反应表达的划分</h2>
 <ol>
-<li><strong>总包反应</strong>：表示化学反应中各反应物的计量关系，与反应本质无关。</li>
-<li><strong>基元反应</strong>：化学反应确切的过程，计量数即参与反应原子个数。</li>
+<li><strong>总包反应</strong>：表示化学反应中各反应物的计量关系，与反应本质无关。分为<strong>简单反应</strong>即基元反应，<strong>复杂反应</strong>包含多个基元反应。所包含的所有基元反应称作反应的<strong>历程</strong>。</li>
+<li><strong>基元反应</strong>：化学反应确切的过程，计量数即参与反应分子个数。</li>
 <li><strong>态-态反应</strong>：确定基元反应中反应物的量子态。</li>
 </ol>
 <h2 id="2-反应速率">2 反应速率</h2>
@@ -46,7 +46,7 @@
 \[0=\sum_B{\nu_B \times B}\]<p>则化学反应速率可写做：</p>
 \[r=\frac{1}{V}\frac{dn_B}{\nu_Bdt}\]<p>若为恒容反应，\(dn_B/V=dc_B\):</p>
 \[r=\frac{dc_B}{\nu_Bdt}\]<p>同时定义气体反应速率 \(r'\):</p>
-\[r'=\frac{dp_B}{\nu_Bdt}\]<p>对于理想气体，\(r=r'/RT\).</p>
+\[r'=\frac{dp_B}{\nu_Bdt}\]<p>对于理想气体，\(r'=RTr\).</p>
 <h3 id="22-反应速率测定方法">2.2 反应速率测定方法</h3>
 <ol>
 <li>慢反应（\(t_{1/2}>\)几秒）：</li>
@@ -64,12 +64,45 @@
 <li></li>
 </ul>
 <h2 id="3-速率方程">3 速率方程</h2>
-<p>实验结果表示，很多反应速率满足公式（我用 \(\Alpha\) 代表希腊字母集）：</p>
-\[r=k\prod_B{c_B^{\Alpha_B}}\]\[n=\sum_B{\Alpha_B}\]<p>其中，\(k\) 称作<strong>反应速率常数</strong>，与温度压力介质催化剂等有关，物理意义为<strong>单位浓度下的反应速率</strong>（即 \(c_B=1 \space mol\cdot L^{-1}\)）；\(n\) 叫做<strong>反应级数</strong>，可以是任意实数。</p>
+<p>实验结果表示，很多反应速率满足公式（我用 \(\Alpha\) 代表希腊字母集 \(\alpha,\beta,\gamma,\cdots\)）：</p>
+\[r=k\prod_B{c_B^{\Alpha_B}}\]\[n=\sum_B{\Alpha_B}\]<p>其中，\(k\) 称作<strong>反应速率常数</strong>，与温度压力介质催化剂等有关，物理意义为<strong>单位浓度下的反应速率</strong>（即 \(c_B=1 \space mol\cdot L^{-1}\)）；\(n\) 叫做<strong>反应级数</strong>，可以是任意实数。\(\Alpha_B\) 为 \(B\) 物质的分级数。</p>
 <h3 id="31-质量作用定律">3.1 质量作用定律</h3>
-<p>对于基元反应，\(A_B=\nu_B\).</p>
+<p>对于基元反应，反应级数等于反应分子数，且各分级数为化学计量数：\(A_B=\nu_B\).</p>
 <p>条件是反应物浓度不太大，且反应速率由化学过程控制：若浓度过大，扩散可能受阻，则反应会由扩散过程控制。</p>
-
+<h2 id="4-简单级数反应">4 简单级数反应</h2>
+<p>只讨论简单反应和一种反应物的多级数反应（最后面）。衰期 \(t_{\beta}\) 指<strong>剩余反应物</strong>占起始反应物 \(\beta\) 时经过的时间。</p>
+<h3 id="41-一级反应">4.1 一级反应</h3>
+<p>\(a\) 为物质初始浓度，\(x\) 为 \(t\) 时刻反应浓度。在 \(t\) 时刻有：</p>
+\[r=k_1(a-x)=\frac{dx}{dt}\]<p>上式为微分式，积分式：</p>
+\[\int_{0}^{t} k_1dt=\int_{0}^{x}\frac{dx}{a-x}\]\[k_1t=\ln\frac{a}{a-x}\]<p>半衰期：</p>
+\[k_1t_{1/2}=\ln\frac{a}{a-a/2}=\ln{2}\]\[\therefore t_{1/2}=\frac{\ln{2}}{k_1}\]<h3 id="42-二级反应">4.2 二级反应</h3>
+<p>微分式：</p>
+\[r=k_2(a-x)(b-x)=\frac{dx}{dt}\]<p>当 \(a \ne b\)，即两个物质初始浓度不同，积分式：</p>
+\[\begin{aligned}\int_{0}^{t} k_2dt &=\int_{0}^{x}\frac{dx}{(b-x)(a-x)}\\
+&=\int_{0}^{x}\frac{1}{a-b}(\frac{1}{b-x}-\frac{1}{a-x})dx\\
+&=\frac{1}{a-b}\left[(-\ln(b-x))-(-\ln(a-x))\right]\big|_{0}^{x}\\
+&=\frac{1}{a-b}\ln\frac{a-x}{b-x}\Big|_{0}^{x}\\
+&=\frac{1}{a-b}\left(\ln\frac{a-x}{b-x}-\ln\frac{a}{b}\right)\end{aligned}\]<p>即：</p>
+\[(a-b)k_2t=\ln\frac{a-x}{b-x}-\ln\frac{a}{b}\]<p>当 \(a=b\)：</p>
+\[\int_{0}^{t} k_2dt =\int_{0}^{x}\frac{dx}{(a-x)^2}\]\[k_2t=\frac{1}{a-x}-\frac{1}{a}\]<p>半衰期：</p>
+\[k_2t_{1/2}=\frac{1}{a-a/2}-\frac{1}{a}\]\[\therefore t_{1/2}=\frac{1}{k_2a}\]<h3 id="43-三级反应">4.3 三级反应</h3>
+<p>只讨论初始浓度相同的情况，微分式：</p>
+\[\int_{0}^{t} k_3dt =\int_{0}^{x}\frac{dx}{(a-x)^3}\]<p>积分：</p>
+\[2k_3t =\frac{1}{(a-x)^2}-\frac{1}{a^2}\]<p>半衰期：</p>
+\[t_{1/2}=\frac{3}{2k_3a^2}\]<h3 id="44-零级反应">4.4 零级反应</h3>
+\[\int_{0}^{t} k_0dt =\int_{0}^{x}dx\]\[k_0t=x\]<p>半衰期：</p>
+\[t_{1/2}=\frac{a}{2k_0}\]<h3 id="45-单反应物n级反应">4.5 单反应物n级反应</h3>
+<p>反应：</p>
+\[mA \xrightarrow{\quad} P(P\;for\;product)\]<p>其实与上面各级简单反应，等浓度情况相似：</p>
+\[\begin{aligned}&r=\frac{1}{-m}\frac{dc_A}{dt}=kc_A^n
+\\n=1:&\\
+&\ln\frac{c_A}{c_{A,0}}=-mkt\\
+n \ne 1:&\\
+&\frac{1}{c_A^{n-1}}-\frac{1}{c_{A,0}^{n-1}}=(n-1)mkt\end{aligned}\]<p>\(m\) 是不确定的，因为化学反应方程是可以倍数更改计量数的，实验只测物质浓度变化，因此替代为：</p>
+\[r_A=-\frac{dc_A}{dt}=k_Ac_A^n\]\[k_A=mk\]\[\begin{aligned}n=1:&\\
+&\ln\frac{c_A}{c_{A,0}}=-k_At\\
+n \ne 1:&\\
+&\frac{1}{c_A^{n-1}}-\frac{1}{c_{A,0}^{n-1}}=(n-1)k_At\end{aligned}\]
 </main>
 
   <footer>
