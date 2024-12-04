@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>物理化学下 04 Part1 | 林子健</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Post</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">物理化学下 04 Part1</span></h1>
+<h2 class="author">Zijian Lin</h2>
+<h2 class="date">2024/12/02</h2>
+</div>
+
+<main>
+<h1 id="04-化学反应动力学一">04 化学反应动力学（一）</h1>
+<h2 id="1-化学反应表达的划分">1 化学反应表达的划分</h2>
+<ol>
+<li><strong>总包反应</strong>：表示化学反应中各反应物的计量关系，与反应本质无关。分为<strong>简单反应</strong>即基元反应，<strong>复杂反应</strong>包含多个基元反应。所包含的所有基元反应称作反应的<strong>历程</strong>。</li>
+<li><strong>基元反应</strong>：化学反应确切的过程，计量数即参与反应分子个数。</li>
+<li><strong>态-态反应</strong>：确定基元反应中反应物的量子态。</li>
+</ol>
+<h2 id="2-反应速率">2 反应速率</h2>
+<h3 id="21-定义">2.1 定义</h3>
+<p>反应速率指单位体积内反应进度随时间的变化率，即：</p>
+\[r=\frac{1}{V}\frac{d\xi}{dt}\]<p>下方公式为反应方程，反应物的 \(\nu_B<0\)：</p>
+\[0=\sum_B{\nu_B \times B}\]<p>则化学反应速率可写做：</p>
+\[r=\frac{1}{V}\frac{dn_B}{\nu_Bdt}\]<p>若为恒容反应，\(dn_B/V=dc_B\):</p>
+\[r=\frac{dc_B}{\nu_Bdt}\]<p>同时定义气体反应速率 \(r'\):</p>
+\[r'=\frac{dp_B}{\nu_Bdt}\]<p>对于理想气体，\(r'=RTr\).</p>
+<h3 id="22-反应速率测定方法">2.2 反应速率测定方法</h3>
+<ol>
+<li>慢反应（\(t_{1/2}>\)几秒）：</li>
+</ol>
+<ul>
+<li>化学法：加阻滞剂</li>
+<li>物理法：压力、体积、旋光度、电导率等</li>
+</ul>
+<ol start="2">
+<li>快反应，\(t_{1/2}\)为：</li>
+</ol>
+<ul>
+<li>\(1 \sim 10^{-3}\,s\)：停流</li>
+<li>\(10^{-2} \sim 10^{-10}\,s\)：弛豫</li>
+<li>\(10^{-9} \sim 10^{-12}\,s\)：闪光光解</li>
+</ul>
+<h2 id="3-速率方程">3 速率方程</h2>
+<p>实验结果表示，很多反应速率满足公式（我用 \(\Alpha\) 代表希腊字母集 \(\alpha,\beta,\gamma,\cdots\)）：</p>
+\[r=k\prod_B{c_B^{\Alpha_B}}\]\[n=\sum_B{\Alpha_B}\]<p>其中，\(k\) 称作<strong>反应速率常数</strong>，与温度压力介质催化剂等有关，物理意义为<strong>单位浓度下的反应速率</strong>（即 \(c_B=1 \space mol\cdot L^{-1}\)）；\(n\) 叫做<strong>反应级数</strong>，可以是任意实数。\(\Alpha_B\) 为 \(B\) 物质的分级数。</p>
+<h3 id="31-质量作用定律">3.1 质量作用定律</h3>
+<p>对于基元反应，反应级数等于反应分子数，且各分级数为化学计量数：\(A_B=\nu_B\).</p>
+<p>条件是反应物浓度不太大，且反应速率由化学过程控制：若浓度过大，扩散可能受阻，则反应会由扩散过程控制。</p>
+<h2 id="4-简单级数反应">4 简单级数反应</h2>
+<p>只讨论类似简单反应和一种反应物的多级数反应（最后面）。衰期 \(t_{\beta}\) 指<strong>剩余反应物</strong>占起始反应物 \(\beta\) 时经过的时间。</p>
+<h3 id="41-一级反应">4.1 一级反应</h3>
+<p>\(a\) 为物质初始浓度，\(x\) 为 \(t\) 时刻反应浓度。在 \(t\) 时刻有：</p>
+\[r=k_1(a-x)=\frac{dx}{dt}\]<p>上式为微分式，积分式：</p>
+\[\int_{0}^{t} k_1dt=\int_{0}^{x}\frac{dx}{a-x}\]\[k_1t=\ln\frac{a}{a-x}\]<p>半衰期：</p>
+\[k_1t_{1/2}=\ln\frac{a}{a-a/2}=\ln{2}\]\[\therefore t_{1/2}=\frac{\ln{2}}{k_1}\]<h3 id="42-二级反应">4.2 二级反应</h3>
+<p>微分式：</p>
+\[r=k_2(a-x)(b-x)=\frac{dx}{dt}\]<p>当 \(a \ne b\)，即两个物质初始浓度不同，积分式：</p>
+\[\begin{aligned}\int_{0}^{t} k_2dt &=\int_{0}^{x}\frac{dx}{(b-x)(a-x)}\\
+&=\int_{0}^{x}\frac{1}{a-b}(\frac{1}{b-x}-\frac{1}{a-x})dx\\
+&=\frac{1}{a-b}\left[(-\ln(b-x))-(-\ln(a-x))\right]\big|_{0}^{x}\\
+&=\frac{1}{a-b}\ln\frac{a-x}{b-x}\Big|_{0}^{x}\\
+&=\frac{1}{a-b}\left(\ln\frac{a-x}{b-x}-\ln\frac{a}{b}\right)\end{aligned}\]<p>即：</p>
+\[(a-b)k_2t=\ln\frac{a-x}{b-x}-\ln\frac{a}{b}\]<p>当 \(a=b\)：</p>
+\[\int_{0}^{t} k_2dt =\int_{0}^{x}\frac{dx}{(a-x)^2}\]\[k_2t=\frac{1}{a-x}-\frac{1}{a}\]<p>半衰期：</p>
+\[k_2t_{1/2}=\frac{1}{a-a/2}-\frac{1}{a}\]\[\therefore t_{1/2}=\frac{1}{k_2a}\]<h3 id="43-三级反应">4.3 三级反应</h3>
+<p>只讨论初始浓度相同的情况，微分式：</p>
+\[\int_{0}^{t} k_3dt =\int_{0}^{x}\frac{dx}{(a-x)^3}\]<p>积分：</p>
+\[2k_3t =\frac{1}{(a-x)^2}-\frac{1}{a^2}\]<p>半衰期：</p>
+\[t_{1/2}=\frac{3}{2k_3a^2}\]<h3 id="44-零级反应">4.4 零级反应</h3>
+\[\int_{0}^{t} k_0dt =\int_{0}^{x}dx\]\[k_0t=x\]<p>半衰期：</p>
+\[t_{1/2}=\frac{a}{2k_0}\]<h3 id="45-单反应物n级反应">4.5 单反应物n级反应</h3>
+<p>反应：</p>
+\[mA \xrightarrow{\quad} P(P\;for\;product)\]<p>其实与上面各级简单反应，等浓度情况一致：</p>
+\[\begin{aligned}&r=\frac{1}{-m}\frac{dc_A}{dt}=kc_A^n
+\\n=1:&\\
+&\ln\frac{c_A}{c_{A,0}}=-mkt\\
+n \ne 1:&\\
+&\frac{1}{c_A^{n-1}}-\frac{1}{c_{A,0}^{n-1}}=(n-1)mkt\end{aligned}\]<p>\(m\) 是不确定的，因为化学反应方程是可以倍数更改计量数的，实验只测物质浓度变化，因此替代为：</p>
+\[r_A=-\frac{dc_A}{dt}=k_Ac_A^n\]\[k_A=mk\]\[\begin{aligned}n=1:&\\
+&\ln\frac{c_A}{c_{A,0}}=-k_At\\
+n \ne 1:&\\
+&\frac{1}{c_A^{n-1}}-\frac{1}{c_{A,0}^{n-1}}=(n-1)k_At\end{aligned}\]\[t_{1/2}=\left\{\begin{aligned}
+&\frac{\ln{2}}{k_A},&n=1\\
+&\frac{2^{n-1}-1}{(c_{A,0})^{n-1}(n-1)k_A},&n\ne{0}\end{aligned}\right.\]<h2 id="5-速率方程的确定">5 速率方程的确定</h2>
+<p>通过孤立法，即一个反应物浓度小，其他反应物远大于它，使反应变为准级数反应，用以下方法确定该反应物的分级数。</p>
+<h4 id="积分法">积分法</h4>
+<p>尝试法，做出 \(c_A\!\sim\!t\) 图，按各级反应积分式拟合，确定反应级数。</p>
+<h4 id="微分法">微分法</h4>
+<ol>
+<li>做出 \(\ln(-\frac{dc_A}{dt})\!\sim\!ln{c_A}\) 图，斜率为反应级数。</li>
+<li>初速度法：多个体系求初速度，得到数据做 \(\ln{r_{A_0}}\!\sim\!\ln{c_{A_0}}\) 图，斜率为反应级数。优点是防止反应过程中体系复杂化，更准确。</li>
+<li>半衰期法：多个体系数据做出 \(\ln{t_{1/2}}\!\sim\!\ln{a}\) 图，斜率为 \(1-n\).</li>
+</ol>
+<h2 id="6-温度对反应速率的影响">6 温度对反应速率的影响</h2>
+<p>大部分化学反应随温度升高，反应速率升高。</p>
+<h3 id="61-vant-hoff规则">6.1 Van&rsquo;t Hoff规则</h3>
+\[\frac{k(T+10)}{k(T)} \approx 2\sim4\]<h3 id="62-arrhenius阿伦尼乌斯经验公式">6.2 Arrhenius（阿伦尼乌斯）经验公式</h3>
+<p>阿伦尼乌斯公式为经验公式，当反应速率方程可以表示为反应物浓度指数相乘，即 \(r=kc_A^{\alpha}c_B^{\beta}\cdots\)，反应往往服从阿伦尼乌斯公式。</p>
+\[k=A\exp{(-\frac{E_a}{RT})}\]\[\ln{k}=\ln{A}-\frac{E_a}{RT}\]<p>微分式：</p>
+\[\frac{d\ln{k}}{dT}=\frac{E_a}{RT^2}\]<p>其中，\(A\) 为指前因子，\(E_a\) 为阿伦尼乌斯活化能。</p>
+<p>易得：</p>
+<ol>
+<li>活化能越大，反应越慢：室温下，\(E_a\) 每增加 \(4\,kJ\,mol^{-1}\)，\(k\) 值降低 \(80\%\).</li>
+<li>反应活化能越大，其反应速率对温度越敏感。</li>
+<li>温度越低，反应速率对温度越敏感。</li>
+</ol>
+<h4 id="621-基元反应活化能">6.2.1 基元反应活化能</h4>
+<p>Tolman：活化能指 \(1\,mol\) 活化分子（过渡态）的平均能量与分子平均能量之差。</p>
+<p>基元反应活化能估算：</p>
+<ol>
+<li>\(A_2+B_2 \to 2AB\)，旧键断裂部分形成过渡态：
+\[E_a=(E_{A-A}+E_{B-B}) \times 30\%\]</li>
+<li>\(H\cdot+Cl_2 \to HCl+Cl\cdot\)，有自由基参与，活化能较小：
+\[E_a=E_{Cl-Cl} \times 5.5\%\]</li>
+<li>\(Cl_2+M \to 2Cl\cdot+M\)，完全断裂形成自由基：
+\[E_a=E_{Cl-Cl}\]</li>
+<li>\(Cl\cdot+Cl\cdot+M \to Cl_2+M\)，自由基偶合，不吸收能量：
+\[E_a=0\]</li>
+</ol>
+<h4 id="622-复杂反应活化能">6.2.2 复杂反应活化能</h4>
+<p>做出 \(\ln{k}\sim\frac{1}{T}\) 图，斜率为 \(-E_a/R\).</p>
+<p>得到活化能称为表观活化能。</p>
+<p>我们确定一个反应机理，需要表观速率方程与机理推断的基元反应各速率方程运算出的总速率方程形式一致。然后表观活化能与机理推断的各基元反应估算（上文）的活化能所计算的总活化能一致。下文详细说明。</p>
+<h4 id="623-活化能三参量公式">6.2.3 活化能三参量公式</h4>
+<p>修正的阿伦尼乌斯公式，活化能与温度有关：</p>
+\[E_a=E_0+mRT\]<p>则积分式将发生改变，微分式不变，带入微分式：</p>
+\[E_0+mRT=RT^2\frac{d\ln{k}}{dT}\]<p>积分式：</p>
+\[\int\frac{E_0}{RT^2}dT+\int\frac{m}{T}dT=\ln{k}\]\[-\frac{E_0}{RT}+m\ln{T}+C=\ln{k}\]<p>即：</p>
+\[k=BT^m\exp{(-\frac{E_0}{RT})}\]<p>称为三参量公式（\(B,m,E_0\)），当温度不高时，对应阿伦尼乌斯公式。</p>
+<h2 id="7-几种典型复杂反应">7 几种典型复杂反应</h2>
+<h3 id="71-对峙反应">7.1 对峙反应</h3>
+<p>即可逆反应：</p>
+\[A\xrightleftharpoons[k_{-1}]{k_1}B\]<p>平衡时，反应了 \(x_e\)，建立热力学与动力学关系：</p>
+\[k_1(a-x_e)=k_{-1}(x_e)\]\[K=\frac{x_e}{a-x_e}=\frac{k_1}{k_{-1}}\]<h3 id="72-平行反应">7.2 平行反应</h3>
+\[A-\hspace{-5px}\big|\begin{matrix}\xrightarrow{k_1}B\\\xrightarrow{k_2}C\end{matrix}\]\[\frac{-da}{dt}=\frac{db}{dt}+\frac{dc}{dt}\]\[ka=k_1a+k_2a\]\[\therefore k=k_1+k_2\]\[\frac{dln(k_1/k_2)}{dT}=\frac{E_1-E_2}{RT^2}\]<h3 id="73-连续反应">7.3 连续反应</h3>
+\[A\xrightarrow{k_1}B\xrightarrow{k_2}C\]\[\frac{db}{dt}=k_1a-k_2b=k_1a_0e^{-k_1t}-k_2b\]<p>一阶线性微分方程求解（<a href="/post/1/01/01/%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B">解微分方程</a>）：</p>
+\[b=\frac{k_1a_0}{k_2-k_1}(e^{-k_1t}-e^{-k_2t})\]<p>中间产物（\(B\)）浓度先增后减，会出现极大值：</p>
+\[t_m=\frac{\ln{k_2}-\ln{k_1}}{k_2-k_1}\]<h3 id="74-链反应">7.4 链反应</h3>
+<h4 id="741-直链反应">7.4.1 直链反应</h4>
+\[链引发：(1)Cl_2+M \to 2Cl\cdot+M\\
+链传递：\begin{cases}(2)Cl\cdot+H_2 \to HCl+H\cdot\\(3)H\cdot+Cl_2 \to HCl+Cl\cdot\end{cases}\\
+链终止：(4)2Cl\cdot+M \to Cl_2+M\]<p>稳态近似：反应一段时间后，认为活性中间体浓度保持不变。</p>
+<p>利用稳态近似假设推导直链反应速率方程：</p>
+\[速率方程：\frac{d[HCl]}{dt}=k_2[Cl][H_2]+k_3[H][Cl_2]\]\[稳态：\left\{\begin{aligned}
+&\frac{d[Cl]}{dt}=2k_1[Cl_2][M]-k_2[Cl][H_2]+k_3[H][Cl_2]-2k_4[Cl]^2[M]=0\\
+&\frac{d[H]}{dt}=k_2[Cl][H_2]-k_3[H][Cl_2]=0\end{aligned}\right.\]\[\therefore [Cl]=\sqrt{\frac{k_1[Cl_2]}{k_4}}\]\[k_3[H][Cl_2]=k_2[Cl][H_2]\]\[速率方程：\frac{d[HCl]}{dt}=2k_2[Cl][H_2]=2k_2(\frac{k_1}{k_4})^{1/2}[H_2][Cl_2]^{1/2}\]<p>对比表观速率方程相同。</p>
+<h4 id="742-支链反应">7.4.2 支链反应</h4>
+<h2 id="8-拟定反应历程的一般方法">8 拟定反应历程的一般方法</h2>
+<ol>
+<li>写出计量方程</li>
+<li>实验测定速率方程，确定反应级数</li>
+<li>测定反应活化能</li>
+<li>用顺磁共振（不知道），核磁共振和质谱等手段测定中间产物的化学组成</li>
+<li>拟定反应历程</li>
+<li>速率方程推导与实验对比</li>
+<li>活化能计算与实验值对比</li>
+</ol>
+<h4 id="平衡假设">平衡假设</h4>
+<p>平衡假设是稳态近似的特殊情况。快平衡后面是慢反应，认为任何时刻都处于平衡状态，即正逆反应速率相同。</p>
+<p>如：</p>
+\[1. 快速平衡：I_2+M\xrightleftharpoons[k_{-1}]{k_1}2I+M\]\[2. 慢反应：2I+H_2\xrightarrow{k_2}2HI\]<p>则：</p>
+\[k_1[I_2][M]=k_{-1}[I]^2[M]\]<p>解得活性中间体浓度：</p>
+\[[I]=\left(\frac{k_1[I_2]}{k_{-1}}\right)^{1/2}\]<p>用稳态近似可以求解，注意条件：\(k_1,k_{-1} \gg k_2\)</p>
+<p>后续请见：<a href="http://localhost:1313/post/1/01/01/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-04-part2/">化学反应动力学（二）</a></p>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+  
+  <hr/>
+  © <a href="https://jeff-linzi.github.io/">林子健(Zijian Lin)</a> 2024 &ndash; 2024 | <a href="https://github.com/Jeff-LinZi">Github</a>
+  
+  </footer>
+  </body>
+</html>
+

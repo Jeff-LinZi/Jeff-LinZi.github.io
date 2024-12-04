@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>微积分 on 林子健</title>
+    <link>http://localhost:1313/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/</link>
+    <description>Recent content in 微积分 on 林子健</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解微分方程</title>
+      <link>http://localhost:1313/post/1/01/01/%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/1/01/01/%E8%A7%A3%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/</guid>
+      <description>&lt;h1 id=&#34;解微分方程&#34;&gt;解微分方程&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-可分离变量&#34;&gt;1 可分离变量&lt;/h2&gt;&#xA;&lt;h2 id=&#34;2-齐次方程&#34;&gt;2 齐次方程&lt;/h2&gt;&#xA;&lt;h2 id=&#34;3-恰当方程exact-equation&#34;&gt;3 恰当方程（Exact Equation）&lt;/h2&gt;&#xA;&lt;p&gt;恰当方程，方程是某函数的全微分：&lt;/p&gt;&#xA;&lt;p&gt;方程：&lt;/p&gt;&#xA;\[M(x,y)dx+N(x,y)dy=0\]&lt;p&gt;满足：&lt;/p&gt;&#xA;\[dg(x,y)=M(x,y)dx+N(x,y)dy\]&lt;p&gt;或：&lt;/p&gt;&#xA;\[\left(\frac{\partial{M}}{\partial{y}}-\frac{\partial{N}}{\partial{x}}\right)=0\]&lt;h3 id=&#34;31-恰当方程求解&#34;&gt;3.1 恰当方程求解&lt;/h3&gt;&#xA;&lt;p&gt;积分得：&lt;/p&gt;&#xA;\[g(x,y)=C\]&lt;p&gt;可知:&lt;/p&gt;&#xA;\[g(x,y)=\int{M(x,y)dx}+h(y)\]&lt;p&gt;上式对 \(y\) 求偏导得 \(h(y)\)：&lt;/p&gt;&#xA;\[\frac{\partial{g}}{\partial{y}}=\frac{\partial{\int{M(x,y)dy}}}{\partial{y}}+\frac{dh}{dy}=N(x,y)\]&lt;p&gt;得到 \(g(x,y)\)，由 \(g(x,y)=C\) 解出 \(y\).&lt;/p&gt;&#xA;&lt;h3 id=&#34;32-积分因子&#34;&gt;3.2 积分因子&lt;/h3&gt;&#xA;&lt;p&gt;方程本身并非恰当方程，但满足：&lt;/p&gt;&#xA;\[dg(x,y)=I(x,y)\left[M(x,y)dx+N(x,y)dy\right]=0\]&lt;p&gt;则 \(I(x,y)\) 称作积分因子，可知：&lt;/p&gt;&#xA;\[\left(\frac{\partial{M}}{\partial{y}}-\frac{\partial{N}}{\partial{x}}\right)I(x,y)+\frac{\partial{I}}{\partial{y}}M-\frac{\partial{I}}{\partial{x}}N=0\]&lt;h4 id=&#34;情况一积分因子只是-boldy-的函数&#34;&gt;情况一：积分因子只是 \(\bold{y}\) 的函数&lt;/h4&gt;&#xA;&lt;p&gt;若满足：&lt;/p&gt;&#xA;\[\frac{1}{M}\left(\frac{\partial{M}}{\partial{y}}-\frac{\partial{N}}{\partial{x}}\right)=h(y)\]&lt;p&gt;那么：&lt;/p&gt;&#xA;\[I(x,y)=e^{-\int{h(y)dy}}\]&lt;h4 id=&#34;情况二积分因子只是-boldx-的函数&#34;&gt;情况二：积分因子只是 \(\bold{x}\) 的函数&lt;/h4&gt;&#xA;&lt;p&gt;若满足：&lt;/p&gt;&#xA;\[\frac{1}{N}\left(\frac{\partial{M}}{\partial{y}}-\frac{\partial{N}}{\partial{x}}\right)=k(x)\]&lt;p&gt;那么：&lt;/p&gt;&#xA;\[I(x,y)=e^{\int{k(x)dx}}\]&lt;h4 id=&#34;情况三&#34;&gt;情况三：&lt;/h4&gt;&#xA;&lt;h2 id=&#34;4-线性方程-liner-equation&#34;&gt;4 线性方程 (Liner Equation)&lt;/h2&gt;&#xA;&lt;p&gt;线性方程：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

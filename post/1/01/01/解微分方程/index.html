@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>解微分方程 | 林子健</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+      <li><a href="/post/">Post</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">解微分方程</span></h1>
+<h2 class="author">Zijian Lin</h2>
+
+</div>
+
+<main>
+<h1 id="解微分方程">解微分方程</h1>
+<h2 id="1-可分离变量">1 可分离变量</h2>
+<h2 id="2-齐次方程">2 齐次方程</h2>
+<h2 id="3-恰当方程exact-equation">3 恰当方程（Exact Equation）</h2>
+<p>恰当方程，方程是某函数的全微分：</p>
+<p>方程：</p>
+\[M(x,y)dx+N(x,y)dy=0\]<p>满足：</p>
+\[dg(x,y)=M(x,y)dx+N(x,y)dy\]<p>或：</p>
+\[\left(\frac{\partial{M}}{\partial{y}}-\frac{\partial{N}}{\partial{x}}\right)=0\]<h3 id="31-恰当方程求解">3.1 恰当方程求解</h3>
+<p>积分得：</p>
+\[g(x,y)=C\]<p>可知:</p>
+\[g(x,y)=\int{M(x,y)dx}+h(y)\]<p>上式对 \(y\) 求偏导得 \(h(y)\)：</p>
+\[\frac{\partial{g}}{\partial{y}}=\frac{\partial{\int{M(x,y)dy}}}{\partial{y}}+\frac{dh}{dy}=N(x,y)\]<p>得到 \(g(x,y)\)，由 \(g(x,y)=C\) 解出 \(y\).</p>
+<h3 id="32-积分因子">3.2 积分因子</h3>
+<p>方程本身并非恰当方程，但满足：</p>
+\[dg(x,y)=I(x,y)\left[M(x,y)dx+N(x,y)dy\right]=0\]<p>则 \(I(x,y)\) 称作积分因子，可知：</p>
+\[\left(\frac{\partial{M}}{\partial{y}}-\frac{\partial{N}}{\partial{x}}\right)I(x,y)+\frac{\partial{I}}{\partial{y}}M-\frac{\partial{I}}{\partial{x}}N=0\]<h4 id="情况一积分因子只是-boldy-的函数">情况一：积分因子只是 \(\bold{y}\) 的函数</h4>
+<p>若满足：</p>
+\[\frac{1}{M}\left(\frac{\partial{M}}{\partial{y}}-\frac{\partial{N}}{\partial{x}}\right)=h(y)\]<p>那么：</p>
+\[I(x,y)=e^{-\int{h(y)dy}}\]<h4 id="情况二积分因子只是-boldx-的函数">情况二：积分因子只是 \(\bold{x}\) 的函数</h4>
+<p>若满足：</p>
+\[\frac{1}{N}\left(\frac{\partial{M}}{\partial{y}}-\frac{\partial{N}}{\partial{x}}\right)=k(x)\]<p>那么：</p>
+\[I(x,y)=e^{\int{k(x)dx}}\]<h4 id="情况三">情况三：</h4>
+<h2 id="4-线性方程-liner-equation">4 线性方程 (Liner Equation)</h2>
+<p>线性方程：</p>
+\[\frac{dy}{dx}+p(x)y=q(x)\]<p>即：</p>
+\[\left[p(x)y-q(x)\right]dx+dy=0\]<p>可知：</p>
+\[\frac{1}{N}\left(\frac{\partial{M}}{\partial{y}}-\frac{\partial{N}}{\partial{x}}\right)=p(x)\]<p>可转变为恰当方程求解，积分因子 \(I(x,y)=e^{\int{p(x)dx}}\):</p>
+<p>解得：</p>
+\[y=\frac{\int{I(x)q(x)dx}+C}{I(x)}\]<h2 id="5-伯努利方程">5 伯努利方程</h2>
+
+</main>
+
+  <footer>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
+
+  
+  <hr/>
+  © <a href="https://jeff-linzi.github.io/">林子健(Zijian Lin)</a> 2024 &ndash; 2024 | <a href="https://github.com/Jeff-LinZi">Github</a>
+  
+  </footer>
+  </body>
+</html>
+

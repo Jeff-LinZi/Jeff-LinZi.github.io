@@ -6,13 +6,13 @@
     <description>Recent content in 有机合成 on 林子健</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jeff-linzi.github.io/tags/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>有机合成 06</title>
-      <link>https://jeff-linzi.github.io/post/2024/11/21/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-06/</link>
-      <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://jeff-linzi.github.io/post/2024/11/21/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-06/</guid>
+      <link>https://jeff-linzi.github.io/post/2024/12/04/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-06/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://jeff-linzi.github.io/post/2024/12/04/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-06/</guid>
       <description>&lt;h1 id=&#34;06-合成碳-氮键&#34;&gt;06 合成碳-氮键&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-亲电试剂&#34;&gt;1 亲电试剂&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-硝酰正离子&#34;&gt;1.1 硝酰正离子&lt;/h3&gt;&#xA;&lt;p&gt;硝酰正离子\((O\!\!=\!\!\overset{+}{N}\!\!=\!\!O,酸脱去羟基称为酰)\)与烯烃或芳基反应。&lt;/p&gt;&#xA;&lt;h4 id=&#34;111-硝酰正离子合成&#34;&gt;1.1.1 硝酰正离子合成：&lt;/h4&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;\(浓HNO_3 + 浓H_2SO_4\begin{cases}提供质子+\!H^+\\脱水-\!H_2O\\作溶剂\end{cases}\)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;\(浓HNO_3 + 醋酸或醋酸酐(与浓H_2SO_4功能相同，作为更好的有机溶剂)\)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;\(浓HNO_3 + Lewis酸\)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;\(anhyd(无水)HNO_3+anhyd\;HF+BF_3 \xrightarrow{\qquad} NO_2^+BF_4^-\)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;\(Cu^{2+}(NO_3^-)_2\)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h4 id=&#34;112-芳基硝化位置&#34;&gt;1.1.2 芳基硝化位置&lt;/h4&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Zeolite（沸石）对位硝化：孔道结构限制了芳环的空间位置。&lt;/li&gt;&#xA;&lt;li&gt;\(NO_2-NO_3\) 邻位硝化：实际上使用臭氧 \(NO_2+O_3 \to NO_3\)，是自由基反应&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jeff-linzi.github.io/images/organicSynthe/06-01-Kyodai_Ortho-Nitration.png&#34; alt=&#34;N2O5邻位硝化&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;12-亚硝化试剂&#34;&gt;1.2 亚硝化试剂&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;\(NaNO_2+H_2SO_4\)：与苯酚发生对位亚硝基化&lt;/li&gt;&#xA;&lt;li&gt;\(NOCl\)：与双键亲电加成，生成氯代亚硝基烃&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;2-亲核试剂&#34;&gt;2 亲核试剂&lt;/h2&gt;&#xA;&lt;p&gt;卤代烃亲核试剂，氨与卤代烃生成季铵正离子。过程中，氮的正电性和位阻都加强，因此受位阻影响，可以稳定为叔胺。&lt;/p&gt;</description>
     </item>
     <item>
@@ -42,6 +42,13 @@
       <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://jeff-linzi.github.io/post/2024/11/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-02/</guid>
       <description>&lt;h1 id=&#34;02-金属有机化合物和叶立德用于碳碳键形成&#34;&gt;02 金属有机化合物和叶立德用于碳碳键形成&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-金属有机化合物&#34;&gt;1 金属有机化合物&lt;/h2&gt;&#xA;&lt;p&gt;金属有机化合物，如格氏试剂，有机铜锂试剂等，产生碳负离子，用于碳碳键的形成。&lt;/p&gt;&#xA;&lt;h3 id=&#34;11-制备&#34;&gt;1.1 制备&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由卤代烃与金属在乙醚或四氢呋喃溶液中制备：&lt;/p&gt;&#xA;\[Mg+RX \xrightarrow{ether} RMgX\]&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由其他强金属有机化合物制备：&lt;/p&gt;&#xA;\[2RMgI+CdCl_2 \xrightarrow{Et_2O} R_2Cd+2MgICl\]&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由金属与炔烃反应得到&lt;/p&gt;&#xA;\[CH \equiv CH \xrightarrow[Fe^{3+}]{Na,NH_3(l)} CH \equiv CNa\]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;12-一般反应&#34;&gt;1.2 一般反应&lt;/h3&gt;&#xA;&lt;p&gt;反应能力弱：热力学控制；&lt;/p&gt;&#xA;&lt;p&gt;反应能力强：动力学控制。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;取代&lt;/p&gt;&#xA;\[MeI+RM \rightarrow RMe+M^++I^-\]&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;加成&lt;/p&gt;&#xA;\[R_2C\xlongequal{} O+R&#39;M \rightarrow R_2CR&#39;-O^-+M^+\]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;13-格氏试剂&#34;&gt;1.3 格氏试剂&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;与醛、酮、酯、环氧化物反应生成醇&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;与腈、酰胺反应生成醛酮&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;与二氧化碳反应生成羧酸（与干冰反应）&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>有机合成 07</title>
+      <link>https://jeff-linzi.github.io/post/1/01/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-07/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jeff-linzi.github.io/post/1/01/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-07/</guid>
+      <description>&lt;h1 id=&#34;07-官能团转化&#34;&gt;07 官能团转化&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-氧化&#34;&gt;1 氧化&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-脱氢dehydrogenation&#34;&gt;1.1 脱氢（Dehydrogenation）&lt;/h3&gt;&#xA;&lt;h4 id=&#34;sse-脱氢&#34;&gt;\(S/Se\) 脱氢&lt;/h4&gt;&#xA;&lt;p&gt;游离基机理，双自由基形成 \(\pi\) 键：&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jeff-linzi.github.io/images/organicSynthe/07-01-S_or_Se-Dehydrogenation.png&#34; alt=&#34;硫/硒脱氢&#34;&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;醇醛氧化&#34;&gt;醇醛氧化&lt;/h4&gt;</description>
     </item>
   </channel>
 </rss>

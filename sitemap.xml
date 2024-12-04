@@ -3,19 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jeff-linzi.github.io/</loc>
-    <lastmod>2024-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jeff-linzi.github.io/post/</loc>
-    <lastmod>2024-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jeff-linzi.github.io/tags/</loc>
-    <lastmod>2024-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jeff-linzi.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2024-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jeff-linzi.github.io/tags/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90/</loc>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jeff-linzi.github.io/post/2024/12/04/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-06/</loc>
+    <lastmod>2024-12-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jeff-linzi.github.io/tags/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6/</loc>
+    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jeff-linzi.github.io/post/2024/12/02/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-04-part1/</loc>
+    <lastmod>2024-12-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jeff-linzi.github.io/tags/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6/</loc>
-    <lastmod>2024-11-26T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jeff-linzi.github.io/post/2024/11/29/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-06/</loc>
+    <lastmod>2024-11-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jeff-linzi.github.io/post/2024/11/26/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-05/</loc>
     <lastmod>2024-11-26T00:00:00+00:00</lastmod>
@@ -25,15 +40,6 @@
   </url><url>
     <loc>https://jeff-linzi.github.io/post/2024/11/22/%E8%A1%A8%E9%9D%A2%E5%8C%96%E5%AD%A6-01/</loc>
     <lastmod>2024-11-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jeff-linzi.github.io/tags/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90/</loc>
-    <lastmod>2024-11-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jeff-linzi.github.io/post/2024/11/21/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-06/</loc>
-    <lastmod>2024-11-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jeff-linzi.github.io/tags/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6/</loc>
-    <lastmod>2024-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jeff-linzi.github.io/post/2024/11/15/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-02/</loc>
     <lastmod>2024-11-15T00:00:00+00:00</lastmod>
@@ -68,5 +74,9 @@
     <loc>https://jeff-linzi.github.io/about/</loc>
   </url><url>
     <loc>https://jeff-linzi.github.io/categories/</loc>
+  </url><url>
+    <loc>https://jeff-linzi.github.io/post/1/01/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-07/</loc>
+  </url><url>
+    <loc>https://jeff-linzi.github.io/post/1/01/01/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-04-part2/</loc>
   </url>
 </urlset>
