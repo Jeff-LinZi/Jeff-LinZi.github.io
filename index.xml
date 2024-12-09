@@ -6,8 +6,15 @@
     <description>Recent content in Home on 林子健</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jeff-linzi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>结构化学 07</title>
+      <link>https://jeff-linzi.github.io/post/2024/12/09/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-07/</link>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://jeff-linzi.github.io/post/2024/12/09/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-07/</guid>
+      <description>&lt;h1 id=&#34;07-晶体的点阵结构和晶体的性质&#34;&gt;07 晶体的点阵结构和晶体的性质&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-晶体的性质&#34;&gt;1 晶体的性质&lt;/h2&gt;&#xA;&lt;p&gt;结构特征：周期性重复&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;均匀性&lt;/li&gt;&#xA;&lt;li&gt;各向异性&lt;/li&gt;&#xA;&lt;li&gt;自发形成多面体外形（\(晶面数+顶点数=晶棱数+2\)）&lt;/li&gt;&#xA;&lt;li&gt;确定的熔点&lt;/li&gt;&#xA;&lt;li&gt;对称性&lt;/li&gt;&#xA;&lt;li&gt;对X射线衍射&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;2-点阵和结构基元&#34;&gt;2 点阵和结构基元&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;结构基元：组成、结构和化学环境相同的&lt;strong&gt;最小&lt;/strong&gt;实体单位。&lt;/li&gt;&#xA;&lt;li&gt;平移矢量：连接各结构基元的矢量。按矢量平移，结构复原。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;结构基元抽象为点，称为点阵点（与结构基元相对位置固定）。以平移矢量重复排列得到点阵：&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;\[结构基元+平移矢量\xrightarrow{\quad}晶体结构\\&#xA;\qquad\Big\downarrow{抽象}\hspace{3cm}\Big\downarrow{抽象}\\&#xA;点（阵点）+平移矢量\xrightarrow{\quad}点阵&#xA;\]\[\bold{晶体结构=点阵+结构基元}\]&lt;hr&gt;&#xA;&lt;h3 id=&#34;21-点阵类型&#34;&gt;2.1 点阵类型&lt;/h3&gt;&#xA;&lt;h4 id=&#34;直线点阵&#34;&gt;直线点阵&lt;/h4&gt;&#xA;&lt;p&gt;阵点选取最小的：原子个数最少，原子间距最短&lt;/p&gt;&#xA;&lt;h4 id=&#34;平面点阵&#34;&gt;平面点阵&lt;/h4&gt;&#xA;&lt;p&gt;平面点阵单位：平面内&lt;strong&gt;无隙并置&lt;/strong&gt;的可平移重复单位。连接阵点可得到多种点阵单位。&lt;/p&gt;&#xA;&lt;p&gt;如单层石墨晶体：两种化学环境的碳&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jeff-linzi.github.io/images/StructuralChem/07-01-2D-Lattice_of_Graphite.png&#34; alt=&#34;石墨平面点阵&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;只连接相邻两个阵点的向量称为素向量。只包含一个阵点的点阵单位称为&lt;strong&gt;素格子&lt;/strong&gt;。而连接更远阵点的向量称为复向量。包含更多阵点的点阵单位称为&lt;strong&gt;复格子&lt;/strong&gt;。格子的取法有无穷多种，规定正当平面格子，统一表达：&lt;/p&gt;&#xA;&lt;p&gt;正当平面格子：&lt;strong&gt;可以是素格子或复格子&lt;/strong&gt;，按优先级从上至下降低&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;平行四边形&lt;/li&gt;&#xA;&lt;li&gt;对称性尽可能高（首先是高次(\(\ge3\))旋转轴轴数目，其次是镜面数量）&lt;/li&gt;&#xA;&lt;li&gt;含点阵点尽可能少&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;因此，正当平面格子形状选取顺序为：正方形，长方形，菱形，其他平面四边形。&lt;/p&gt;&#xA;&lt;h4 id=&#34;空间点阵&#34;&gt;空间点阵&lt;/h4&gt;&#xA;&lt;p&gt;与平面点阵类似。选取正当空间格子：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;平行六面体&lt;/li&gt;&#xA;&lt;li&gt;对称性尽可能高&lt;/li&gt;&#xA;&lt;li&gt;含点阵点尽可能少&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;按正当格子确定三单位向量 \(a,b,c\)，坐标轴间夹角表示 \(\alpha=\angle{b,c}\;;\quad \beta=\angle{a,c}\;;\quad \gamma=\angle{a,b}.\)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>有机合成 06</title>
       <link>https://jeff-linzi.github.io/post/2024/12/04/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-06/</link>
@@ -112,13 +119,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://jeff-linzi.github.io/post/1/01/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-07/</guid>
       <description>&lt;h1 id=&#34;07-官能团转化&#34;&gt;07 官能团转化&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-氧化&#34;&gt;1 氧化&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-脱氢dehydrogenation&#34;&gt;1.1 脱氢（Dehydrogenation）&lt;/h3&gt;&#xA;&lt;h4 id=&#34;sse-脱氢&#34;&gt;\(S/Se\) 脱氢&lt;/h4&gt;&#xA;&lt;p&gt;游离基机理，双自由基形成 \(\pi\) 键：&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://jeff-linzi.github.io/images/organicSynthe/07-01-S_or_Se-Dehydrogenation.png&#34; alt=&#34;硫/硒脱氢&#34;&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;醇醛氧化&#34;&gt;醇醛氧化&lt;/h4&gt;</description>
-    </item>
-    <item>
-      <title>物理化学下 04 Part2</title>
-      <link>https://jeff-linzi.github.io/post/1/01/01/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-04-part2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jeff-linzi.github.io/post/1/01/01/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-04-part2/</guid>
-      <description>&lt;h1 id=&#34;05-化学反应动力学二&#34;&gt;05 化学反应动力学（二）&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-碰撞理论&#34;&gt;1 碰撞理论&lt;/h2&gt;&#xA;&lt;p&gt;用于解释气相双分子基元反应。&lt;/p&gt;&#xA;&lt;h2 id=&#34;2-过渡态理论&#34;&gt;2 过渡态理论&lt;/h2&gt;&#xA;&lt;h2 id=&#34;3-林德曼单分子反应&#34;&gt;3 林德曼单分子反应&lt;/h2&gt;&#xA;&lt;h2 id=&#34;4-态-态反应&#34;&gt;4 态-态反应&lt;/h2&gt;&#xA;&lt;p&gt;结束&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
