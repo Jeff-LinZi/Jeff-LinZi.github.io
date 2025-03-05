@@ -49,3 +49,15 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+.summary-text {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.title-background {
+  background-color: #6c6363; /* 你可以根据需要调整背景颜色 */
+  padding: 5px; /* 你可以根据需要调整内边距 */
+  border-radius: 3px; /* 你可以根据需要调整圆角 */
+  display: inline-block; /* 使背景颜色只应用于标题文本 */
+}
