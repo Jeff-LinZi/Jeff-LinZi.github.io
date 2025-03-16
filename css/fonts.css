@@ -5,3 +5,8 @@ code {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 85%;
 }
+
+.summary-text {
+  font-size: 13px;
+  line-height: 1;
+}
