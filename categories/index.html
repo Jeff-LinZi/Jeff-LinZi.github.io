@@ -1,50 +1,103 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Categories | 林子健</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My New Hugo Site | Categories</title>
+  
+  <link rel="stylesheet" href="https://example.org/css/main.min.css">
+  
+  
+
+  <script src="/vendor/mermaid/mermaid.min.js"></script>
+  <script>
+    function getMermaidTheme() {
+      
+      return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default';
+    }
+    mermaid.initialize({ 
+      startOnLoad: true,
+      securityLevel: 'loose',
+      theme: getMermaidTheme()
+    });
+  </script>
+
+  
+  
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<script defer src="/vendor/katex/katex.min.js"></script>
+<script defer src="/vendor/katex/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ],
+      throwOnError: false,
+      output: "html"
+    });
+  });
+</script>
+  
+</head>
+<body>
+  <nav data-no-window>
+    <a href="/">首页</a> | 
+    <button onclick="toggleTheme()">🌓</button>
+  </nav>
+  
+  <main>
     
-  </head>
-
-  <body>
-    <nav>
-    <ul class="menu">
-      
-      <li><a href="/">Home</a></li>
-      
-      <li><a href="/about/">About</a></li>
-      
-      <li><a href="/post/">Post</a></li>
-      
-      <li><a href="/plan/">Plan</a></li>
-      
-      <li><a href="/tags/">Tags</a></li>
-      
-    </ul>
-    <hr/>
-    </nav>
-
-
-<h1>Categories</h1>
-
-<ul class="terms">
+    
+  <h1>Categories</h1>
   
-</ul>
 
+  </main>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.mermaid').forEach(chart => {
+        if (!chart.dataset.original) {
+          chart.dataset.original = chart.textContent;
+        }
+      });
+    });
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', html.dataset.theme);
+      
+      if (window.mermaid) {
+        const theme = html.dataset.theme === 'dark' ? 'dark' : 'default';
+        mermaid.initialize({ theme });
+        
+        const charts = document.querySelectorAll('.mermaid');
+        charts.forEach(chart => {
+          
+          if (chart.dataset.original) {
+            chart.textContent = chart.dataset.original;
+            chart.removeAttribute('data-processed');
+          }
+            });
+
+        
+        mermaid.init(undefined, charts);
+      }
+    }
+
+    
+    document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+  </script>
+  
+  <script type="module" src="/js/main.js"></script>
+  <div id="window-bar" style="position:fixed;bottom:0;left:0;width:100%;z-index:9999;display:flex;gap:8px;"></div>
+  <div id="window-container" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;"></div>
   <footer>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
-
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
-
-  
-  <hr/>
-  © <a href="https://jeff-linzi.github.io/">林子健(Zijian Lin)</a> 2024 &ndash; 2025 | <a href="https://github.com/Jeff-LinZi">Github</a>
-  
+    <p>© My New Hugo Site 2025</p>
   </footer>
-  </body>
+</body>
 </html>
-

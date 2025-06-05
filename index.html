@@ -1,146 +1,425 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-	<meta name="generator" content="Hugo 0.134.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | 林子健</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
+<html lang="zh-CN" data-theme="light">
+<head>
+	<meta name="generator" content="Hugo 0.147.3">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My New Hugo Site | home</title>
+  
+  <link rel="stylesheet" href="https://example.org/css/main.min.css">
+  
+  
+
+  <script src="/vendor/mermaid/mermaid.min.js"></script>
+  <script>
+    function getMermaidTheme() {
+      
+      return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default';
+    }
+    mermaid.initialize({ 
+      startOnLoad: true,
+      securityLevel: 'loose',
+      theme: getMermaidTheme()
+    });
+  </script>
+
+  
+  
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<script defer src="/vendor/katex/katex.min.js"></script>
+<script defer src="/vendor/katex/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ],
+      throwOnError: false,
+      output: "html"
+    });
+  });
+</script>
+  
+</head>
+<body>
+  <nav data-no-window>
+    <a href="/">首页</a> | 
+    <button onclick="toggleTheme()">🌓</button>
+  </nav>
+  
+  <main>
     
-  </head>
+    
+  <div class="homepage">
+    <h1 class="site-title">My New Hugo Site</h1>
+    <div class="content">
+        <h1 id="这是主页">这是主页</h1>
 
-  <body>
-    <nav>
-    <ul class="menu">
+    </div>
+    
+    <div class="article-list">
       
-      <li><a href="/">Home</a></li>
-      
-      <li><a href="/about/">About</a></li>
-      
-      <li><a href="/post/">Post</a></li>
-      
-      <li><a href="/plan/">Plan</a></li>
-      
-      <li><a href="/tags/">Tags</a></li>
-      
-    </ul>
-    <hr/>
-    </nav>
-
-
-
-
-<h1 id="主页">主页</h1>
-<p>林子健的个人网站，依靠 Hugo 和主题 <a href="https://github.com/yihui/hugo-xmin">hugo-xmin</a> 建立。</p>
-
-
-<ul>
+        <article class="article-item">
+          <h2><a href="/posts/principles-of-chemical-engineering/%E8%92%B8%E9%A6%8F%E4%B8%8E%E7%B2%BE%E9%A6%8F/">蒸馏与精馏</a></h2>
+          <time class="article-date">2025-06-05</time>
+          
+            <div class="article-tags">
+              
+                <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" class="tag">学习笔记</a>
+              
+                <a href="/tags/%E5%8C%96%E5%B7%A5%E5%8E%9F%E7%90%86" class="tag">化工原理</a>
+              
+            </div>
+          
+          
+            <p class="article-summary"><div class="mermaid">
   
-  <strong>最近发布:</strong>
+
+
+</div>
+<h2 id="双组分溶液的气液平衡">双组分溶液的气液平衡</h2>
+<p>$$ y=\frac{\alpha x}{1+(\alpha-1)x} $$
+其中：$\alpha$为相对挥发度，$\alpha$越大越容易精馏分离</p>
+<h2 id="双组分连续精馏塔的计算">双组分连续精馏塔的计算</h2>
+<h3 id="1-恒摩尔流假设">1 恒摩尔流假设</h3>
+<p>摩尔流量恒定</p>
+<h3 id="2-全塔衡算">2 全塔衡算</h3>
+<p>$$ F=D+W $$
+$$ Fx_F=Dx_D+Wx_W $$</p>
+<h4 id="回收率">回收率：</h4>
+<p>$$ \eta_A = \frac{Dx_D}{Fx_F} $$
+$$ \eta_B = \frac{W(1-x_W)}{F(1-x_F)} $$</p>
+<h3 id="3-精馏段">3 精馏段</h3>
+<p>$$ V=L+D $$
+$$ Vy_{n+1}=Lx_n+Dx_D $$</p>
+
+<div class="highlight" >
+    精馏段操作线方程：
+$$ y_{n+1}=\frac{R}{R+1}x_n+\frac{1}{R+1}x_D $$
+其中：$R$为回流比，$R=L/D$
+</div>
+<h3 id="4-提馏段">4 提馏段</h3>
+<p>$$ V'=L'-W $$
+$$ V'y'_{m+1}=L'x_m-Wx_W $$</p>
+
+<div class="highlight" >
+    提馏段操作线方程：
+$$ y'_{m+1}=\frac{L'}{L'-W}x'_m-\frac{W}{L'-W}x_W $$
+</div>
+<h3 id="5-进料板">5 进料板</h3>
+<p>$$ F+L+V'=L'+V $$
+$$ FI_F+LI_L+V'I_W=L'I_{L'}+VI_V $$</p>
+<p>近似处理，$I_{V'}\approx I_V$，$I_{L'}\approx I_L$，得：</p>
+<p>$$ \frac{L'-L}{F}=\frac{I_V-I_F}{I_V-I_L}=q $$</p>
+<p>记作$q$，称为热状况参数，$q=1$为饱和液体，$q=0$为饱和蒸气，且有：</p>
+<p>$$ L'=L+qF $$
+$$ V'=V-(1-q)F $$</p></p>
+          
+        </article>
+      
+        <article class="article-item">
+          <h2><a href="/posts/principles-of-chemical-engineering/%E8%92%B8%E5%8F%91/">蒸发</a></h2>
+          <time class="article-date">2025-06-05</time>
+          
+            <div class="article-tags">
+              
+                <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" class="tag">学习笔记</a>
+              
+                <a href="/tags/%E5%8C%96%E5%B7%A5%E5%8E%9F%E7%90%86" class="tag">化工原理</a>
+              
+            </div>
+          
+          
+            <p class="article-summary"><div class="mermaid">
   
-  <li>
-    <span class="date">2025/03/16</span>
-    <a href="/post/2025/03/16/%E5%8C%96%E5%B7%A5%E5%8E%9F%E7%90%86-01/" class="title-background">化工原理 01</a>
-    <p class="summary-text"><h1 id="01-流体力学-flow-of-fliud">01 流体力学 Flow of Fliud</h1>
-<h2 id="1-思维导图">1 思维导图</h2>
-<p><img src="/Xmind/UO_of_CE/Flow_of_Fluid.png" alt="思维导图"></p>
-<h2 id="2-笔记">2 笔记</h2>
-<p><img src="/images/UO_of_CE/01-1.jpg" alt="笔记1" style="width: 50%;" /><img src="/images/UO_of_CE/01-2.jpg" alt="笔记2" style="width: 50%;" /></p></p>
-  </li>
+mindmap
+  root((蒸发))
+    概述
+        蒸发
+        蒸发过程分类
+    单效蒸发
+        单效蒸发的计算
+        蒸发器的传热面积
+            温度差损失与总传热系数
+                蒸气压下降
+                    杜林规则
+                溶液静压强（液体有高度）
+                管路阻力
+    多效蒸发
+        并流
+        逆流
+        错流
+        平流
+    生产强度
+
+</div>
+<h2 id="单效蒸发">单效蒸发</h2>
+
+
+
+
+
+  <div class="inline-svg svg-left">
+    <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="339px" height="416px" viewBox="-0.5 -0.5 339 416" content="&lt;mxfile&gt;&lt;diagram id=&quot;E78n04zypMAWxxPSOC1M&quot; name=&quot;Page-1&quot;&gt;7Vttj+I2EP41ltoPi+y8Oh8TXq4f2urarbTXjynxQnQhoSEs0F9fm9ghdsIGgjlxm5NWiz2xx/Y880w8swswx6v9pzxcL3/LIpIAA0Z7YE6AYSCMIf1gkgOX2NAqJYs8jrjsJHiO/yNcyCcutnFENtLAIsuSIl7LwnmWpmReSLIwz7OdPOw1S+RV1+GCNATP8zBpSl/iqFiWUmzDk/wXEi+WYmUE+ZNVKAZzwWYZRtmuJjKnwBznWVaUrdV+TBJmPWGXct7szNNqYzlJi0smGOWEtzDZ8rPxfRUHcdg826YRYeMhMIPdMi7I8zqcs6c7ii+VLYtVQnuINpvr8y29kbwg+5qI7+cTyVakyA90CH/qcdNw53B5d3cyNBLWW9aMbAjrhxzcRaX5dH7a4CZoN4fZbQ6SRj5zIdqbJ+FmE89lC9CD54cvtPMER9CwheRvZr+R43pCMNlzi5a9Q733meQx3TvJubDyEvieiUkkeW3TwDUT2i0WFLKcJGERv8m+3mZVvsLnLKY7qQAzoClP2WTbfE74qLoviontwBvQGLm2rKoI8wUpGqqOsFYHvQhp6zGRfnhwLagHXFWPPmTtFmSdpGA0WoepBLHz75YF2uA1S4unzfE149MBCK/3RyzEc9paHD+nGHgGCDCY2gDPgIdYw/OAj8UadHflMnyG6lQ0CBayG4VJvEiZj1HImR8ELFTG9GXj8werOIrY9NbYK0dndpBZuIoTZua/qGdt6Oq/kx39/We2otvSEqGr+HuQsa25oNPigqaGAO2cBZcd/SZw/6jcZPuPkP1ah/UkrknLZT8w2NULWFzWROisoW3dCW33drStd6gcUAbThgM8h5GYNgL6w1acDQJhgWjLFQvfCVF8T0RpTPaBD8HUBdgE/qQWrimuEHjUc+FkENDyp0/ozGu3fpuGd8Lau/2K9bDXIWF9yxvZkoXdnvcjZMtIVcjpvyAJzfchoQUCH+Axo5w/Bj6SSYhAQLXClyGRUIXW+HbhFqEWqM9zMM1SIlt7U+TZ16rIIWU9cOR5rpL0wGqElqSn9HlQr1Q8CPHVdMboS3tLuV2p8UMj7S+o9VzpC48enruSzotRcjsUaUTpuhLURYzdx0VJWAu5vF/y1XV498RW1jnUOhdztbTlI3K1uuAI9NRK4SO6wXX1qSsDt+MogRsPJGyr4baqU1ztCrjDpzS6QltB62PHbWQh2bpeb8Yqiu74em0rTV2Z7nwfdX7tICmKTFWRRpDuWlGyAaYpjntsuMCb8LJDMLiygxpmzZayg9vimeotulfK01Zi+sg8NNQajwdHhvJ3s0upaBoNXXejYlt5SCMV/SmvQmAM6Clqxd2fZk8vPw+Jjg0PcXCDjq1VQB18FDp6X19O6YtrS9mLg/VlLw/C5ca10vH6EdlQcx5VkT4iV/74A+ALAHY9GZfeuajXoUgjwLeWJAYFsCPjYsK+AOMORRoBvrXYMCiAka3ggnoCbHYo0gjwdbnpwAFulAutkeP2xFi9T7fo0ghzW3b7A+Zz0FgyNG5fHlsdijQCfF1uO2yA1QsStnriizoUacT3un+ZGDa+CCu8wz2LHgbsUKQPYPOCZHizDNes+ZqQPUc6+N7/T0atQKC+f4k1XPt9Rb2xot3T1y7K4advr5jT/wE=&lt;/diagram&gt;&lt;/mxfile&gt;"><defs/><g><g><rect x="100" y="87" width="120" height="250" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 10 220 L 93.63 219.77" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 98.88 219.75 L 91.89 223.27 L 93.63 219.77 L 91.87 216.27 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 10 257 L 93.63 257" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 98.88 257 L 91.88 260.5 L 93.63 257 L 91.88 253.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="130" y="107" width="60" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 122px; margin-left: 131px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="font-size: 18px;">蒸发器</span></div></div></div></foreignObject><text x="160" y="126" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="12px" text-anchor="middle">蒸发器</text></switch></g></g><g><rect x="280" y="141" width="40" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 156px; margin-left: 281px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><font style="font-size: 18px;">Q<sub>L</sub></font></div></div></div></foreignObject><text x="300" y="160" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="12px" text-anchor="middle">QL</text></switch></g></g><g><rect x="10" y="187" width="80" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 202px; margin-left: 11px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><font style="font-size: 14px;">进料液 F</font></div></div></div></foreignObject><text x="50" y="206" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="12px" text-anchor="middle">进料液 F</text></switch></g></g><g><rect x="0" y="257" width="100" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 272px; margin-left: 1px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><font style="font-size: 14px;">加热蒸气 D</font></div></div></div></foreignObject><text x="50" y="276" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="12px" text-anchor="middle">加热蒸气 D</text></switch></g></g><g><path d="M 159.5 87 L 159.96 13.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 159.99 8.12 L 163.45 15.14 L 159.96 13.37 L 156.45 15.1 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="160" y="37" width="80" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 52px; margin-left: 161px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><font style="font-size: 14px;">二次蒸汽 W</font></div></div></div></foreignObject><text x="200" y="56" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="12px" text-anchor="middle">二次蒸汽 W</text></switch></g></g><g><path d="M 100 237 L 219.64 237.25" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 100 257 L 180 257" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 150.04 277 L 180 257" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 150 277 L 180.04 287" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 151 307 L 181 287" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 151 307 L 151 400.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 151 405.88 L 147.5 398.88 L 151 400.63 L 154.5 398.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="150" y="357" width="70" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 367px; margin-left: 151px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><font style="font-size: 14px;">冷凝水 D</font></div></div></div></foreignObject><text x="185" y="371" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="12px" text-anchor="middle">冷凝水 D</text></switch></g></g><g><path d="M 220 307.25 L 323.63 307.01" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 328.88 307 L 321.89 310.52 L 323.63 307.01 L 321.87 303.52 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="220" y="285" width="100" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 295px; margin-left: 221px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><font style="font-size: 14px;">完成液 (F-W)</font></div></div></div></foreignObject><text x="270" y="299" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="12px" text-anchor="middle">完成液 (F-W)</text></switch></g></g><g><path d="M 190 286 L 210 286" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 189 267 L 209 267" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 179 317 L 199 317" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 125 318 L 145 318" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 110 271.67 L 130 271.67" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 134 288 L 154 288" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 109 301 L 129 301" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 194 302 L 214 302" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 220.5 162 L 220.5 152 L 265.5 152 L 265.5 141.5 L 284.5 157 L 265.5 172.5 L 265.5 162 Z" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg>
+  </div></p>
+          
+        </article>
+      
+        <article class="article-item">
+          <h2><a href="/posts/principles-of-chemical-engineering/%E4%BC%A0%E7%83%AD/">传热</a></h2>
+          <time class="article-date">2025-06-04</time>
+          
+            <div class="article-tags">
+              
+                <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" class="tag">学习笔记</a>
+              
+                <a href="/tags/%E5%8C%96%E5%B7%A5%E5%8E%9F%E7%90%86" class="tag">化工原理</a>
+              
+            </div>
+          
+          
+            <p class="article-summary"><div class="mermaid">
   
-  <li>
-    <span class="date">2025/03/03</span>
-    <a href="/plan/junior_2_plan/" class="title-background">大三下任务计划</a>
-    <p class="summary-text"><h1 id="大三下任务计划">大三下任务计划</h1>
-<h2 id="任务">任务</h2>
+mindmap
+    root((传热))
+        概述
+            热传导
+            热对流
+                强制对流
+                自然对流
+            热辐射
+        热传导
+            傅里叶定律
+                导热系数
+            平壁的稳定热传导
+            圆筒壁的稳定热传导
+        对流传热
+            间壁式对流传热
+                传热边界层
+            对流传热速率
+            对流传热中的准数
+                努塞尔准数
+                雷诺准数
+                普兰特准数
+                格拉晓夫准数
+            准数方程
+            有相变时的对流传热系数
+                蒸汽冷凝
+                    膜状冷凝
+                    滴状冷凝
+                液体沸腾
+                    大容器沸腾
+        稳定传热的计算
+            总传热速率方程
+                总传热系数
+                污垢热阻
+        传热平均温差
+            恒温传热
+            变温传热
+        传热的强化
+            传热面积
+            温差
+            热阻
+        换热器
+            间壁式换热器
+            蛇管式换热器
+            列管换热器
+            板式换热器
+
+</div></p>
+          
+        </article>
+      
+        <article class="article-item">
+          <h2><a href="/posts/principles-of-chemical-engineering/%E9%9D%9E%E5%9D%87%E7%9B%B8%E7%89%A9%E7%B3%BB%E5%88%86%E7%A6%BB/">非均相物系分离</a></h2>
+          <time class="article-date">2025-06-04</time>
+          
+            <div class="article-tags">
+              
+                <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" class="tag">学习笔记</a>
+              
+                <a href="/tags/%E5%8C%96%E5%B7%A5%E5%8E%9F%E7%90%86" class="tag">化工原理</a>
+              
+            </div>
+          
+          
+            <p class="article-summary"><div class="mermaid">
+  
+mindmap
+    root(非均相物系分离)
+        root(过滤)
+            基本概念
+                滤浆
+                滤饼
+                过滤介质
+                滤液
+            过滤方式
+                滤饼过滤
+                深层过滤
+            滤饼的压缩性和助滤剂
+            过滤理论
+                流动模型
+                颗粒床层
+                    孔隙率
+                    比表面积
+                过滤速率
+                滤饼阻力
+                    比阻
+                过滤介质阻力
+            过滤基本方程式
+            恒压过滤
+                恒压过滤方程式
+            恒速过滤
+            过滤设备
+                板框过滤机
+                转筒真空过滤机
+                离心过滤机
+        root(沉降)
+            颗粒运动时的阻力
+            重力沉降
+                降尘室
+            离心沉降
+                旋风分离器
+
+</div></p>
+          
+        </article>
+      
+        <article class="article-item">
+          <h2><a href="/posts/principles-of-chemical-engineering/fluid-delivery-mechine/">流体输送器械</a></h2>
+          <time class="article-date">2025-06-04</time>
+          
+            <div class="article-tags">
+              
+                <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" class="tag">学习笔记</a>
+              
+                <a href="/tags/%E5%8C%96%E5%B7%A5%E5%8E%9F%E7%90%86" class="tag">化工原理</a>
+              
+            </div>
+          
+          
+            <p class="article-summary"><div class="mermaid">
+  
+mindmap
+    root(离心泵)
+        主要部件和工作原理
+            气缚现象
+        离心泵基本方程式
+        离心泵主要性能参数
+        离心泵的特性曲线
+        气蚀现象与离心泵安装高度
+        离心泵工作点
+
+</div>
+<h2 id="离心泵">离心泵</h2>
+<h3 id="2-离心泵基本方程式">2 离心泵基本方程式</h3>
+<p>根据伯努利方程，叶片入口截面$1-1'$至叶片出口截面$2-2'$：</p>
+<p>$$ H_{T\infty} = H_p + H_e = \frac{p_2-p_1}{\rho g} + \frac{c_2^2-c_1^2}{2g} $$</p>
+<p>其中：$H_{T\infty}$为无穷叶片离心泵的理论压头；$H_p$为静压头增量；$H_e$为动压头增量。</p>
+<p>经过推导可得理论压头与理论流量的关系：</p>
+<p>$$ H_{T\infty} = \frac{u_2^2}{g} - \frac{u_2\cot{\beta_2}}{g\pi D_2b_2}Q_T $$</p>
+<p>其中：$u_2$为出口叶轮角速度；$\beta_2$为出口液体速度与叶轮角速度的夹角；$D_2$为叶轮外径；$b_2$为叶轮出口宽度。</p>
+<h3 id="3-离心泵主要性能参数">3 离心泵主要性能参数</h3>
 <ol>
-<li>工作流确立方法</li>
-<li>化学创新实验大赛</li>
-<li>遗传学Mini-review</li>
-<li>计算机与化学综述</li>
-<li>分子发光文献汇报PPT+录屏</li>
-<li>功能材料汇报</li>
-<li>日常锻炼</li>
-<li>攀岩知到课程</li>
-<li>机器学习MOOC</li>
-<li>笔记与复习工作流</li>
-<li>体测</li>
-<li>python二级</li>
+<li>流量$Q$</li>
+<li>扬程（压头）$H$</li>
+<li>效率$\eta$：容积损失，水力损失，机械损失</li>
+<li>有效功率$N_e=QH\rho g$</li>
+<li>轴功率$N=N_e/\eta$</li>
 </ol>
-<h1 id="周计划表">周计划表</h1>
-<h1 id="计划确立">计划确立</h1>
-<h2 id="工作流">工作流</h2>
-<ol>
-<li>定义目标：明确工作流的最终目标是什么。</li>
-<li>列出任务：列出所有需要完成的任务。</li>
-<li>确定顺序与规则：确定任务的执行顺序。</li>
-<li>分配资源：分配完成每 …</li></ol></p>
-  </li>
-  
-  <li>
-    <span class="date">2025/01/20</span>
-    <a href="/post/2025/01/20/2025-1-%E6%9C%89%E6%9C%BA%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93/" class="title-background">2025-1-有机实验总结</a>
-    <p class="summary-text"><h1 id="2025-1-有机实验总结">2025-1-有机实验总结</h1>
-<h2 id="1-开反应">1 开反应</h2>
-<p>写反应方程式，记录比例和相对分子质量，计算各物质质量并记录，记录溶剂体积。根据反应条件搭建反应仪器。监控实验进行。注意：</p>
-<ol>
-<li>对于密闭体系，反应容器塞橡胶塞，橡胶塞翻下包住瓶口边缘，保证气密性。同时橡胶塞上插上气球，避免气压升高爆炸。</li>
-<li>对于无水无氧体系，需要塞上橡胶塞，先对反应容器抽气。充氮气气球，抽完气，插上氮气气球保护。</li>
-<li>针管吸取无水无氧液体加入。针管碰到 …</li></ol></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/12/09</span>
-    <a href="/post/2024/12/09/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-07/" class="title-background">结构化学 07</a>
-    <p class="summary-text"><h1 id="07-晶体的点阵结构和晶体的性质">07 晶体的点阵结构和晶体的性质</h1>
-<h2 id="1-晶体的性质">1 晶体的性质</h2>
-<p>结构特征：周期性重复</p>
-<ol>
-<li>均匀性</li>
-<li>各向异性</li>
-<li>自发形成多面体外形（\(晶面数+顶点数=晶棱数+2\)）</li>
-<li>确定的熔点</li>
-<li>对称性</li>
-<li>对X射线衍射</li>
-</ol>
-<h2 id="2-点阵和结构基元">2 点阵和结构基元</h2>
-<ol>
-<li>结构基元：组成、结构和化学环境相同的<strong>最小</strong>实体单位。</li>
-<li>平移矢量：连接各结构基元的矢量。按矢量平移，结构复原。</li>
-</ol>
-<p>结构基元抽象为点，称为点阵点（与结构基元相对位置固定）。以平移矢量重复排列得到点 …</p></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/12/04</span>
-    <a href="/post/2024/12/04/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-06/" class="title-background">有机合成 06</a>
-    <p class="summary-text"><h1 id="06-合成碳-氮键">06 合成碳-氮键</h1>
-<h2 id="1-亲电试剂">1 亲电试剂</h2>
-<h3 id="11-硝酰正离子">1.1 硝酰正离子</h3>
-<p>硝酰正离子\((O\!\!=\!\!\overset{+}{N}\!\!=\!\!O,酸脱去羟基称为酰)\)与烯烃或芳基反应。</p>
-<h4 id="111-硝酰正离子合成">1.1.1 硝酰正离子合成：</h4>
-<ol>
-<li>
-<p>\(浓HNO_3 + 浓H_2SO_4\begin{cases}提供质子+\!H^+\\脱水-\!H_2O\\作溶剂\end{cases}\)</p>
-</li>
-<li>
-<p>\(浓HNO_3 + 醋酸或醋酸酐( …</p></li></ol></p>
-  </li>
-  
-</ul>
+<h3 id="4-离心泵特性曲线">4 离心泵特性曲线</h3>
 
+
+
+
+
+  <div class="inline-svg svg-left">
+    <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="362px" height="278px" viewBox="-0.5 -0.5 362 278" content="&lt;mxfile&gt;&lt;diagram id=&quot;6xINkVcfZ2Ts9G9U0ybO&quot; name=&quot;Page-1&quot;&gt;7Vpbk5s2FP41mmkeNoMQ2PDo22Zn2mTSbmaaPnW0INtMALlCXtv99ZVAskHgy7LgOtnsw1o6uh2d73xHHAFAk2T7geHV8iMNSQxsK9wCNAW2bXtI/JeCXSFwLKcQLFgUFiJ4EDxG/xIltJR0HYUkq3TklMY8WlWFAU1TEvCKDDNGN9VucxpXV13hBakJHgMc16V/RiFfFlLPtQ7yBxItlnplaKmWBOvOSpAtcUg3JRGaATRhlPKilGwnJJa203Ypxt0fad0rxkjKLxkg2+SIZxyv1eaAPYjF2HG2wqnUkO/Utgf/rKVa4zlN+d0cJ1Es4BuJLr/iL+Tr3x/zvY1ze4oOapxsjziOo6Bo42TL70R1kRZtMZnzUstG+MtdIvylaE2pFOTtenVRWqjfWGvTLGtQPaAxZcXUbPH0i+26wJ6Iigv177vGxXxhFRdMZmA81GsImzYtna2fetcmwdszWghxgyInOudYa7Fd0daWwAj5kiexEEBRVPhNA+FlROxg/EwYjwQ/RqohicJQDh9vlhEnjyscyLkUloyu05BIB7SUde6VM02/RIngtW19Ihvx/w+aCLWKLioIQEfVJ4XthH7o/h6JPyGP8ROJxzj4tsiX0F1SmpL9vsrUUGyRypNtSaSo8oHQhHC2E1104HK8YoiKW1AHsk0pCgwL0bIUADTbsYo7i/3MB2qKgmLnEaY2ENUAiqThSEY3iUyMsyznXAm2jDP6bR+x4CmbkLASAesWKe1Yh73yjrWMkRjz6LkaN5vMoFb4TKOcLMrgSFtOGRwNDEtmdM0CokaV49yZiaBjTMQxWxBemyhHZb/ti4BCrwfqzcAysM5M1B0szotgUTHjJHlahptbxRC1xNAdVCey/d4wdF+JYfXkCdbsOa+8CXjbUrQGr3mYHYFXoIB3pW4r2SE7oTAy1hlaJ/VyoBHRz/R3jfmhX+kvCoXGbX1z2J9v/lieaFtdeaLbjyc65rNCx54CnbpnCKgeVbXuGmQb8a/KMWT5L1l+76radFtqmu5U5ahXFNZWz6oXOsorPaAtcC1s69VY+FAz9i3lM/ZJrC7PTFzfMLF+vi1x3G7guHnot8lMIHqhP1/km/DSKNa1c154vrUhvoa1+8uW3JtkM/Tfo8Fqe82LGPNa5Lu5TLD1EH2ihmSO1/k2er9KqBHWuiJh3Vs5gKB9JZK7hrX7y1H0ll5CcuMiEDnF/d/h912Jz22DQWeE//Tdcr1/VnuGn3lXZPWg5ni/3z4kPYRSNLyi0VulfSHOlvvsrnbH1HS1fdRMN5LkOZZdxaDtdYM5EewxUteThTeJXe1u3IftsHOd4emJOsTO/4ldPo1Ovl59zWdM1CPvtLu9dexqvBt6HfHOnKhD7PpLYX+k7wV+firw/z9eQhcc/1RAKvqov725SmpgG6kBHNSfUp2enlIveSedLfFKFoM1i3djJixB+BFUGt9ayNo8jlYPoPTS4jPNIh5RiTMrtrTH/zejfe8H2mMU04/6C6Mcq7F+R5mEY3zfgXROdSaTgPBE8L8YpIY31DMfjMbA98BsAHwXeKIwBN4MeEMwE9UJGI9un4MdAIN8I71oyKshsjthj6gevr8rjsjDR4xo9h8=&lt;/diagram&gt;&lt;/mxfile&gt;"><defs/><g><g><rect x="0" y="50" width="87" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 85px; height: 1px; padding-top: 60px; margin-left: 1px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #FF3333; "><div style="display: inline-block; font-size: 14px; font-family: &quot;Times New Roman&quot;; color: light-dark(#FF3333, #ff7777); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="font-family: KaTeX_Math; font-style: italic; text-align: left; text-wrap-mode: nowrap;"><font><font style="color: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));">92%η</font><sub><font style="color: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));">max</font></sub></font></span></div></div></div></foreignObject><text x="44" y="64" fill="#FF3333" font-family="&quot;Times New Roman&quot;" font-size="14px" text-anchor="middle">92%ηmax</text></switch></g></g><g><path d="M 72 227 L 72 13.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 72 8.12 L 75.5 15.12 L 72 13.37 L 68.5 15.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 72 227 L 345.63 227" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 350.88 227 L 343.88 230.5 L 345.63 227 L 343.88 223.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 72 197 L 312 157" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 72 227 Q 82 137 122 87 Q 162 37 222 47 Q 282 57 312 87" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 72 67 Q 172 57 312 117" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 342 122 L 318.28 118.05" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 313.1 117.18 L 320.58 114.88 L 318.28 118.05 L 319.43 121.79 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="342" y="107" width="20" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 122px; margin-left: 343px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">H</div></div></div></foreignObject><text x="352" y="128" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">H</text></switch></g></g><g><path d="M 342 83.25 L 318.32 86.21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 313.11 86.86 L 319.62 82.52 L 318.32 86.21 L 320.49 89.47 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="342" y="67" width="20" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 82px; margin-left: 343px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="font-family: KaTeX_Math; font-size: 19.36px; font-style: italic; text-align: left; text-wrap-mode: nowrap;">η</span></div></div></div></foreignObject><text x="352" y="88" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">η</text></switch></g></g><g><path d="M 332 162 L 308.28 158.05" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 303.1 157.18 L 310.58 154.88 L 308.28 158.05 L 309.43 161.79 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="332" y="147" width="20" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 162px; margin-left: 333px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(34, 34, 34), rgb(208, 208, 208)); font-family: KaTeX_Math; font-size: 19.36px; text-align: left; text-wrap-mode: nowrap;">N</span></div></div></div></foreignObject><text x="342" y="168" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">N</text></switch></g></g><g><rect x="342" y="237" width="20" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 252px; margin-left: 343px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">Q</div></div></div></foreignObject><text x="352" y="258" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">Q</text></switch></g></g><g><path d="M 154 227 L 154 57" fill="none" stroke="#ff3333" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 72 58 L 299 58" fill="none" stroke="#ff3333" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 265 227 L 265 57" fill="none" stroke="#ff3333" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 72 45 L 299 45" fill="none" stroke="#ff3333" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><rect x="32" y="27" width="40" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 42px; margin-left: 33px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #FF3333; "><div style="display: inline-block; font-size: 15px; font-family: &quot;Times New Roman&quot;; color: light-dark(#FF3333, #ff7777); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="font-family: KaTeX_Math; font-style: italic; text-align: left; text-wrap-mode: nowrap;"><font><font style="color: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));">η</font><sub><font style="color: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));">max</font></sub></font></span></div></div></div></foreignObject><text x="52" y="47" fill="#FF3333" font-family="&quot;Times New Roman&quot;" font-size="15px" text-anchor="middle">ηmax</text></switch></g></g><g><path d="M 220 183 L 215 183 Q 210 183 210 193 L 210 228.5 Q 210 238.5 205 238.5 L 202.5 238.5 Q 200 238.5 205 238.5 L 207.5 238.5 Q 210 238.5 210 248.5 L 210 284 Q 210 294 215 294 L 220 294" fill="none" stroke="#000000" stroke-miterlimit="10" transform="translate(210,0)scale(-1,1)translate(-210,0)rotate(-90,210,238.5)" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="144" y="247" width="132" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 130px; height: 1px; padding-top: 262px; margin-left: 145px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 15px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">高效率区</div></div></div></foreignObject><text x="210" y="267" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="15px" text-anchor="middle">高效率区</text></switch></g></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg>
+  </div>
+
+<p>影响因素：泵的转速</p></p>
+          
+        </article>
+      
+    </div>
+
+    
+    <div class="tag-cloud">
+      <h2>热门标签</h2>
+      
+        <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" class="tag">
+          学习笔记 (8)
+        </a>
+      
+        <a href="/tags/%E5%8C%96%E5%B7%A5%E5%8E%9F%E7%90%86" class="tag">
+          化工原理 (6)
+        </a>
+      
+        <a href="/tags/katex" class="tag">
+          katex (1)
+        </a>
+      
+        <a href="/tags/mermaid" class="tag">
+          mermaid (1)
+        </a>
+      
+        <a href="/tags/%E5%BC%95%E7%94%A8" class="tag">
+          引用 (1)
+        </a>
+      
+        <a href="/tags/%E8%84%9A%E6%B3%A8" class="tag">
+          脚注 (1)
+        </a>
+      
+    </div>
+  </div>
+
+  </main>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.mermaid').forEach(chart => {
+        if (!chart.dataset.original) {
+          chart.dataset.original = chart.textContent;
+        }
+      });
+    });
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', html.dataset.theme);
+      
+      if (window.mermaid) {
+        const theme = html.dataset.theme === 'dark' ? 'dark' : 'default';
+        mermaid.initialize({ theme });
+        
+        const charts = document.querySelectorAll('.mermaid');
+        charts.forEach(chart => {
+          
+          if (chart.dataset.original) {
+            chart.textContent = chart.dataset.original;
+            chart.removeAttribute('data-processed');
+          }
+            });
+
+        
+        mermaid.init(undefined, charts);
+      }
+    }
+
+    
+    document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+  </script>
+  
+  <script type="module" src="/js/main.js"></script>
+  <div id="window-bar" style="position:fixed;bottom:0;left:0;width:100%;z-index:9999;display:flex;gap:8px;"></div>
+  <div id="window-container" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;"></div>
   <footer>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
-
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
-
-  
-  <hr/>
-  © <a href="https://jeff-linzi.github.io/">林子健(Zijian Lin)</a> 2024 &ndash; 2025 | <a href="https://github.com/Jeff-LinZi">Github</a>
-  
+    <p>© My New Hugo Site 2025</p>
   </footer>
-  </body>
+</body>
 </html>
-

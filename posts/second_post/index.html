@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My New Hugo Site | b</title>
+  
+  <link rel="stylesheet" href="https://example.org/css/main.min.css">
+  
+  
+
+  <script src="/vendor/mermaid/mermaid.min.js"></script>
+  <script>
+    function getMermaidTheme() {
+      
+      return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default';
+    }
+    mermaid.initialize({ 
+      startOnLoad: true,
+      securityLevel: 'loose',
+      theme: getMermaidTheme()
+    });
+  </script>
+
+  
+  
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<script defer src="/vendor/katex/katex.min.js"></script>
+<script defer src="/vendor/katex/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ],
+      throwOnError: false,
+      output: "html"
+    });
+  });
+</script>
+  
+</head>
+<body>
+  <nav data-no-window>
+    <a href="/">首页</a> | 
+    <button onclick="toggleTheme()">🌓</button>
+  </nav>
+  
+  <main>
+    
+    
+  
+  
+  <article>
+    <h1>b</h1>
+    
+    
+    <div class="tags">
+      标签: <a class="tag" href="/tags/%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0">学习笔记</a> <a class="tag" href="/tags/%e5%bc%95%e7%94%a8">引用</a> <a class="tag" href="/tags/katex">katex</a> 
+    </div>
+    
+    <hr>
+    <div class="content">
+      <p>这是一个交叉引用
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+  
+  <a href="/posts/first_post/" class="cross-ref" 
+     data-ref="example" 
+     title="示例"
+     id="ref-example-%!s(int64=1)">
+    示例
+  </a>
+。</p>
+<p>或者
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+  
+  <a href="/posts/first_post/" class="cross-ref" 
+     data-ref="example" 
+     title="示例"
+     id="ref-example-%!s(int64=2)">
+    自定义内容
+  </a>
+。</p>
+<p>一个失效引用
+
+
+
+
+
+
+
+
+
+
+  <span class="broken-ref">[失效引用: error_ref]</span>
+。</p>
+<h2 id="行内公式">行内公式</h2>
+<p>勾股定理：$a^2 + b^2 = c^2$</p>
+<p>欧拉公式：$e^{i\pi} + 1 = 0$</p>
+<p>薛定谔方程：$i\hbar \frac{\partial}{\partial t} \Psi = \hat{H} \Psi$</p>
+<h2 id="块级公式">块级公式</h2>
+<p>二次方程求根公式：
+$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
+<p>麦克斯韦方程组：
+$$
+\begin{aligned}
+\nabla \cdot \mathbf{E} &amp;= \frac{\rho}{\epsilon_0} \
+\nabla \cdot \mathbf{B} &amp;= 0 \
+\nabla \times \mathbf{E} &amp;= -\frac{\partial \mathbf{B}}{\partial t} \
+\nabla \times \mathbf{B} &amp;= \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}
+\end{aligned}
+$$</p>
+<h2 id="矩阵和行列式">矩阵和行列式</h2>
+<p>矩阵乘法：
+$$</p>
+<h1 id="endpmatrix">\begin{pmatrix}
+a_{11} &amp; a_{12} \
+a_{21} &amp; a_{22}
+\end{pmatrix}
+\times
+\begin{pmatrix}
+b_{11} &amp; b_{12} \
+b_{21} &amp; b_{22}
+\end{pmatrix}</h1>
+<p>\begin{pmatrix}
+a_{11}b_{11} + a_{12}b_{21} &amp; a_{11}b_{12} + a_{12}b_{22} \
+a_{21}b_{11} + a_{22}b_{21} &amp; a_{21}b_{12} + a_{22}b_{22}
+\end{pmatrix}</p>
+<p>$$</p>
+<p>行列式：
+$$
+\det(A) =
+\begin{matrix}
+a &amp; b \
+c &amp; d
+\end{matrix}
+= ad - bc
+$$</p>
+<h2 id="物理公式">物理公式</h2>
+<p>相对论质能方程：
+$$ E = mc^2 $$</p>
+<p>海森堡不确定性原理：
+$$ \Delta x \Delta p \geq \frac{\hbar}{2} $$</p>
+<h2 id="化学方程式">化学方程式</h2>
+<p>化学平衡：
+$$ 2H_2 + O_2 \to 2H_2O $$</p>
+<p>氧化还原反应：
+$$ Zn(s) + 2H^+(aq) \to Zn^{2+}(aq) + H_2(g) $$</p>
+
+    </div>
+    <hr>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+        
+          
+        
+      
+    
+    
+      <div class="backlinks">
+        <h2>无其他页面引用</h2>
+      </div>
+    
+  </article>
+
+  </main>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.mermaid').forEach(chart => {
+        if (!chart.dataset.original) {
+          chart.dataset.original = chart.textContent;
+        }
+      });
+    });
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', html.dataset.theme);
+      
+      if (window.mermaid) {
+        const theme = html.dataset.theme === 'dark' ? 'dark' : 'default';
+        mermaid.initialize({ theme });
+        
+        const charts = document.querySelectorAll('.mermaid');
+        charts.forEach(chart => {
+          
+          if (chart.dataset.original) {
+            chart.textContent = chart.dataset.original;
+            chart.removeAttribute('data-processed');
+          }
+            });
+
+        
+        mermaid.init(undefined, charts);
+      }
+    }
+
+    
+    document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+  </script>
+  
+  <script type="module" src="/js/main.js"></script>
+  <div id="window-bar" style="position:fixed;bottom:0;left:0;width:100%;z-index:9999;display:flex;gap:8px;"></div>
+  <div id="window-container" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;"></div>
+  <footer>
+    <p>© My New Hugo Site 2025</p>
+  </footer>
+</body>
+</html>

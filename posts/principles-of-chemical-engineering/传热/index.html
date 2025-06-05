@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My New Hugo Site | 传热</title>
+  
+  <link rel="stylesheet" href="https://example.org/css/main.min.css">
+  
+  
+
+  <script src="/vendor/mermaid/mermaid.min.js"></script>
+  <script>
+    function getMermaidTheme() {
+      
+      return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default';
+    }
+    mermaid.initialize({ 
+      startOnLoad: true,
+      securityLevel: 'loose',
+      theme: getMermaidTheme()
+    });
+  </script>
+
+  
+  
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<script defer src="/vendor/katex/katex.min.js"></script>
+<script defer src="/vendor/katex/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ],
+      throwOnError: false,
+      output: "html"
+    });
+  });
+</script>
+  
+</head>
+<body>
+  <nav data-no-window>
+    <a href="/">首页</a> | 
+    <button onclick="toggleTheme()">🌓</button>
+  </nav>
+  
+  <main>
+    
+    
+  
+  
+  <article>
+    <h1>传热</h1>
+    
+    
+    <div class="tags">
+      标签: <a class="tag" href="/tags/%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0">学习笔记</a> <a class="tag" href="/tags/%e5%8c%96%e5%b7%a5%e5%8e%9f%e7%90%86">化工原理</a> 
+    </div>
+    
+    <hr>
+    <div class="content">
+      <div class="mermaid">
+  
+mindmap
+    root((传热))
+        概述
+            热传导
+            热对流
+                强制对流
+                自然对流
+            热辐射
+        热传导
+            傅里叶定律
+                导热系数
+            平壁的稳定热传导
+            圆筒壁的稳定热传导
+        对流传热
+            间壁式对流传热
+                传热边界层
+            对流传热速率
+            对流传热中的准数
+                努塞尔准数
+                雷诺准数
+                普兰特准数
+                格拉晓夫准数
+            准数方程
+            有相变时的对流传热系数
+                蒸汽冷凝
+                    膜状冷凝
+                    滴状冷凝
+                液体沸腾
+                    大容器沸腾
+        稳定传热的计算
+            总传热速率方程
+                总传热系数
+                污垢热阻
+        传热平均温差
+            恒温传热
+            变温传热
+        传热的强化
+            传热面积
+            温差
+            热阻
+        换热器
+            间壁式换热器
+            蛇管式换热器
+            列管换热器
+            板式换热器
+
+</div>
+
+    </div>
+    <hr>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+    
+      <div class="backlinks">
+        <h2>无其他页面引用</h2>
+      </div>
+    
+  </article>
+
+  </main>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.mermaid').forEach(chart => {
+        if (!chart.dataset.original) {
+          chart.dataset.original = chart.textContent;
+        }
+      });
+    });
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', html.dataset.theme);
+      
+      if (window.mermaid) {
+        const theme = html.dataset.theme === 'dark' ? 'dark' : 'default';
+        mermaid.initialize({ theme });
+        
+        const charts = document.querySelectorAll('.mermaid');
+        charts.forEach(chart => {
+          
+          if (chart.dataset.original) {
+            chart.textContent = chart.dataset.original;
+            chart.removeAttribute('data-processed');
+          }
+            });
+
+        
+        mermaid.init(undefined, charts);
+      }
+    }
+
+    
+    document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+  </script>
+  
+  <script type="module" src="/js/main.js"></script>
+  <div id="window-bar" style="position:fixed;bottom:0;left:0;width:100%;z-index:9999;display:flex;gap:8px;"></div>
+  <div id="window-container" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;"></div>
+  <footer>
+    <p>© My New Hugo Site 2025</p>
+  </footer>
+</body>
+</html>

@@ -1,300 +1,145 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>学习笔记 | 林子健</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My New Hugo Site | 学习笔记</title>
+  
+  <link rel="stylesheet" href="https://example.org/css/main.min.css">
+  
+  
+
+  <script src="/vendor/mermaid/mermaid.min.js"></script>
+  <script>
+    function getMermaidTheme() {
+      
+      return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default';
+    }
+    mermaid.initialize({ 
+      startOnLoad: true,
+      securityLevel: 'loose',
+      theme: getMermaidTheme()
+    });
+  </script>
+
+  
+  
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<script defer src="/vendor/katex/katex.min.js"></script>
+<script defer src="/vendor/katex/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ],
+      throwOnError: false,
+      output: "html"
+    });
+  });
+</script>
+  
+</head>
+<body>
+  <nav data-no-window>
+    <a href="/">首页</a> | 
+    <button onclick="toggleTheme()">🌓</button>
+  </nav>
+  
+  <main>
     
-  </head>
+    
+  <h1>标签: 学习笔记</h1>
+  <ul>
+    
+      <li>
+        <a href="/posts/principles-of-chemical-engineering/%E8%92%B8%E9%A6%8F%E4%B8%8E%E7%B2%BE%E9%A6%8F/">蒸馏与精馏</a>
+        <span>(2025-06-05)</span>
+      </li>
+    
+      <li>
+        <a href="/posts/principles-of-chemical-engineering/%E8%92%B8%E5%8F%91/">蒸发</a>
+        <span>(2025-06-05)</span>
+      </li>
+    
+      <li>
+        <a href="/posts/principles-of-chemical-engineering/%E4%BC%A0%E7%83%AD/">传热</a>
+        <span>(2025-06-04)</span>
+      </li>
+    
+      <li>
+        <a href="/posts/principles-of-chemical-engineering/%E9%9D%9E%E5%9D%87%E7%9B%B8%E7%89%A9%E7%B3%BB%E5%88%86%E7%A6%BB/">非均相物系分离</a>
+        <span>(2025-06-04)</span>
+      </li>
+    
+      <li>
+        <a href="/posts/principles-of-chemical-engineering/fluid-delivery-mechine/">流体输送器械</a>
+        <span>(2025-06-04)</span>
+      </li>
+    
+      <li>
+        <a href="/posts/principles-of-chemical-engineering/flow-of-fluid/">流体流动</a>
+        <span>(2025-06-03)</span>
+      </li>
+    
+      <li>
+        <a href="/posts/first_post/">a</a>
+        <span>(2025-05-05)</span>
+      </li>
+    
+      <li>
+        <a href="/posts/second_post/">b</a>
+        <span>(2025-05-05)</span>
+      </li>
+    
+  </ul>
 
-  <body>
-    <nav>
-    <ul class="menu">
+  </main>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.mermaid').forEach(chart => {
+        if (!chart.dataset.original) {
+          chart.dataset.original = chart.textContent;
+        }
+      });
+    });
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', html.dataset.theme);
       
-      <li><a href="/">Home</a></li>
-      
-      <li><a href="/about/">About</a></li>
-      
-      <li><a href="/post/">Post</a></li>
-      
-      <li><a href="/plan/">Plan</a></li>
-      
-      <li><a href="/tags/">Tags</a></li>
-      
-    </ul>
-    <hr/>
-    </nav>
+      if (window.mermaid) {
+        const theme = html.dataset.theme === 'dark' ? 'dark' : 'default';
+        mermaid.initialize({ theme });
+        
+        const charts = document.querySelectorAll('.mermaid');
+        charts.forEach(chart => {
+          
+          if (chart.dataset.original) {
+            chart.textContent = chart.dataset.original;
+            chart.removeAttribute('data-processed');
+          }
+            });
 
+        
+        mermaid.init(undefined, charts);
+      }
+    }
 
-
-<h1>学习笔记</h1>
-
-
-
-
-<ul>
+    
+    document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+  </script>
   
-  
-  
-  <li>
-    <span class="date">2025/03/16</span>
-    <a href="/post/2025/03/16/%E5%8C%96%E5%B7%A5%E5%8E%9F%E7%90%86-01/" class="title-background">化工原理 01</a>
-    <p class="summary-text"><h1 id="01-流体力学-flow-of-fliud">01 流体力学 Flow of Fliud</h1>
-<h2 id="1-思维导图">1 思维导图</h2>
-<p><img src="/Xmind/UO_of_CE/Flow_of_Fluid.png" alt="思维导图"></p>
-<h2 id="2-笔记">2 笔记</h2>
-<p><img src="/images/UO_of_CE/01-1.jpg" alt="笔记1" style="width: 50%;" /><img src="/images/UO_of_CE/01-2.jpg" alt="笔记2" style="width: 50%;" /></p></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/12/09</span>
-    <a href="/post/2024/12/09/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-07/" class="title-background">结构化学 07</a>
-    <p class="summary-text"><h1 id="07-晶体的点阵结构和晶体的性质">07 晶体的点阵结构和晶体的性质</h1>
-<h2 id="1-晶体的性质">1 晶体的性质</h2>
-<p>结构特征：周期性重复</p>
-<ol>
-<li>均匀性</li>
-<li>各向异性</li>
-<li>自发形成多面体外形（\(晶面数+顶点数=晶棱数+2\)）</li>
-<li>确定的熔点</li>
-<li>对称性</li>
-<li>对X射线衍射</li>
-</ol>
-<h2 id="2-点阵和结构基元">2 点阵和结构基元</h2>
-<ol>
-<li>结构基元：组成、结构和化学环境相同的<strong>最小</strong>实体单位。</li>
-<li>平移矢量：连接各结构基元的矢量。按矢量平移，结构复原。</li>
-</ol>
-<p>结构基元抽象为点，称为点阵点（与结构基元相对位置固定）。以平移矢量重复排列得到点 …</p></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/12/04</span>
-    <a href="/post/2024/12/04/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-06/" class="title-background">有机合成 06</a>
-    <p class="summary-text"><h1 id="06-合成碳-氮键">06 合成碳-氮键</h1>
-<h2 id="1-亲电试剂">1 亲电试剂</h2>
-<h3 id="11-硝酰正离子">1.1 硝酰正离子</h3>
-<p>硝酰正离子\((O\!\!=\!\!\overset{+}{N}\!\!=\!\!O,酸脱去羟基称为酰)\)与烯烃或芳基反应。</p>
-<h4 id="111-硝酰正离子合成">1.1.1 硝酰正离子合成：</h4>
-<ol>
-<li>
-<p>\(浓HNO_3 + 浓H_2SO_4\begin{cases}提供质子+\!H^+\\脱水-\!H_2O\\作溶剂\end{cases}\)</p>
-</li>
-<li>
-<p>\(浓HNO_3 + 醋酸或醋酸酐( …</p></li></ol></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/12/02</span>
-    <a href="/post/2024/12/02/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-04-part1/" class="title-background">物理化学下 04 Part1</a>
-    <p class="summary-text"><h1 id="04-化学反应动力学一">04 化学反应动力学（一）</h1>
-<h2 id="1-化学反应表达的划分">1 化学反应表达的划分</h2>
-<ol>
-<li><strong>总包反应</strong>：表示化学反应中各反应物的计量关系，与反应本质无关。分为<strong>简单反应</strong>即基元反应，<strong>复杂反应</strong>包含多个基元反应。所包含的所有基元反应称作反应的<strong>历程</strong>。</li>
-<li><strong>基元反应</strong>：化学反应确切的过程，计量数即参与反应分子个数。</li>
-<li><strong>态-态反应</strong>：确定基元反应中反应物的量子态。</li>
-</ol>
-<h2 id="2-反应速率">2 反应速率</h2>
-<h3 id="21-定义">2.1 定义</h3>
-<p>反应速率指单位体积内反应进度随时间的变化率，即： …</p></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/11/29</span>
-    <a href="/post/2024/11/29/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-06/" class="title-background">结构化学 06</a>
-    <p class="summary-text"><h1 id="06-配位化合物的结构与性质">06 配位化合物的结构与性质</h1>
-<h2 id="1-配位化合物物与配位键">1 配位化合物物与配位键</h2>
-<h3 id="11-配位化合物">1.1 配位化合物</h3>
-<ol>
-<li>中心金属原子 \(M\)：提供空轨道</li>
-</ol>
-<ul>
-<li>单核：一个中心原子</li>
-<li>多核：多个中心原子（金属原子簇 \(M\hspace{-4pt}-\hspace{-4pt}M\)）</li>
-</ul>
-<ol start="2">
-<li>配位体 \(L\)：提供电子对（\(\pi\)电子对或孤对电子对）</li>
-</ol>
-<ul>
-<li>单齿：单配位点</li>
-<li>多齿：多配位点
-<ul>
-<li>螯合：多配位点全部与一个中心原子配位</li>
-<li>非螯合：多 …</li></ul></li></ul></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/11/26</span>
-    <a href="/post/2024/11/26/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-05/" class="title-background">结构化学 05</a>
-    <p class="summary-text"><h1 id="05-多原子分子结构和性质">05 多原子分子结构和性质</h1>
-<h2 id="1-多原子分子结构">1 多原子分子结构</h2>
-<ul>
-<li>几何结构：键长键角，几何构型。通过衍射等方法确定。</li>
-<li>电子结构：电子轨道，能级分布。用谱学方法测定。</li>
-</ul>
-<h2 id="2-价层电子对互斥理论">2 价层电子对互斥理论</h2>
-<p>Valence Shell Electron Pair Replusion 简称 <strong>VSEPR</strong></p>
-<ul>
-<li>第一步，确定分子中的中心原子，以及该原子键合原子（\(L\)）数和孤对电子（\(E\)）数。记作 \(AL_mE_n\)。</li>
-<li>第二 …</li></ul></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/11/22</span>
-    <a href="/post/2024/11/22/%E8%A1%A8%E9%9D%A2%E5%8C%96%E5%AD%A6-01/" class="title-background">表面化学 01</a>
-    <p class="summary-text"><h1 id="01-液体的表面性质">01 液体的表面性质</h1>
-<h2 id="1-界面与分散度">1 界面与分散度</h2>
-<h3 id="11-界面">1.1 界面</h3>
-<p>相与相之间几个分子厚度的过渡区</p>
-<h3 id="12-分散度">1.2 分散度</h3>
-<p>分散度即比表面积，用 \(A_0\) 或 \(S_0\) 表示：</p>
-\[S_0=\frac{A}{V} \quad或\quad S_0=\frac{A}{m}\]<p>其中 \(A\) 为总表面积。</p>
-<ul>
-<li>球形粒子：</li>
-</ul>
-\[S_0=\frac{A}{V}=\frac{4\pi r^2}{4/3\pi …</p>
-  </li>
-  
-  <li>
-    <span class="date">2024/11/15</span>
-    <a href="/post/2024/11/15/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-02/" class="title-background">物理化学下 02</a>
-    <p class="summary-text"><h1 id="第8章-电解质溶液">第8章 电解质溶液</h1>
-<h2 id="1-faraday-电解定律">1 Faraday 电解定律</h2>
-<p>法拉第常数 \(F=e\times N_A\)（阿伏伽德罗常数）</p>
-<p>法拉第定律，电解反应中，对于离子 \(B\)：</p>
-\[n_B=\frac{Q}{zF}\]<p>其中，\(Q\) 为用于电解反应的电荷量，\(z\) 为离子所带电荷数。</p>
-<h2 id="2-电迁移率和迁移数">2 电迁移率和迁移数</h2>
-<h3 id="21-电迁移率">2.1 电迁移率</h3>
-<p>以阳离子为例：</p>
-\[r_+=u_+\frac{dE}{dl}\]<p>离子电迁移 …</p></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/11/09</span>
-    <a href="/post/2024/11/09/%E7%89%A9%E7%90%86%E5%8C%96%E5%AD%A6%E4%B8%8B-01/" class="title-background">物理化学下 01</a>
-    <p class="summary-text"><h1 id="第6章-相平衡">第6章 相平衡</h1>
-<h2 id="1-相平衡条件">1 相平衡条件</h2>
-<p>设在多组分系统中，仅有\(\alpha\)和\(\beta\)两相且彼此处于平衡状态。有\(dn_B\)的物质\(B\)从\(\alpha\)相转移到\(\beta\)相：</p>
-$$dG = dG^{\alpha}_B + dG^{\beta}_B = \mu^{\alpha}_{B}dn^{\alpha}_B + …</p>
-  </li>
-  
-  <li>
-    <span class="date">2024/11/07</span>
-    <a href="/post/2024/11/07/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%9005/" class="title-background">有机合成05</a>
-    <p class="summary-text"><h1 id="05-游离基反应">05 游离基反应</h1>
-<p>游离基也叫自由基，游离基原子有未成对的电子，反应性强，两个游离基会发生偶合反应。</p>
-<h2 id="1-游离基引发">1 游离基引发</h2>
-<h3 id="11-化合物引发剂">1.1 化合物引发剂</h3>
-<ul>
-<li>过氧化二苯甲酰：</li>
-</ul>
-\[PhCO-OO-COPh \to 2PhCOO^\bullet\]<ul>
-<li>偶氮二异丁腈（\(AIBN\)）：</li>
-</ul>
-\[CNCMe_2-N=N-CMe_2CN \to 2CN\overset{\bullet}CMe_2+N_2\]<h3 id="12-电化学法">1.2 …</h3></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/11/07</span>
-    <a href="/post/2024/11/07/%E7%BB%93%E6%9E%84%E5%8C%96%E5%AD%A6-04/" class="title-background">结构化学 04</a>
-    <p class="summary-text"><h1 id="第4章-分子的对称性">第4章 分子的对称性</h1>
-<h2 id="1-对称动作和对称元素">1 对称动作和对称元素</h2>
-<h3 id="11-旋转操作和旋转轴">1.1 旋转操作和旋转轴</h3>
-<ul>
-<li>分子绕某轴旋转一定角度 \(\alpha\) 后分子复原，则该轴为旋转轴 \(C_n\)，\(n\) 称为轴次，\(n=360^{\circ}/{\alpha}\)；</li>
-<li>旋转操作 \(C_n^m\) (\(m < n\))代表分子用该轴旋转 \(m\) 个 \(\alpha\)，\(C_n^n=E\) 为复原操作；</li>
-<li>若存在多个 …</li></ul></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/11/05</span>
-    <a href="/post/2024/11/05/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-04/" class="title-background">有机合成 04</a>
-    <p class="summary-text"><h1 id="04-碳正离子">04 碳正离子</h1>
-<h2 id="1-碳正离子形成">1 碳正离子形成</h2>
-\[R_3CX \to R_3C^+ + X^-\]\[R_2C\xlongequal{}CR_2 \xrightarrow{H^+} R_2CH-\overset{+}{C}R_2\]\[R_2COH \xrightarrow{H^+} R_2C-\overset{+}{O}H_2 \xrightarrow{-H_2O}R_2C^+\]\[RCOCl \to …</p>
-  </li>
-  
-  <li>
-    <span class="date">2024/11/03</span>
-    <a href="/post/2024/11/03/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-03/" class="title-background">有机合成 03</a>
-    <p class="summary-text"><h1 id="03-羰基活化和烯醇式用于碳碳键形成">03 羰基活化和烯醇式用于碳碳键形成</h1>
-<h2 id="1-烯醇化">1 烯醇化</h2>
-<p>羰基烯醇化，结果电子离域，活化邻位连有氢的碳原子：</p>
-<p>很多其他基团都可以烯醇化，如硝基（\(NO_2\)），亚砜（\(S\xlongequal{}O\)），砜（\(SO_2\)），膦酸酯（\(P(O)(OR)_2\)），亚胺（\(C\xlongequal{}NH\)），腈（\(CN\)）。</p>
-<h3 id="11-烯醇酯">1.1 烯醇酯</h3>
-<p>强碱处理，动力学控制产物；弱碱处理，热力学控 …</p></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/11/01</span>
-    <a href="/post/2024/11/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-02/" class="title-background">有机合成 02</a>
-    <p class="summary-text"><h1 id="02-金属有机化合物和叶立德用于碳碳键形成">02 金属有机化合物和叶立德用于碳碳键形成</h1>
-<h2 id="1-金属有机化合物">1 金属有机化合物</h2>
-<p>金属有机化合物，如格氏试剂，有机铜锂试剂等，产生碳负离子，用于碳碳键的形成。</p>
-<h3 id="11-制备">1.1 制备</h3>
-<ul>
-<li>
-<p>由卤代烃与金属在乙醚或四氢呋喃溶液中制备：</p>
-\[Mg+RX \xrightarrow{ether} RMgX\]</li>
-<li>
-<p>由其他强金属有机化合物制备：</p>
-\[2RMgI+CdCl_2 \xrightarrow{Et_2O} …</li></ul></p>
-  </li>
-  
-  <li>
-    <span class="date">2024/10/26</span>
-    <a href="/post/2024/10/26/%E9%AB%98%E5%88%86%E5%AD%90%E5%8C%96%E5%AD%A6-01/" class="title-background">高分子化学 01</a>
-    <p class="summary-text"><h1 id="第1章-绪论">第1章 绪论</h1>
-<h2 id="1-定义">1 定义</h2>
-<p>许多<strong>原子</strong>以一定<strong>规律</strong>由<strong>共价键</strong>连接而成的<strong>分子量很大</strong>(10<sup>4</sup>~10<sup>7</sup> g/mol)的化合物。</p>
-<h2 id="2-特性">2 特性</h2>
-<ol>
-<li>粘度大</li>
-<li>高强度、高弹性</li>
-<li>多分散（分子量不均一）</li>
-<li>难溶解、无沸点（分子链之间有缠结）</li>
-</ol>
-<h2 id="3-基本概念">3 基本概念</h2>
-<h3 id="31-单体">3.1 单体</h3>
-<p>monomer：能够通过聚合反应形成高分子化合物的低分子化合物。<strong>至少要有两个官能度</strong></p>
-<h3 id="32-两类重要合成高分子">3.2 两类重要合成高分子</h3>
-<ol>
-<li>PMMA：聚甲基丙烯酸甲酯、有机玻璃</li>
-<li>尼 …</li></ol></p>
-  </li>
-  
-  <li>
-    <span class="date">0001/01/01</span>
-    <a href="/post/1/01/01/%E6%9C%89%E6%9C%BA%E5%90%88%E6%88%90-07/" class="title-background">有机合成 07</a>
-    <p class="summary-text"><h1 id="07-官能团转化">07 官能团转化</h1>
-<h2 id="1-氧化">1 氧化</h2>
-<h3 id="11-脱氢dehydrogenation">1.1 脱氢（Dehydrogenation）</h3>
-<h4 id="sse-脱氢">\(S/Se\) 脱氢</h4>
-<p>游离基机理，双自由基形成 \(\pi\) 键：</p>
-<p><img src="/images/organicSynthe/07-01-S_or_Se-Dehydrogenation.png" alt="硫/硒脱氢"></p>
-<h4 id="苯醌与氢醌">苯醌与氢醌</h4>
-<p>苯醌与氢醌转化，使用氧气进行绿色循环。</p>
-<h3 id="12-醇醛氧化">1.2 醇、醛氧化</h3>
-<p>羰基碳连有氢就有还原性，一个例子是甲酸具有还原性。对醇、醛氧化，醇、醛与酸酐加成，失去羰基碳上氢，形成双键。</p>
-<ol>
-<li>\(CrO_3\) 三氧化铬，可以认为是铬酸酐。不可控，将醇、醛氧 …</li></ol></p>
-  </li>
-  
-</ul>
-
+  <script type="module" src="/js/main.js"></script>
+  <div id="window-bar" style="position:fixed;bottom:0;left:0;width:100%;z-index:9999;display:flex;gap:8px;"></div>
+  <div id="window-container" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;"></div>
   <footer>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
-<script src="//cdn.jsdelivr.net/combine/npm/katex/dist/katex.min.js,npm/katex/dist/contrib/auto-render.min.js,npm/@xiee/utils/js/render-katex.js" defer></script>
-
-<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/center-img.min.js" defer></script>
-
-  
-  <hr/>
-  © <a href="https://jeff-linzi.github.io/">林子健(Zijian Lin)</a> 2024 &ndash; 2025 | <a href="https://github.com/Jeff-LinZi">Github</a>
-  
+    <p>© My New Hugo Site 2025</p>
   </footer>
-  </body>
+</body>
 </html>
-

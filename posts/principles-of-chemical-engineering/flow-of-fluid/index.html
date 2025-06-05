@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My New Hugo Site | 流体流动</title>
+  
+  <link rel="stylesheet" href="https://example.org/css/main.min.css">
+  
+  
+
+  <script src="/vendor/mermaid/mermaid.min.js"></script>
+  <script>
+    function getMermaidTheme() {
+      
+      return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default';
+    }
+    mermaid.initialize({ 
+      startOnLoad: true,
+      securityLevel: 'loose',
+      theme: getMermaidTheme()
+    });
+  </script>
+
+  
+  
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<script defer src="/vendor/katex/katex.min.js"></script>
+<script defer src="/vendor/katex/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ],
+      throwOnError: false,
+      output: "html"
+    });
+  });
+</script>
+  
+</head>
+<body>
+  <nav data-no-window>
+    <a href="/">首页</a> | 
+    <button onclick="toggleTheme()">🌓</button>
+  </nav>
+  
+  <main>
+    
+    
+  
+  
+  <article>
+    <h1>流体流动</h1>
+    
+    
+    <div class="tags">
+      标签: <a class="tag" href="/tags/%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0">学习笔记</a> <a class="tag" href="/tags/%e5%8c%96%e5%b7%a5%e5%8e%9f%e7%90%86">化工原理</a> 
+    </div>
+    
+    <hr>
+    <div class="content">
+      <div class="mermaid">
+  
+mindmap
+  root((流体流动))
+    概述
+      流体
+      流体的特征
+      流体的压缩性
+    流体静力学
+      流体的物理特性
+        密度
+        比体积
+        静压强
+      流体静力学基本方程
+    流体动力学
+      流量与流速
+      稳态流动与非稳态流动
+      连续性方程
+      伯努利方程
+    流体流动现象
+      牛顿黏性定律
+      牛顿流体与非牛顿流体
+      流体流动类型与雷诺准数
+      流体在圆管内的速度分布
+    流体流动的阻力
+      直管阻力
+      局部阻力
+    流量的测定
+      皮托管
+      孔板流量计
+      文丘里流量计
+      转子流量计
+      涡轮流量计
+
+</div>
+<h2 id="概述">概述</h2>
+<h3 id="1-流体">1 流体</h3>
+<p>在微小剪应力作用下能产生连续变形的物体，如气体和液体。</p>
+<h3 id="2-流体的特征">2 流体的特征</h3>
+<p>具有流动性，即：</p>
+<ol>
+<li>抗剪切和抗扩张的能力很小</li>
+<li>无固定形状</li>
+<li>在外力作用下内部发生相对运动</li>
+</ol>
+<h2 id="流体静力学">流体静力学</h2>
+<h3 id="1-流体的物理特性">1 流体的物理特性</h3>
+<h4 id="密度">密度：</h4>
+<ol>
+<li>气体：一般理想气体状态方程，标准状态下（273K, 101.3Kpa），空气密度：
+$$ \rho = \frac{M(相对质量)}{22.4}kg/m^3 $$</li>
+<li>混合物密度：假设混合后体积不变。质量分数除以密度等于单位质量的体积：
+$$ \frac{1}{\rho_m}=\frac{\omega_1}{\rho_1}+\frac{\omega_2}{\rho_2}+...+\frac{\omega_n}{\rho_n} $$
+对于气体：混合后体积不变，体积分数等于摩尔分数：
+$$ \rho_m=\rho_1V_1+\rho_2V_2+...+\rho_nV_n $$</li>
+</ol>
+<h3 id="2-流体静力学方程">2 流体静力学方程</h3>
+<h4 id="流体静力学基本方程式">流体静力学基本方程式</h4>
+
+
+
+
+
+  <div class="inline-svg svg-left">
+    <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="142px" height="207px" viewBox="-0.5 -0.5 142 207" content="&lt;mxfile&gt;&lt;diagram name=&quot;第 1 页&quot; id=&quot;maomxcA_Lfk5agmuEApS&quot;&gt;7Vlbb5swGP01SNtDqoATII9N2rQP2zq1m7o9uuCAV4OZcRrSXz8b7HBLmotyq7pUqvCx/RnOOZ+xjQFGUXbDYBJ+pT4ihtX1MwNcGZblDLrivwTmBWADUAABw34BmSXwgF+RAlW/YIp9lNYackoJx0kd9GgcI4/XMMgYndWbTSipj5rAALWABw+SNvqIfR4WqGs5JX6LcBDqkU17UNREUDdWT5KG0KezCgSuDTBilPLiKspGiEjuNC9Fv/GK2sWNMRTzTTrc/nyMpj4J78j9H5LdoS+d+WNHh3mBZKqeWN0tn2sKZiHm6CGBnizPhMoGGIY8IqJkikuYJgXxE5whMdaQwCdEhtB7Dhidxv6IEsrySACAsfgtmlDmI6arYxqL+MMJJqTSw4fInXgCTzmjz0jXEMl4x4fs+ZNo1M1/hjUyJAWg7zkDCD6LTm2K9OMixlFWgRRlN4hGiLO5aKJqtZzKvpat1JyVZjB7CgurRtAgVAYMFqFLjcSFkmkLyez1iqHYv5TeL2mt6JWLIoW66oqSYIbNf1ULv6uFq6xWmqvSSmI5ZAHiGxgO+bW8a/NfIbi/hF+NMUQgxy/1bF3GuRrhO8XillfKazVUS+mUeUh1qiZXI47ZawRyGoEKYlqBcgcsnnp3U7jrTVHXfU1S7yFz3G6NEWC2MwcsEdY+VN4Mtsobj8A0xd5mqXPRP07yuGeVO4N+3fJg19wx604xB8fNHT38GTvjTBRfvNS05ObO02UjUDPrDy35BsueLV6iZ6+buWIu3lo3Z02gQ+tm7ZiqqbgxvkUGn72i9r4UtU+cieBIijY2FhPXQ157YyFqxmOxTwHvwQONSbTX3dNsfPSs7v33wK4ecPflAffE80C/5YHEsGzCpTzTJ3EZyEtLY2KQCtyyi9ij8MYxBcFBLG0ilERC5qHcyWAPkktVEWHfl92Xbo0aPqIxH8MIE0nWDxyhVIz+Dc3E/3sawVg1UadZ1psvlN2PIhx1BrVmQ9Xc0u5tQ2U6b0iWCBaqith/p/KgK+elk+bEXIoGpn1h27aTZDlFulEpa8sA5ioDlGg+9AfyRWsxrV1wMmO0TyPCj6nEyVO0fejxuk1Snbtmsrz8THhiAmChxZkw8uXfns6Em+9KYJ044XTgpTIfaiZe+Sp+pzPxibzUXHsv+cBwXC9ttxg/8veFM1l2W909fTdoBdrbslsUy2+LRfPyAy24/gc=&lt;/diagram&gt;&lt;/mxfile&gt;"><defs/><g><g><rect x="0" y="57" width="140" height="140" fill="#dae8fc" stroke="#000000" pointer-events="all" style="fill: light-dark(rgb(218, 232, 252), rgb(29, 41, 59)); stroke: light-dark(rgb(0, 0, 0), rgb(92, 121, 163));"/></g><g><path d="M 0 17 L 0 57" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="11" y="107" width="30" height="60" fill="#ffffff" stroke="#000000" pointer-events="all" style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 26 27 L 26 100.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 26 105.88 L 22.5 98.88 L 26 100.63 L 29.5 98.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 71 7 L 71 50.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 71 55.88 L 67.5 48.88 L 71 50.63 L 74.5 48.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 41 107 L 101 107" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 91 100.63 L 91 63.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 91 105.88 L 87.5 98.88 L 91 100.63 L 94.5 98.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 91 58.12 L 94.5 65.12 L 91 63.37 L 87.5 65.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 71 190.63 L 71 113.37" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 71 195.88 L 67.5 188.88 L 71 190.63 L 74.5 188.88 Z" fill="#ff3333" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 71 108.12 L 74.5 115.12 L 71 113.37 L 67.5 115.12 Z" fill="#ff3333" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 111 190.63 L 111 63.37" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 111 195.88 L 107.5 188.88 L 111 190.63 L 114.5 188.88 Z" fill="#ff3333" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 111 58.12 L 114.5 65.12 L 111 63.37 L 107.5 65.12 Z" fill="#ff3333" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><rect x="0" y="74" width="30" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 28px; height: 1px; padding-top: 84px; margin-left: 1px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">p<sub>2</sub></div></div></div></foreignObject><text x="15" y="90" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">p2</text></switch></g></g><g><rect x="71" y="27" width="30" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 28px; height: 1px; padding-top: 37px; margin-left: 72px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">p<span style="font-size: 16.6667px;"><sub>1</sub></span></div></div></div></foreignObject><text x="86" y="43" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">p1</text></switch></g></g><g><rect x="71" y="74" width="30" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 28px; height: 1px; padding-top: 84px; margin-left: 72px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">h</div></div></div></foreignObject><text x="86" y="90" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">h</text></switch></g></g><g><rect x="111" y="117" width="30" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 28px; height: 1px; padding-top: 127px; margin-left: 112px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #f1332e; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#f1332e, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">z<sub>1</sub></div></div></div></foreignObject><text x="126" y="133" fill="light-dark(#f1332e, #ededed)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">z1</text></switch></g></g><g><rect x="71" y="157" width="30" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 28px; height: 1px; padding-top: 167px; margin-left: 72px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #f1332e; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#f1332e, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">z<span style="font-size: 16.6667px;"><sub>2</sub></span></div></div></div></foreignObject><text x="86" y="173" fill="light-dark(#f1332e, #ededed)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">z2</text></switch></g></g><g><path d="M 140 17 L 140 57" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg>
+  </div>
+
+<p>$$ p_2=p_1+\rho{gh} $$</p>
+<p>若确定基准面（高度0点，这里取水槽底部）：
+$$ p_2=p_1+\rho g(z_1-z_2) $$
+$$ z_1+\frac{p_1}{\rho{g}}=z_2+\frac{p_2}{\rho{g}} $$</p>
+<p>即：</p>
+
+<div class="highlight" >
+    $$ z_n(位压头)+\frac{p_n}{\rho{g}}(静压头)=R(常数) $$
+</div>
+<h2 id="流体动力学">流体动力学</h2>
+<h3 id="4-伯努利方程">4 伯努利方程</h3>
+<ol>
+<li>理想流体：不可压缩，无粘性，连续性</li>
+<li>稳态流动</li>
+</ol>
+
+<div class="highlight" >
+    $$ z(位压头)+\frac{p}{\rho{g}}(静压头)+\frac{u^2}{2g}(动压头)=R(常数) $$
+</div>
+<p>在实际情况下，有压头损失$\Sigma{H_f}$，有有效压头（能量输入）$H_e$</p>
+<h2 id="流体流动现象">流体流动现象</h2>
+<h3 id="1-牛顿黏性定律">1 牛顿黏性定律</h3>
+<p>$$ F=\mu\frac{du}{dy}S $$
+$$ \tau=\frac{F}{S}=\mu\frac{du}{dy} $$</p>
+<h3 id="2-牛顿流体与非牛顿流体">2 牛顿流体与非牛顿流体</h3>
+<div class=mermaid>
+flowchart LR
+A(非牛顿流体) --> B[黏性流体]
+A --> C[粘弹性流体]
+B --> D[与时间无关]
+B --> E[与时间有关]
+D --> F[无屈服应力]
+D --> G[有屈服应力]
+F --> a[假塑性流体]
+F --> b[涨塑性流体]
+G --> c[宾汉塑性流体]
+E --> d[触变性流体]
+E --> e[流凝性流体]
+</div>
+<h3 id="3-流动类型与雷诺准数">3 流动类型与雷诺准数</h3>
+
+<div class="highlight" >
+    $$ Re=\frac{\rho u d}{\mu} $$
+无量纲，可以解释为惯性力与粘滞力的比值
+</div>
+<ol>
+<li>层流/滞流：$Re \le 2000$，丝带般流动，直线状</li>
+<li>湍流/紊流：$Re \ge 4000$，径向脉动</li>
+</ol>
+<h3 id="4-流体在圆管内的速度分布">4 流体在圆管内的速度分布</h3>
+<h4 id="层流">层流</h4>
+
+
+
+
+
+  <div class="inline-svg ">
+    <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="454px" height="163px" viewBox="-0.5 -0.5 454 163" content="&lt;mxfile&gt;&lt;diagram name=&quot;第 1 页&quot; id=&quot;maomxcA_Lfk5agmuEApS&quot;&gt;7Z1fc5s4EMA/DY/HgMD8eawdu7279qaTdKbpIzWqzQUjD8ax009/wkYGJMcGRVJxT3lI0CKtLe1Py2oFxHAmq/37PFovP6EYpgaw4r3h3BkA+KGFf5eCl6PAc5yjYJEn8VFk14KH5CeshFW7xTaJ4aZVsUAoLZJ1WzhHWQbnRUsW5Tnatav9QGn7U9fRAjKCh3mUstKvSVwsj9IA+LX8A0wWS/LJthcez6wiUrnqyWYZxWjXEDlTw5nkCBXHo9V+AtNy7Mi4HNvNXjl7+mI5zIouDe7/XiV3P/34w3b76eOf39K/nKfJH35QfbnihfQYxngAqmKGMvxnPN/mz7BUY+NCjrZZfChZuITyYokWKIvSjwitqyr/wqJ4qWwZbQuERctilVZnf6CsqE7aeBTGmyLKiSDAZZjFjRLbzarnG7TN5/BC3whCZYcaLavReQ/RChb5C66QwzQqkue2xaMKnMWp3qnpZ5Tg7wKsinFnVH1QhbhDLE5U4P4tYFG1qi2EDxpfoxYd7NbDhqSfz1G6rfrAGLVttN0yKeDDOjoM3w7PW8pASZpOUIryQ1snDGf455IpnmFewP3FMa7OUkMFiHvY1XPrVGfZmFee9bpVWuPZe/Ds2xk8GrRzo2fbSkcPXB89PJ3flY64didxtFme3Elj6Nrj3M9NtFwU3CfFY6WmPP7WOL7bNwsvpJDh4XgkzcvCoY0JRqRctzuUSMO3u6ejdxDhxxoYnJtDRPZGdwd8yt35FF3HnjPujvWb4Bf7Tedm4LW54PU1vDRzHoWcxcuuTSmyR2rZDW6GXcsccdErEV6ykLgKrz0oeB2KOfqy3hVeEFCKXMXwhjzwyuB1U+ToCTbCtdnMwT+X6BoICyFlwhEnC+ErIaUiFIDHWl72+pM4KbuHkxK0ZpW9FLXp2IwOqbpicVWRbC587SLeDAMd7LguJwwe7SR8pTC4HdboZ7wGh2sQFwgxbB4az5Ky5wflkrmygSCIwJULBD9EXieI8DBGL41q67LC5sIXfiVJUjN51CiW0C55kKERWoXdlhlYTjv0DsLgSvB9KH2GeYJHDuYn4W8KPXd0haE3MZD1j0N5ZMcMAiXTgHRB7jTgyqhIXYiawA+biRTTsrzLy1FcoMHmwFbc7oSiYOFaMq4z8tcuGLKDBXcoDN5u5AhcOnLkzTTQiuh8m2wYRjd4Xf5NLqLAEhQ58kLU95JJ59fURI6eJnQohHKHeVf9pSRC1QR1g0nF/PKgbiiXZ2HcXnPRsi/P/Xax5mm02STzL8skE0PYqHvIhhtVDs6+AULoxR/vNie9y6A6fOu3UaT54OXDFsQHrUcyH6Qbmg/ZfIRmIIgQRpNsRrpsHmhG3s4IEMYIq0k2I0AzooQRRxgjrCbZjPTLbWtGujLCZJ55gxFmv1t1NNIv86wJ4SeE242wjCj3I11S0poSETtY4ihRH5F0SQtrSgRQwh+SMJSoj0n6pWY1JdyU8CbQGEYUZ9BGOsMqhxAmB29x3lzJ7m66agnROVZFhNiiCKEVSSaEuDBNiGxCgGMGjiBIzuiSzYnOtCrixBHlSWhFsgkBmhAlhICQlxDmHijFhOjsiCIf4npiCGEUySakX2ZE39977kFi+gFg3huIaEVdbyDqe+ObyyTkFNz45g3mxjdNGjdpwmDQiRRFhNih6dt8kLhnNopoXbI50ekURZy4Fj8nTDCkFhLycL2GRDIkIAzFEMIokk2IzqUociO8uRSXfgOU45pAMSQ6naIIEotzscxAQiuSTEgwmAeyh25y+k7FgHOd8spj98oMPpinn4ducGaO81r86hJXtsm5UqbEmKz4/wgDPWu5X2lKs0Arks0Cmxx9NICXFqW5tt/x4aI8tIgMf0hDXNrZtEYxOZuQE/ew0eAkZSgr4L5oAxSlySIr6cJ2Lx+8HJcvO07mUfquOrFK4rhsfvatyix+s2iVpOXYfklWcIM//R+4w7/v0SrKKEK9S9h1f+eyTd94ToKuBpjeGTDp12cIe+Vy0C8riXA9aVnJ9lPfNxbj0Ttd3A/RMsGi2i2zoF9mUiIQNwYAufPprQA4XluR6nclEg/VBGA6Msa2EeADzxiPjMA2poExnhrj0Jj6Roglk7qOWj8uwCnTb18+7Uk2yPFVOuWwX7rme4rmT+LW4Tc+EYPLs6fzWvuKHtmzkE3GbBXPrH4REhA0Galht9ip6IiZirhY/7eco9nqfznkTP8D&lt;/diagram&gt;&lt;/mxfile&gt;"><defs/><g><g><path d="M 292 90 Q 292 90 334.13 90" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 340.88 90 L 331.88 94.5 L 334.13 90 L 331.88 85.5 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="42" y="60" width="250" height="60" fill="#99ffff" stroke="#000000" pointer-events="all" style="fill: light-dark(rgb(153, 255, 255), rgb(0, 55, 55)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="342" y="60" width="110" height="60" fill="#99ffff" stroke="#000000" pointer-events="all" style="fill: light-dark(rgb(153, 255, 255), rgb(0, 55, 55)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 42 60 Q 42 60 292 75" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 42 120 Q 42 120 292 105" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 342 90 Q 342 90 452 90" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 82 120 Q 82 120 82 60" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g/><g><path d="M 152 114 Q 152 114 152 67" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 112 60 Q 142 60 152 66" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 112 120 Q 142 120 152.15 113.88" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 111.75 120.36 Q 111.75 120.36 112 60" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 232 110 Q 232 110 232 70" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 192 60 Q 222 60 232 70" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 192 120 Q 222 120 232 110" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 192 120 Q 192 120 192 60" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 42 70 Q 42 70 76.38 70" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 80.88 70 L 74.88 72 L 76.38 70 L 74.88 68 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 42 80 Q 42 80 76.38 80" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 80.88 80 L 74.88 82 L 76.38 80 L 74.88 78 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 42 89.8 Q 42 89.8 76.38 89.8" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 80.88 89.8 L 74.88 91.8 L 76.38 89.8 L 74.88 87.8 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 42 99.8 Q 42 99.8 76.38 99.8" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 80.88 99.8 L 74.88 101.8 L 76.38 99.8 L 74.88 97.8 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 42 109.8 Q 42 109.8 76.38 109.8" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 80.88 109.8 L 74.88 111.8 L 76.38 109.8 L 74.88 107.8 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 112 80 Q 112 80 146.38 80" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 150.88 80 L 144.88 82 L 146.38 80 L 144.88 78 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 112 89.8 Q 112 89.8 146.38 89.8" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 150.88 89.8 L 144.88 91.8 L 146.38 89.8 L 144.88 87.8 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 112 99.8 Q 112 99.8 146.38 99.8" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 150.88 99.8 L 144.88 101.8 L 146.38 99.8 L 144.88 97.8 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 112 109.8 Q 112 109.8 146.38 109.8" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 150.88 109.8 L 144.88 111.8 L 146.38 109.8 L 144.88 107.8 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 112 70 Q 112 70 146.38 70" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 150.88 70 L 144.88 72 L 146.38 70 L 144.88 68 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 192 74 Q 192 74 226.38 74" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 230.88 74 L 224.88 76 L 226.38 74 L 224.88 72 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 192 84 Q 192 84 226.38 84" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 230.88 84 L 224.88 86 L 226.38 84 L 224.88 82 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 192 93.83 Q 192 93.83 226.38 93.83" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 230.88 93.83 L 224.88 95.83 L 226.38 93.83 L 224.88 91.83 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 192 104 Q 192 104 226.38 104" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 230.88 104 L 224.88 106 L 226.38 104 L 224.88 102 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 192 64 Q 192 64 216.38 64" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 220.88 64 L 214.88 66 L 216.38 64 L 214.88 62 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 192 116 Q 192 116 216.38 116" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 220.88 116 L 214.88 118 L 216.38 116 L 214.88 114 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 372 120 Q 452 90 372 60" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 372 120 Q 372 120 372 60" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 372 89.71 Q 372 89.71 406.38 89.71" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 410.88 89.71 L 404.88 91.71 L 406.38 89.71 L 404.88 87.71 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 372 110.71 Q 372 110.71 386.38 110.92" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 390.88 110.98 L 384.85 112.9 L 386.38 110.92 L 384.91 108.9 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 372 69 Q 372 69 386.38 69" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 390.88 69 L 384.88 71 L 386.38 69 L 384.88 67 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 372 104 Q 372 104 396.38 104.24" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 400.88 104.28 L 394.86 106.22 L 396.38 104.24 L 394.9 102.22 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 372 76 Q 372 76 396.38 76" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 400.88 76 L 394.88 78 L 396.38 76 L 394.88 74 Z" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 42 150 Q 42 150 42 120" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 372 150 Q 372 150 372 120" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 49.87 140 Q 49.87 140 364.13 140" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 43.12 140 L 52.12 135.5 L 49.87 140 L 52.12 144.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 370.88 140 L 361.88 144.5 L 364.13 140 L 361.88 135.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="182" y="142" width="60" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 152px; margin-left: 183px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 16px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">X<sub>0</sub>=0.05d<i>Re</i></div></div></div></foreignObject><text x="212" y="157" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="16px" text-anchor="middle">X0=0.05...</text></switch></g></g><g><path d="M 322 20 Q 322 20 274.72 71.06" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><ellipse cx="272" cy="74" rx="4" ry="4" fill="#000000" stroke="#000000" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 351 20 Q 351 20 360.43 86.04" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><ellipse cx="361" cy="90" rx="4" ry="4" fill="#000000" stroke="#000000" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="302" y="0" width="70" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 10px; margin-left: 303px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">层流边界层</div></div></div></foreignObject><text x="337" y="14" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">层流边界层</text></switch></g></g><g><path d="M 0 90 Q 0 90 29.88 90" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 38.88 90 L 29.88 93 L 29.88 87 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="0" y="70" width="30" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 28px; height: 1px; padding-top: 80px; margin-left: 1px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">u</div></div></div></foreignObject><text x="15" y="86" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">u</text></switch></g></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg>
+  </div>
+
+<ol>
+<li>层流起始段$X_0$</li>
+<li>速度分布方程：
+$$ u_r = \frac{\Delta{p}}{4\mu l}(R^2-r^2) $$
+其中：$r$为距管中心的距离</li>
+<li>平均流速：
+$$ u=\frac{R^2\Delta{p}}{8\mu l}=\frac{1}{2}u_{max} $$</li>
+<li>计算层流摩擦损失：
+$$ \Delta{p} = \frac{32\mu lu}{d^2} $$</li>
+</ol>
+<h4 id="湍流">湍流</h4>
+<ol>
+<li>$u = 0.82u_{max}$</li>
+<li>层流内层+湍流中心：层流内层速度梯度很大；$u$越大，层流内层越薄；湍流速度梯度几乎为零。</li>
+<li>涡流粘性$e$:
+$$ \tau=\tau_1+\tau_e=(\mu+e)\frac{du}{dy} $$</li>
+</ol>
+<h2 id="流体流动的阻力">流体流动的阻力</h2>
+<h3 id="1-直管阻力">1 直管阻力</h3>
+<p>$$ \Delta{p}\frac{\pi}{4}d^2=\tau A=\tau \pi d l $$
+$$ \Delta{p}=\rho h_f $$
+$$ \therefore h_f=\frac{4l}{\rho d}\tau $$
+令$\lambda=8\tau/\rho u^2 $:
+
+<div class="highlight" >
+    范宁公式：
+$$ h_f=\lambda\frac{l}{d}\frac{u^2}{2} $$
+其中：$\lambda$称为摩擦系数，无量纲
+</div></p>
+<h4 id="层流-1">层流</h4>
+<p>带入层流摩擦损失：
+$$ \lambda=\frac{64}{Re} $$</p>
+<p>则其$h_f\propto{u}$.</p>
+<h4 id="湍流-1">湍流</h4>
+<ol>
+<li>绝对粗糙度$\varepsilon$：管内壁粗糙部分的平均高度。</li>
+<li>相对粗糙度$\varepsilon/d$.</li>
+</ol>
+<p>设层流内层厚度为$\delta_b$，当$\delta_b \gt \varepsilon$，此时管壁粗糙度对摩擦系数的影响不大，$Re$值越大，$\delta_b$越小，当$\delta_b \lt \varepsilon$，湍流中心与壁面突起碰撞，使湍动加剧，此时壁面粗糙度对摩擦系数有重要影响。</p>
+<h4 id="摩擦系数图">摩擦系数图</h4>
+
+<div class="highlight" >
+    <ol>
+<li>层流区：$ \lambda \propto 1/Re$，与相对粗糙度无关。($h_f\propto{u}$称为阻力一次方区)</li>
+<li>过渡区</li>
+<li>湍流区：$\lambda$与$Re$和$\varepsilon/d$都有关。随$Re$增大而减小，减小逐渐缓慢。</li>
+<li>完全湍流区：$\lambda$只与$\varepsilon/d$有关。($h_f\propto{u^2}$称为阻力平方区)</li>
+</ol>
+
+</div>
+<h4 id="当量直径">当量直径</h4>
+
+<div class="highlight" >
+    $$ d_e = \frac{4A}{\Pi} $$
+其中：$A$为管道截面积，$\Pi$为润湿周边长度。
+</div>
+<h3 id="2-局部阻力">2 局部阻力</h3>
+<p>突扩、突缩、弯头、三通等</p>
+<h4 id="阻力系数法">阻力系数法</h4>
+<p>$$ h_f'=\zeta\frac{u^2}{2} $$
+其中：$\zeta$为局部阻力系数，由实验得出。</p>
+<h4 id="当量长度法">当量长度法</h4>
+<p>$$ h_f=\lambda\frac{l_e}{d}\frac{u^2}{2} $$
+其中：$l_e$为当量长度，由实验确定。</p>
+<h2 id="流量的测定">流量的测定</h2>
+
+<div class="highlight" >
+    测点流速（流速分布）使用皮托管。
+</div>
+
+    </div>
+    <hr>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+        
+          
+        
+      
+    
+    
+      <div class="backlinks">
+        <h2>无其他页面引用</h2>
+      </div>
+    
+  </article>
+
+  </main>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.mermaid').forEach(chart => {
+        if (!chart.dataset.original) {
+          chart.dataset.original = chart.textContent;
+        }
+      });
+    });
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', html.dataset.theme);
+      
+      if (window.mermaid) {
+        const theme = html.dataset.theme === 'dark' ? 'dark' : 'default';
+        mermaid.initialize({ theme });
+        
+        const charts = document.querySelectorAll('.mermaid');
+        charts.forEach(chart => {
+          
+          if (chart.dataset.original) {
+            chart.textContent = chart.dataset.original;
+            chart.removeAttribute('data-processed');
+          }
+            });
+
+        
+        mermaid.init(undefined, charts);
+      }
+    }
+
+    
+    document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+  </script>
+  
+  <script type="module" src="/js/main.js"></script>
+  <div id="window-bar" style="position:fixed;bottom:0;left:0;width:100%;z-index:9999;display:flex;gap:8px;"></div>
+  <div id="window-container" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;"></div>
+  <footer>
+    <p>© My New Hugo Site 2025</p>
+  </footer>
+</body>
+</html>

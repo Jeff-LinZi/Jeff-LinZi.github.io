@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My New Hugo Site | 流体输送器械</title>
+  
+  <link rel="stylesheet" href="https://example.org/css/main.min.css">
+  
+  
+
+  <script src="/vendor/mermaid/mermaid.min.js"></script>
+  <script>
+    function getMermaidTheme() {
+      
+      return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default';
+    }
+    mermaid.initialize({ 
+      startOnLoad: true,
+      securityLevel: 'loose',
+      theme: getMermaidTheme()
+    });
+  </script>
+
+  
+  
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<script defer src="/vendor/katex/katex.min.js"></script>
+<script defer src="/vendor/katex/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ],
+      throwOnError: false,
+      output: "html"
+    });
+  });
+</script>
+  
+</head>
+<body>
+  <nav data-no-window>
+    <a href="/">首页</a> | 
+    <button onclick="toggleTheme()">🌓</button>
+  </nav>
+  
+  <main>
+    
+    
+  
+  
+  <article>
+    <h1>流体输送器械</h1>
+    
+    
+    <div class="tags">
+      标签: <a class="tag" href="/tags/%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0">学习笔记</a> <a class="tag" href="/tags/%e5%8c%96%e5%b7%a5%e5%8e%9f%e7%90%86">化工原理</a> 
+    </div>
+    
+    <hr>
+    <div class="content">
+      <div class="mermaid">
+  
+mindmap
+    root(离心泵)
+        主要部件和工作原理
+            气缚现象
+        离心泵基本方程式
+        离心泵主要性能参数
+        离心泵的特性曲线
+        气蚀现象与离心泵安装高度
+        离心泵工作点
+
+</div>
+<h2 id="离心泵">离心泵</h2>
+<h3 id="2-离心泵基本方程式">2 离心泵基本方程式</h3>
+<p>根据伯努利方程，叶片入口截面$1-1'$至叶片出口截面$2-2'$：</p>
+<p>$$ H_{T\infty} = H_p + H_e = \frac{p_2-p_1}{\rho g} + \frac{c_2^2-c_1^2}{2g} $$</p>
+<p>其中：$H_{T\infty}$为无穷叶片离心泵的理论压头；$H_p$为静压头增量；$H_e$为动压头增量。</p>
+<p>经过推导可得理论压头与理论流量的关系：</p>
+<p>$$ H_{T\infty} = \frac{u_2^2}{g} - \frac{u_2\cot{\beta_2}}{g\pi D_2b_2}Q_T $$</p>
+<p>其中：$u_2$为出口叶轮角速度；$\beta_2$为出口液体速度与叶轮角速度的夹角；$D_2$为叶轮外径；$b_2$为叶轮出口宽度。</p>
+<h3 id="3-离心泵主要性能参数">3 离心泵主要性能参数</h3>
+<ol>
+<li>流量$Q$</li>
+<li>扬程（压头）$H$</li>
+<li>效率$\eta$：容积损失，水力损失，机械损失</li>
+<li>有效功率$N_e=QH\rho g$</li>
+<li>轴功率$N=N_e/\eta$</li>
+</ol>
+<h3 id="4-离心泵特性曲线">4 离心泵特性曲线</h3>
+
+
+
+
+
+  <div class="inline-svg svg-left">
+    <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="362px" height="278px" viewBox="-0.5 -0.5 362 278" content="&lt;mxfile&gt;&lt;diagram id=&quot;6xINkVcfZ2Ts9G9U0ybO&quot; name=&quot;Page-1&quot;&gt;7Vpbk5s2FP41mmkeNoMQ2PDo22Zn2mTSbmaaPnW0INtMALlCXtv99ZVAskHgy7LgOtnsw1o6uh2d73xHHAFAk2T7geHV8iMNSQxsK9wCNAW2bXtI/JeCXSFwLKcQLFgUFiJ4EDxG/xIltJR0HYUkq3TklMY8WlWFAU1TEvCKDDNGN9VucxpXV13hBakJHgMc16V/RiFfFlLPtQ7yBxItlnplaKmWBOvOSpAtcUg3JRGaATRhlPKilGwnJJa203Ypxt0fad0rxkjKLxkg2+SIZxyv1eaAPYjF2HG2wqnUkO/Utgf/rKVa4zlN+d0cJ1Es4BuJLr/iL+Tr3x/zvY1ze4oOapxsjziOo6Bo42TL70R1kRZtMZnzUstG+MtdIvylaE2pFOTtenVRWqjfWGvTLGtQPaAxZcXUbPH0i+26wJ6Iigv177vGxXxhFRdMZmA81GsImzYtna2fetcmwdszWghxgyInOudYa7Fd0daWwAj5kiexEEBRVPhNA+FlROxg/EwYjwQ/RqohicJQDh9vlhEnjyscyLkUloyu05BIB7SUde6VM02/RIngtW19Ihvx/w+aCLWKLioIQEfVJ4XthH7o/h6JPyGP8ROJxzj4tsiX0F1SmpL9vsrUUGyRypNtSaSo8oHQhHC2E1104HK8YoiKW1AHsk0pCgwL0bIUADTbsYo7i/3MB2qKgmLnEaY2ENUAiqThSEY3iUyMsyznXAm2jDP6bR+x4CmbkLASAesWKe1Yh73yjrWMkRjz6LkaN5vMoFb4TKOcLMrgSFtOGRwNDEtmdM0CokaV49yZiaBjTMQxWxBemyhHZb/ti4BCrwfqzcAysM5M1B0szotgUTHjJHlahptbxRC1xNAdVCey/d4wdF+JYfXkCdbsOa+8CXjbUrQGr3mYHYFXoIB3pW4r2SE7oTAy1hlaJ/VyoBHRz/R3jfmhX+kvCoXGbX1z2J9v/lieaFtdeaLbjyc65rNCx54CnbpnCKgeVbXuGmQb8a/KMWT5L1l+76radFtqmu5U5ahXFNZWz6oXOsorPaAtcC1s69VY+FAz9i3lM/ZJrC7PTFzfMLF+vi1x3G7guHnot8lMIHqhP1/km/DSKNa1c154vrUhvoa1+8uW3JtkM/Tfo8Fqe82LGPNa5Lu5TLD1EH2ihmSO1/k2er9KqBHWuiJh3Vs5gKB9JZK7hrX7y1H0ll5CcuMiEDnF/d/h912Jz22DQWeE//Tdcr1/VnuGn3lXZPWg5ni/3z4kPYRSNLyi0VulfSHOlvvsrnbH1HS1fdRMN5LkOZZdxaDtdYM5EewxUteThTeJXe1u3IftsHOd4emJOsTO/4ldPo1Ovl59zWdM1CPvtLu9dexqvBt6HfHOnKhD7PpLYX+k7wV+firw/z9eQhcc/1RAKvqov725SmpgG6kBHNSfUp2enlIveSedLfFKFoM1i3djJixB+BFUGt9ayNo8jlYPoPTS4jPNIh5RiTMrtrTH/zejfe8H2mMU04/6C6Mcq7F+R5mEY3zfgXROdSaTgPBE8L8YpIY31DMfjMbA98BsAHwXeKIwBN4MeEMwE9UJGI9un4MdAIN8I71oyKshsjthj6gevr8rjsjDR4xo9h8=&lt;/diagram&gt;&lt;/mxfile&gt;"><defs/><g><g><rect x="0" y="50" width="87" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 85px; height: 1px; padding-top: 60px; margin-left: 1px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #FF3333; "><div style="display: inline-block; font-size: 14px; font-family: &quot;Times New Roman&quot;; color: light-dark(#FF3333, #ff7777); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="font-family: KaTeX_Math; font-style: italic; text-align: left; text-wrap-mode: nowrap;"><font><font style="color: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));">92%η</font><sub><font style="color: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));">max</font></sub></font></span></div></div></div></foreignObject><text x="44" y="64" fill="#FF3333" font-family="&quot;Times New Roman&quot;" font-size="14px" text-anchor="middle">92%ηmax</text></switch></g></g><g><path d="M 72 227 L 72 13.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 72 8.12 L 75.5 15.12 L 72 13.37 L 68.5 15.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 72 227 L 345.63 227" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 350.88 227 L 343.88 230.5 L 345.63 227 L 343.88 223.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 72 197 L 312 157" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 72 227 Q 82 137 122 87 Q 162 37 222 47 Q 282 57 312 87" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 72 67 Q 172 57 312 117" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 342 122 L 318.28 118.05" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 313.1 117.18 L 320.58 114.88 L 318.28 118.05 L 319.43 121.79 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="342" y="107" width="20" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 122px; margin-left: 343px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">H</div></div></div></foreignObject><text x="352" y="128" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">H</text></switch></g></g><g><path d="M 342 83.25 L 318.32 86.21" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 313.11 86.86 L 319.62 82.52 L 318.32 86.21 L 320.49 89.47 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="342" y="67" width="20" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 82px; margin-left: 343px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="font-family: KaTeX_Math; font-size: 19.36px; font-style: italic; text-align: left; text-wrap-mode: nowrap;">η</span></div></div></div></foreignObject><text x="352" y="88" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">η</text></switch></g></g><g><path d="M 332 162 L 308.28 158.05" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 303.1 157.18 L 310.58 154.88 L 308.28 158.05 L 309.43 161.79 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="332" y="147" width="20" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 162px; margin-left: 333px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="color: light-dark(rgb(34, 34, 34), rgb(208, 208, 208)); font-family: KaTeX_Math; font-size: 19.36px; text-align: left; text-wrap-mode: nowrap;">N</span></div></div></div></foreignObject><text x="342" y="168" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">N</text></switch></g></g><g><rect x="342" y="237" width="20" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 252px; margin-left: 343px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">Q</div></div></div></foreignObject><text x="352" y="258" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">Q</text></switch></g></g><g><path d="M 154 227 L 154 57" fill="none" stroke="#ff3333" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 72 58 L 299 58" fill="none" stroke="#ff3333" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 265 227 L 265 57" fill="none" stroke="#ff3333" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 72 45 L 299 45" fill="none" stroke="#ff3333" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><rect x="32" y="27" width="40" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 42px; margin-left: 33px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #FF3333; "><div style="display: inline-block; font-size: 15px; font-family: &quot;Times New Roman&quot;; color: light-dark(#FF3333, #ff7777); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><span style="font-family: KaTeX_Math; font-style: italic; text-align: left; text-wrap-mode: nowrap;"><font><font style="color: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));">η</font><sub><font style="color: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));">max</font></sub></font></span></div></div></div></foreignObject><text x="52" y="47" fill="#FF3333" font-family="&quot;Times New Roman&quot;" font-size="15px" text-anchor="middle">ηmax</text></switch></g></g><g><path d="M 220 183 L 215 183 Q 210 183 210 193 L 210 228.5 Q 210 238.5 205 238.5 L 202.5 238.5 Q 200 238.5 205 238.5 L 207.5 238.5 Q 210 238.5 210 248.5 L 210 284 Q 210 294 215 294 L 220 294" fill="none" stroke="#000000" stroke-miterlimit="10" transform="translate(210,0)scale(-1,1)translate(-210,0)rotate(-90,210,238.5)" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="144" y="247" width="132" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 130px; height: 1px; padding-top: 262px; margin-left: 145px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 15px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">高效率区</div></div></div></foreignObject><text x="210" y="267" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="15px" text-anchor="middle">高效率区</text></switch></g></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg>
+  </div>
+
+<p>影响因素：泵的转速</p>
+<h3 id="5-气蚀现象">5 气蚀现象</h3>
+<h4 id="气蚀">气蚀</h4>
+<p>泵入口处压力小于液体饱和蒸气压，会使液体汽化，在叶轮高压区产生局部真空，周围液体迅速压向叶轮，破坏叶轮。</p>
+<h4 id="允许安装高度">允许安装高度</h4>
+<p>允许吸上真空度：
+$$ H_s' = \frac{p_0-p_{1min}}{\rho g} $$
+其中：$p_0$为大气压；$p_{1min}$为入口最低压力</p>
+
+<div class="highlight" >
+    允许安装高度：
+$$ H_g = H_s'-\frac{u_1^2}{2g}-\Sigma{H_f} $$
+</div>
+<h3 id="6-离心泵工作点">6 离心泵工作点</h3>
+
+
+
+
+
+  <div class="inline-svg svg-left">
+    <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="374px" height="271px" viewBox="-0.5 -0.5 374 271" content="&lt;mxfile&gt;&lt;diagram id=&quot;6xINkVcfZ2Ts9G9U0ybO&quot; name=&quot;Page-1&quot;&gt;7Vvfk6I4EP5rqNp7uC0gBOFRZnT35a72brbq9h6zEjU1SKwQR72//hJJBAIqKjI/1nmwkoY0SfeX/jo0Y4GHxeYLQ8v5HzTGieXa8cYCj5brDkJb/ErBNhd4tpcLZozEucgpBE/kP6yEatxsRWKcVW7klCacLKvCCU1TPOEVGWKMrqu3TWlSfeoSzXBN8DRBSV36D4n5PJcG0C7kXzGZzfWTHVtdWSB9sxJkcxTTdUkERhZ4YJTyvLXYPOBE2k7bJR83PnB1PzGGU95mgLwmR7ygZKUWpybGt3q1HG+ErmjOF4kQOKKJEjJLRXsinoKZELxgxomwz1BdWJA4lsOj9Zxw/LREE6lrLcAgZIyu0hjLCdiiN6UpH6MFSSQWvpOF8Ktr/4nX4vdvukCpukWBwPFU/4EmlO3mB8ZjIP6EvL54ZQ85PbwpiZQxvmC6wJxtxS3qqusP8iEKmU4A8v668LN287zkYu1PpJA122sujC8ayv4HfHHaFTiNhxK/0vYJyjIyqTom44w+7zHpHLMJjisYr1vkxIq1jOEEcfJS3RlNZlBP+EaJmMne4EBbThkc+IYlM7piE6xGlZF8QpHjGYo4YjPMa4p2Xtkvu5WjwPWO+mXc4tsnFHXnlsFZbklpiqs+qcalyYq97Dr5vkKMj4l89O6i0FPqvX1ngooP3MGFzvS8qiJghr0DzhQ2R9vSbUt5Q3Z4wp5jTNivsJho5BovRUpQQ8rXN8167lGUncFuoREjgV1jN7cBh6ADdnP8mtH/+iWMDg2jg0F/Rt/P9r2kd/BIeicn+qTzZak7QT9xEqHJ82z3TD1GRfYu9ktg7Be/7jrvVq6r75fu6KxsxWlC18OUiKMJoamSvXe+q7rtYr6D0Ni6t+I7A2caVF3xXQPhdYelDwUV59I81xv0BBXPmDDsFio6dJWRIVz1pLp1aBz0cG45nXi09Pq17hyc2PndnTb0ksp7auRbEbAi+AocWybQDpgPOIYhgzrz+Q3bsov3ICA8E4J4Q/gPaYvPUPX+LV153OjIJDvbU4GpDFvQNlhdCVvPCaubOvRuBVvQkBGOPCsKrEg0AitwLP3wd41fvQgjTPbxHg/4bwa/bj/4hcAgP/tmYVcvqYJfaEWhFfkfCL/QjL8N+G06eXSC32tfpB1PCY/mkvL19Vmv9t9oHllL/y49cjjhbfJIaJ6Rwo7zyGuPHHcQXQ4izzdA1LIWcvZhxG9Ot7sCkac57WwmLfFowarNTHoBXsocq017c441AoN7O47VS6pw7MAajqyhIzk2Eu3xK3PsBV5rz75m0WofhHtgX11iuSB7dNunj9eCvqfEshbIgtuBvimxDK1hZIWBbIjfKCq2wQdGv/kqq6lKNLgV+r3TaUM2R8udpdB2R1DSHs+YT+baWCJN0Nslo4lUHWW58XzR3I3BbPSCJbflvlJEJ9TDyIKPSolRUGBYaEE/d3rzHIQjXuovMSNiwdLXyunfCkmUpWj5neZIbUpUEmnI32PEnj8Jf06nti2DkDCY+AXIRa6HfhODZgzFBBcFkhhP0SrhlvntR1dYcGCVdQJYw0JT8aoTLLSogNyx0B8WQBBUseAH/WGhxZn0joUe44JtfKEB69/J3QwLLY6Wdyz0iAXoVLEwcPrDQkMV5o6FV8SC8f2s6/cXF2DDsfWOhVfEglEV2H8C1gcW7ueIN4UFs54BWn552AkWYB0LsmQkjvJwV/t8tMIHebIPXFlH+sAn+1qdrsELHVX1Rbf4L5b8dUzxr0Bg9D8=&lt;/diagram&gt;&lt;/mxfile&gt;"><defs/><g><g><rect x="0" y="53" width="50" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><path d="M 53 230 L 53 16.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 53 11.12 L 56.5 18.12 L 53 16.37 L 49.5 18.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 53 230 L 326.63 230" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 331.88 230 L 324.88 233.5 L 326.63 230 L 324.88 226.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 56 140 Q 146 130 176 190" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="23" y="0" width="20" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 15px; margin-left: 24px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">H</div></div></div></foreignObject><text x="33" y="21" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">H</text></switch></g></g><g><rect x="323" y="240" width="20" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 18px; height: 1px; padding-top: 255px; margin-left: 324px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 20px; font-family: &quot;Times New Roman&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">Q</div></div></div></foreignObject><text x="333" y="261" fill="light-dark(#000000, #ffffff)" font-family="&quot;Times New Roman&quot;" font-size="20px" text-anchor="middle">Q</text></switch></g></g><g><rect x="13" y="30" width="40" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><path d="M 53 140 Q 213 110 283 190" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 53 30 Q 173 20 203 190" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 88 150 L 97.7 143.53" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 102.07 140.62 L 98.19 147.42 L 97.7 143.53 L 94.3 141.59 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="43" y="150" width="60" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 160px; margin-left: 44px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 15px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">泵</div></div></div></foreignObject><text x="73" y="165" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="15px" text-anchor="middle">泵</text></switch></g></g><g><path d="M 152 40 L 152 57.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 152 62.88 L 148.5 55.88 L 152 57.63 L 155.5 55.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="127" y="20" width="50" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 48px; height: 1px; padding-top: 30px; margin-left: 128px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 15px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">串联</div></div></div></foreignObject><text x="152" y="35" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="15px" text-anchor="middle">串联</text></switch></g></g><g><path d="M 263 140 L 263 163.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 263 168.88 L 259.5 161.88 L 263 163.63 L 266.5 161.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="243" y="120" width="40" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 130px; margin-left: 244px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 15px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">并联</div></div></div></foreignObject><text x="263" y="135" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="15px" text-anchor="middle">并联</text></switch></g></g><g><path d="M 53 190 Q 253 160 283 60" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 53 190 Q 193 140 193 10" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 333 70 L 289.37 70" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 284.12 70 L 291.12 66.5 L 289.37 70 L 291.12 73.5 Z" fill="#ff3333" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><rect x="333" y="60" width="40" height="20" fill="none" stroke="#ff3333" pointer-events="all" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 70px; margin-left: 334px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 15px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">管路</div></div></div></foreignObject><text x="353" y="75" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="15px" text-anchor="middle">管路</text></switch></g></g><g><path d="M 220.5 20 L 197.3 45.31" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/><path d="M 193.76 49.18 L 195.91 41.65 L 197.3 45.31 L 201.07 46.38 Z" fill="#ff3333" stroke="#ff3333" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(255, 51, 51), rgb(255, 119, 119)); stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><rect x="203" y="0" width="70" height="20" fill="none" stroke="#ff3333" pointer-events="all" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 68px; height: 1px; padding-top: 10px; margin-left: 204px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 15px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">高阻管</div></div></div></foreignObject><text x="238" y="15" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="15px" text-anchor="middle">高阻管</text></switch></g></g><g><ellipse cx="158" cy="165" rx="5" ry="5" fill="#ff0000" stroke="none" pointer-events="all" style="fill: light-dark(rgb(255, 0, 0), rgb(162, 162, 74));"/><rect x="148" y="155" width="20" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><ellipse cx="131" cy="148" rx="5" ry="5" fill="#ff0000" stroke="none" pointer-events="all" style="fill: light-dark(rgb(255, 0, 0), rgb(162, 162, 74));"/><rect x="121" y="138" width="20" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><ellipse cx="146" cy="133" rx="5" ry="5" fill="#ff0000" stroke="none" pointer-events="all" style="fill: light-dark(rgb(255, 0, 0), rgb(162, 162, 74));"/><rect x="136" y="123" width="20" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><ellipse cx="194" cy="151" rx="5" ry="5" fill="#ff0000" stroke="none" pointer-events="all" style="fill: light-dark(rgb(255, 0, 0), rgb(162, 162, 74));"/><rect x="184" y="141" width="20" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><ellipse cx="210" cy="143" rx="5" ry="5" fill="#ff0000" stroke="none" pointer-events="all" style="fill: light-dark(rgb(255, 0, 0), rgb(162, 162, 74));"/><rect x="200" y="133" width="20" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><ellipse cx="173" cy="96" rx="5" ry="5" fill="#ff0000" stroke="none" pointer-events="all" style="fill: light-dark(rgb(255, 0, 0), rgb(162, 162, 74));"/><rect x="163" y="86" width="20" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><ellipse cx="253" cy="210" rx="5" ry="5" fill="#ff0000" stroke="none" pointer-events="all" style="fill: light-dark(rgb(255, 0, 0), rgb(162, 162, 74));"/><rect x="243" y="200" width="20" height="20" fill="none" stroke="none" pointer-events="all"/></g><g><rect x="263" y="200" width="60" height="20" fill="none" stroke="#ff3333" pointer-events="all" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 210px; margin-left: 264px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 15px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">工作点</div></div></div></foreignObject><text x="293" y="215" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="15px" text-anchor="middle">工作点</text></switch></g></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg>
+  </div>
+
+<p>管路特性曲线：</p>
+<p>$H_e=H_0+KQ_e^2$</p>
+<p>影响因素：改变调节阀开度（阻力改变）</p>
+
+    </div>
+    <hr>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+    
+      <div class="backlinks">
+        <h2>无其他页面引用</h2>
+      </div>
+    
+  </article>
+
+  </main>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.mermaid').forEach(chart => {
+        if (!chart.dataset.original) {
+          chart.dataset.original = chart.textContent;
+        }
+      });
+    });
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', html.dataset.theme);
+      
+      if (window.mermaid) {
+        const theme = html.dataset.theme === 'dark' ? 'dark' : 'default';
+        mermaid.initialize({ theme });
+        
+        const charts = document.querySelectorAll('.mermaid');
+        charts.forEach(chart => {
+          
+          if (chart.dataset.original) {
+            chart.textContent = chart.dataset.original;
+            chart.removeAttribute('data-processed');
+          }
+            });
+
+        
+        mermaid.init(undefined, charts);
+      }
+    }
+
+    
+    document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+  </script>
+  
+  <script type="module" src="/js/main.js"></script>
+  <div id="window-bar" style="position:fixed;bottom:0;left:0;width:100%;z-index:9999;display:flex;gap:8px;"></div>
+  <div id="window-container" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;"></div>
+  <footer>
+    <p>© My New Hugo Site 2025</p>
+  </footer>
+</body>
+</html>

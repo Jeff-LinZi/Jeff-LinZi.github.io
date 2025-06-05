@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>引用 on My New Hugo Site</title>
+    <link>https://example.org/tags/%E5%BC%95%E7%94%A8/</link>
+    <description>Recent content in 引用 on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 05 May 2025 22:22:41 +0800</lastBuildDate>
+    <atom:link href="https://example.org/tags/%E5%BC%95%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>b</title>
+      <link>https://example.org/posts/second_post/</link>
+      <pubDate>Mon, 05 May 2025 22:22:41 +0800</pubDate>
+      <guid>https://example.org/posts/second_post/</guid>
+      <description>&lt;p&gt;这是一个交叉引用&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;  &#xD;&#xA;  &lt;a href=&#34;https://example.org/posts/first_post/&#34; class=&#34;cross-ref&#34; &#xD;&#xA;     data-ref=&#34;example&#34; &#xD;&#xA;     title=&#34;示例&#34;&#xD;&#xA;     id=&#34;ref-example-%!s(int64=1)&#34;&gt;&#xD;&#xA;    示例&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;。&lt;/p&gt;&#xA;&lt;p&gt;或者&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;  &#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;  &#xD;&#xA;  &lt;a href=&#34;https://example.org/posts/first_post/&#34; class=&#34;cross-ref&#34; &#xD;&#xA;     data-ref=&#34;example&#34; &#xD;&#xA;     title=&#34;示例&#34;&#xD;&#xA;     id=&#34;ref-example-%!s(int64=2)&#34;&gt;&#xD;&#xA;    自定义内容&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;。&lt;/p&gt;&#xA;&lt;p&gt;一个失效引用&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;  &lt;span class=&#34;broken-ref&#34;&gt;[失效引用: error_ref]&lt;/span&gt;&#xD;&#xA;。&lt;/p&gt;&#xA;&lt;h2 id=&#34;行内公式&#34;&gt;行内公式&lt;/h2&gt;&#xA;&lt;p&gt;勾股定理：$a^2 + b^2 = c^2$&lt;/p&gt;&#xA;&lt;p&gt;欧拉公式：$e^{i\pi} + 1 = 0$&lt;/p&gt;&#xA;&lt;p&gt;薛定谔方程：$i\hbar \frac{\partial}{\partial t} \Psi = \hat{H} \Psi$&lt;/p&gt;&#xA;&lt;h2 id=&#34;块级公式&#34;&gt;块级公式&lt;/h2&gt;&#xA;&lt;p&gt;二次方程求根公式：&#xA;$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$&lt;/p&gt;&#xA;&lt;p&gt;麦克斯韦方程组：&#xA;$$&#xA;\begin{aligned}&#xA;\nabla \cdot \mathbf{E} &amp;amp;= \frac{\rho}{\epsilon_0} \&#xA;\nabla \cdot \mathbf{B} &amp;amp;= 0 \&#xA;\nabla \times \mathbf{E} &amp;amp;= -\frac{\partial \mathbf{B}}{\partial t} \&#xA;\nabla \times \mathbf{B} &amp;amp;= \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}&#xA;\end{aligned}&#xA;$$&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
