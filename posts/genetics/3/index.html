@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My New Hugo Site | a</title>
+  <title>My New Hugo Site | 主要概念与计算</title>
   
   <link rel="stylesheet" href="https://jeff-linzi.github.io/css/main.min.css">
   
@@ -55,74 +55,111 @@
   
   
   <article>
-    <h1>a</h1>
+    <h1>主要概念与计算</h1>
     
     
     <div class="tags">
-      标签: <a class="tag" href="/tags/%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0">学习笔记</a> <a class="tag" href="/tags/%e8%84%9a%e6%b3%a8">脚注</a> <a class="tag" href="/tags/mermaid">mermaid</a> 
+      标签: <a class="tag" href="/tags/%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0">学习笔记</a> <a class="tag" href="/tags/%e9%81%97%e4%bc%a0%e5%ad%a6">遗传学</a> 
     </div>
     
     <hr>
     <div class="content">
-      <p>这是正文内容，带一个脚注。
+      <h2 id="连锁和交换">连锁和交换</h2>
+<h3 id="1-亲本基因类型">1 亲本基因类型</h3>
+<ol>
+<li>相引相：显性基因与显性基因连锁；</li>
+<li>相斥相：显性基因与隐性基因连锁。</li>
+</ol>
+<h3 id="2-连锁类型">2 连锁类型</h3>
+<ol>
+<li>完全连锁：基因位置很近。完全连锁是相对的。</li>
+<li>不完全连锁：
 
-  
-  
-
-
-
-
-
-
-<sup class="footnote" id="fnref-1" data-note="这是脚注内容">
-  <a href="#fn-1" title="跳转到脚注" class="footnote-link">[1]</a>
-</sup></p>
-<p>还有一个脚注。
-
-
-
-
-
-
-<sup class="footnote" id="fnref-2" data-note="第二个脚注">
-  <a href="#fn-2" title="跳转到脚注" class="footnote-link">[2]</a>
-</sup></p>
-<p>再来一个脚注。
-
-
-
-
-
-
-<sup class="footnote" id="fnref-3" data-note="第三个脚注">
-  <a href="#fn-3" title="跳转到脚注" class="footnote-link">[3]</a>
-</sup></p>
-<div class="mermaid">
-  
-graph TD
-  A{林子健} -->|?| B(未来者)
-  A -->|?| C[超能力者]
-  A -->|?| D{外星人} 
-  A -->|?| E(普通人)
-
+<div class="highlight" >
+    $$ RF = \frac{2R}{2(P+R)} $$
+其中：$RF$为重组率，$R$为重组型个体占比，$P$为亲本型占比。
 </div>
+测交法：
+$$ 相引组：RF=(b+c)/(a+b+c+d) $$
+$$ 相斥组：RF=(a+d)/(a+b+c+d) $$
+自交法：
+$$ 相引组：RF=1-[a+d-(b+c)]^{1/2} $$
+$$ 相斥组：RF=[a+d-(b+c)]^{1/2} $$
+其中：
+$$ a=A-B-; b=A-bb; c=aaB-; d=aabb ~ 的比率 $$</li>
+</ol>
+<h3 id="3-三点作图">3 三点作图</h3>
+<ol>
+<li>条件：杂合体；表型变化；样本足够。</li>
+<li>三对不完全连锁，表现型比例：2最多，2最少，2较少，2较少；</li>
+</ol>
+<h4 id="过程">过程</h4>
+<ol>
+<li>总数</li>
+<li>确定亲本型（2最多），双交换（2最少）</li>
+<li>由双交换和亲本型确定三个基因顺序（双交换交换中间的）</li>
+<li>算两点RF</li>
+<li>作图</li>
+</ol>
+<h4 id="干扰系数和符合系数">干扰系数和符合系数</h4>
+
+<div class="highlight" >
+    符合系数：
+$$ C=\frac{理论双交换频率}{实际双交换频率}=\frac{SCO(Ⅰ)\times SCO(Ⅱ)}{DCO} $$
+干扰系数：
+$$ I = 1-C $$
+</div>
+<h4 id="真菌分析">真菌分析</h4>
+<p>着丝粒与基因距离测定（着丝粒作图）</p>
+<p>子囊八分子：减数分裂后有丝分裂</p>
+<ol>
+<li>非交换型：MⅠ分离，八分子：AAAAaaaa或aaaaAAAA</li>
+<li>交换型：MⅡ分离，八分子：AAaaAAaa或AAaaaaAA或aaAAaaAA或aaAAAAaa</li>
+</ol>
+<p>计算基因与着丝粒之间的重组频率：
+$$ RF=\frac{1/2MⅡ}{MⅠ+MⅡ} $$</p>
+<h2 id="染色体数目变异">染色体数目变异</h2>
+<ol>
+<li>缺失：假显性</li>
+<li>重复：剂量效应</li>
+<li>倒位：交换抑制因子</li>
+<li>易位：半不育</li>
+</ol>
+<h2 id="数量性状遗传分析">数量性状遗传分析</h2>
+<h3 id="数量性状的多基因假设">数量性状的多基因假设</h3>
+<ol>
+<li>$$ V_p = V_g + V_e $$
+其中，依次为：表型方差、基因型方差、环境方差</li>
+<li>加性效应与显性效应：
+$$ a= frac{(AA)-(aa)}{2} $$
+$$ d= (Aa)-\left[\frac{(AA)+(aa)}{2}\right] $$</li>
+</ol>
+<h4 id="广义遗传力">广义遗传力</h4>
+<p>加性和显性效应所占表型方差比例</p>
+<p>对于$F_2$</p>
+<ol>
+<li>基因型方差：$V_g=1/2a^2+1/4d^2$</li>
+<li>计算环境方差：$V_e=1/2(V_{p_1}+V_{p_2})$</li>
+<li>广义遗传力：
+
+<div class="highlight" >
+    $$ h_B^2 = \frac{V_{F_2}-V_e}{V_{F_2}} $$
+</div></li>
+</ol>
+<h4 id="狭义遗传力">狭义遗传力</h4>
+<p>加性效应占表型方差的比例</p>
+
+<div class="highlight" >
+    $$ h_n^2 = \frac{2V_{F_2}-(V_{B_1}+V_{B_2})}{V_{F_2}} $$
+其中：$V_{B}$代表回交方差
+</div>
+<h4 id="平均显性程度">平均显性程度</h4>
+<p>$$ =\frac{d}{a}=\sqrt{\frac{V_D}{V_A}} $$</p>
 
     </div>
     <hr>
     
     
-    
-      <section class="footnotes">
-        <ol>
-          
-            <li id="fn-1">这是脚注内容 <a href="#fnref-1" class="footnote-link">↩</a></li>
-          
-            <li id="fn-2">第二个脚注 <a href="#fnref-2" class="footnote-link">↩</a></li>
-          
-            <li id="fn-3">第三个脚注 <a href="#fnref-3" class="footnote-link">↩</a></li>
-          
-        </ol>
-      </section>
     
     
     

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My New Hugo Site | a</title>
+  <title>My New Hugo Site | 孟德尔定律</title>
   
   <link rel="stylesheet" href="https://jeff-linzi.github.io/css/main.min.css">
   
@@ -55,74 +55,78 @@
   
   
   <article>
-    <h1>a</h1>
+    <h1>孟德尔定律</h1>
     
     
     <div class="tags">
-      标签: <a class="tag" href="/tags/%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0">学习笔记</a> <a class="tag" href="/tags/%e8%84%9a%e6%b3%a8">脚注</a> <a class="tag" href="/tags/mermaid">mermaid</a> 
+      标签: <a class="tag" href="/tags/%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0">学习笔记</a> <a class="tag" href="/tags/%e9%81%97%e4%bc%a0%e5%ad%a6">遗传学</a> 
     </div>
     
     <hr>
     <div class="content">
-      <p>这是正文内容，带一个脚注。
-
-  
-  
-
-
-
-
-
-
-<sup class="footnote" id="fnref-1" data-note="这是脚注内容">
-  <a href="#fn-1" title="跳转到脚注" class="footnote-link">[1]</a>
-</sup></p>
-<p>还有一个脚注。
-
-
-
-
-
-
-<sup class="footnote" id="fnref-2" data-note="第二个脚注">
-  <a href="#fn-2" title="跳转到脚注" class="footnote-link">[2]</a>
-</sup></p>
-<p>再来一个脚注。
-
-
-
-
-
-
-<sup class="footnote" id="fnref-3" data-note="第三个脚注">
-  <a href="#fn-3" title="跳转到脚注" class="footnote-link">[3]</a>
-</sup></p>
-<div class="mermaid">
-  
-graph TD
-  A{林子健} -->|?| B(未来者)
-  A -->|?| C[超能力者]
-  A -->|?| D{外星人} 
-  A -->|?| E(普通人)
-
-</div>
+      <h3 id="实现孟德尔定律的5个假设">实现孟德尔定律的5个假设</h3>
+<ol>
+<li>二倍体生物，相对性状差异明显；</li>
+<li>各种配子数目相等，或接近相等；</li>
+<li>配子生活力相同，受精时雌雄配子自由结合机会均等；</li>
+<li>基因型存活率相同；</li>
+<li>环境相对一致，群体足够大</li>
+</ol>
+<h3 id="卡方检测">卡方检测</h3>
+<p>可以检测实际与期望的差异</p>
+<p>$$ \chi^2 = \sum\frac{(o-e)^2}{e} $$</p>
+<p>若自由度为1，即两个数据分析：</p>
+<p>$$ \chi^2 = \sum\frac{(|o-e|-0.5)^2}{e} $$</p>
+<h2 id="孟德尔遗传定律的拓展">孟德尔遗传定律的拓展</h2>
+<h3 id="1-显性的相对性">1 显性的相对性</h3>
+<ol>
+<li>完全显性</li>
+<li>不完全显性</li>
+<li>共（无）显性</li>
+<li>镶嵌显性=3</li>
+</ol>
+<h3 id="2-复等位基因">2 复等位基因</h3>
+<p>相同基因位点，存在三个或三个以上的等位基因。</p>
+<h3 id="3-一因多效">3 一因多效</h3>
+<h3 id="4-基因互作多因一效">4 基因互作（多因一效）</h3>
+<h4 id="非等位基因的互作方式">非等位基因的互作方式</h4>
+<ol>
+<li>
+<p>互补作用(Complementation)
+共同作用成显性
+$$  F2=9:7  $$</p>
+</li>
+<li>
+<p>上位作用(Epistatic)
+显性上位：一个显性盖住另一个
+$$ F2=12:3:1 $$
+隐性上位：一个隐性盖住另一个显性
+$$ F2=9:3:4 $$
+共上位
+等位基因称为共显性，非等位基因称为共上位
+$$ F2=9:3:3:1 $$</p>
+</li>
+<li>
+<p>积加作用(Additive effect)
+显性作用相同，显性对数越多，性状越强
+$$ F2=9:6:1 $$</p>
+</li>
+<li>
+<p>冗余作用(Duplicate effect)
+只需要一对基因
+$$ F2=15:1 $$</p>
+</li>
+<li>
+<p>抑制作用(Suppression)
+一个基因没表现性状，但会抑制另一对基因
+$$ F2=13:3 $$</p>
+</li>
+</ol>
 
     </div>
     <hr>
     
     
-    
-      <section class="footnotes">
-        <ol>
-          
-            <li id="fn-1">这是脚注内容 <a href="#fnref-1" class="footnote-link">↩</a></li>
-          
-            <li id="fn-2">第二个脚注 <a href="#fnref-2" class="footnote-link">↩</a></li>
-          
-            <li id="fn-3">第三个脚注 <a href="#fnref-3" class="footnote-link">↩</a></li>
-          
-        </ol>
-      </section>
     
     
     

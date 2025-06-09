@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>遗传学 on My New Hugo Site</title>
+    <link>https://jeff-linzi.github.io/tags/%E9%81%97%E4%BC%A0%E5%AD%A6/</link>
+    <description>Recent content in 遗传学 on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 09 Jun 2025 16:43:00 +0800</lastBuildDate>
+    <atom:link href="https://jeff-linzi.github.io/tags/%E9%81%97%E4%BC%A0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>主要概念与计算</title>
+      <link>https://jeff-linzi.github.io/posts/genetics/3/</link>
+      <pubDate>Mon, 09 Jun 2025 16:43:00 +0800</pubDate>
+      <guid>https://jeff-linzi.github.io/posts/genetics/3/</guid>
+      <description>&lt;h2 id=&#34;连锁和交换&#34;&gt;连锁和交换&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-亲本基因类型&#34;&gt;1 亲本基因类型&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;相引相：显性基因与显性基因连锁；&lt;/li&gt;&#xA;&lt;li&gt;相斥相：显性基因与隐性基因连锁。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;2-连锁类型&#34;&gt;2 连锁类型&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;完全连锁：基因位置很近。完全连锁是相对的。&lt;/li&gt;&#xA;&lt;li&gt;不完全连锁：&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34; &gt;&#xD;&#xA;    $$ RF = \frac{2R}{2(P+R)} $$&#xA;其中：$RF$为重组率，$R$为重组型个体占比，$P$为亲本型占比。&#xD;&#xA;&lt;/div&gt;&#xA;测交法：&#xA;$$ 相引组：RF=(b+c)/(a+b+c+d) $$&#xA;$$ 相斥组：RF=(a+d)/(a+b+c+d) $$&#xA;自交法：&#xA;$$ 相引组：RF=1-[a+d-(b+c)]^{1/2} $$&#xA;$$ 相斥组：RF=[a+d-(b+c)]^{1/2} $$&#xA;其中：&#xA;$$ a=A-B-; b=A-bb; c=aaB-; d=aabb ~ 的比率 $$&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;3-三点作图&#34;&gt;3 三点作图&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;条件：杂合体；表型变化；样本足够。&lt;/li&gt;&#xA;&lt;li&gt;三对不完全连锁，表现型比例：2最多，2最少，2较少，2较少；&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h4 id=&#34;过程&#34;&gt;过程&lt;/h4&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;总数&lt;/li&gt;&#xA;&lt;li&gt;确定亲本型（2最多），双交换（2最少）&lt;/li&gt;&#xA;&lt;li&gt;由双交换和亲本型确定三个基因顺序（双交换交换中间的）&lt;/li&gt;&#xA;&lt;li&gt;算两点RF&lt;/li&gt;&#xA;&lt;li&gt;作图&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h4 id=&#34;干扰系数和符合系数&#34;&gt;干扰系数和符合系数&lt;/h4&gt;&#xA;&#xD;&#xA;&lt;div class=&#34;highlight&#34; &gt;&#xD;&#xA;    符合系数：&#xA;$$ C=\frac{理论双交换频率}{实际双交换频率}=\frac{SCO(Ⅰ)\times SCO(Ⅱ)}{DCO} $$&#xA;干扰系数：&#xA;$$ I = 1-C $$&#xD;&#xA;&lt;/div&gt;&#xA;&lt;h4 id=&#34;真菌分析&#34;&gt;真菌分析&lt;/h4&gt;&#xA;&lt;p&gt;着丝粒与基因距离测定（着丝粒作图）&lt;/p&gt;&#xA;&lt;p&gt;子囊八分子：减数分裂后有丝分裂&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;非交换型：MⅠ分离，八分子：AAAAaaaa或aaaaAAAA&lt;/li&gt;&#xA;&lt;li&gt;交换型：MⅡ分离，八分子：AAaaAAaa或AAaaaaAA或aaAAaaAA或aaAAAAaa&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;计算基因与着丝粒之间的重组频率：&#xA;$$ RF=\frac{1/2MⅡ}{MⅠ+MⅡ} $$&lt;/p&gt;&#xA;&lt;h2 id=&#34;染色体数目变异&#34;&gt;染色体数目变异&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;缺失：假显性&lt;/li&gt;&#xA;&lt;li&gt;重复：剂量效应&lt;/li&gt;&#xA;&lt;li&gt;倒位：交换抑制因子&lt;/li&gt;&#xA;&lt;li&gt;易位：半不育&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;数量性状遗传分析&#34;&gt;数量性状遗传分析&lt;/h2&gt;&#xA;&lt;h3 id=&#34;数量性状的多基因假设&#34;&gt;数量性状的多基因假设&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;$$ V_p = V_g + V_e $$&#xA;其中，依次为：表型方差、基因型方差、环境方差&lt;/li&gt;&#xA;&lt;li&gt;加性效应与显性效应：&#xA;$$ a= frac{(AA)-(aa)}{2} $$&#xA;$$ d= (Aa)-\left[\frac{(AA)+(aa)}{2}\right] $$&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h4 id=&#34;广义遗传力&#34;&gt;广义遗传力&lt;/h4&gt;&#xA;&lt;p&gt;加性和显性效应所占表型方差比例&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>遗传的染色体基础</title>
+      <link>https://jeff-linzi.github.io/posts/genetics/2/</link>
+      <pubDate>Mon, 09 Jun 2025 16:08:00 +0800</pubDate>
+      <guid>https://jeff-linzi.github.io/posts/genetics/2/</guid>
+      <description>&lt;h2 id=&#34;染色体&#34;&gt;染色体&lt;/h2&gt;&#xA;&lt;h3 id=&#34;结构&#34;&gt;结构&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;着丝粒&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;染色体臂：断臂p，长臂q&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;同源染色体&#xA;大小、着丝粒位置、基因位点相同但等位基因不一定相同&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>孟德尔定律</title>
+      <link>https://jeff-linzi.github.io/posts/genetics/1/</link>
+      <pubDate>Mon, 09 Jun 2025 15:24:00 +0800</pubDate>
+      <guid>https://jeff-linzi.github.io/posts/genetics/1/</guid>
+      <description>&lt;h3 id=&#34;实现孟德尔定律的5个假设&#34;&gt;实现孟德尔定律的5个假设&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;二倍体生物，相对性状差异明显；&lt;/li&gt;&#xA;&lt;li&gt;各种配子数目相等，或接近相等；&lt;/li&gt;&#xA;&lt;li&gt;配子生活力相同，受精时雌雄配子自由结合机会均等；&lt;/li&gt;&#xA;&lt;li&gt;基因型存活率相同；&lt;/li&gt;&#xA;&lt;li&gt;环境相对一致，群体足够大&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;卡方检测&#34;&gt;卡方检测&lt;/h3&gt;&#xA;&lt;p&gt;可以检测实际与期望的差异&lt;/p&gt;&#xA;&lt;p&gt;$$ \chi^2 = \sum\frac{(o-e)^2}{e} $$&lt;/p&gt;&#xA;&lt;p&gt;若自由度为1，即两个数据分析：&lt;/p&gt;&#xA;&lt;p&gt;$$ \chi^2 = \sum\frac{(|o-e|-0.5)^2}{e} $$&lt;/p&gt;&#xA;&lt;h2 id=&#34;孟德尔遗传定律的拓展&#34;&gt;孟德尔遗传定律的拓展&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-显性的相对性&#34;&gt;1 显性的相对性&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;完全显性&lt;/li&gt;&#xA;&lt;li&gt;不完全显性&lt;/li&gt;&#xA;&lt;li&gt;共（无）显性&lt;/li&gt;&#xA;&lt;li&gt;镶嵌显性=3&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;2-复等位基因&#34;&gt;2 复等位基因&lt;/h3&gt;&#xA;&lt;p&gt;相同基因位点，存在三个或三个以上的等位基因。&lt;/p&gt;&#xA;&lt;h3 id=&#34;3-一因多效&#34;&gt;3 一因多效&lt;/h3&gt;&#xA;&lt;h3 id=&#34;4-基因互作多因一效&#34;&gt;4 基因互作（多因一效）&lt;/h3&gt;&#xA;&lt;h4 id=&#34;非等位基因的互作方式&#34;&gt;非等位基因的互作方式&lt;/h4&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;互补作用(Complementation)&#xA;共同作用成显性&#xA;$$  F2=9:7  $$&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;上位作用(Epistatic)&#xA;显性上位：一个显性盖住另一个&#xA;$$ F2=12:3:1 $$&#xA;隐性上位：一个隐性盖住另一个显性&#xA;$$ F2=9:3:4 $$&#xA;共上位&#xA;等位基因称为共显性，非等位基因称为共上位&#xA;$$ F2=9:3:3:1 $$&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;积加作用(Additive effect)&#xA;显性作用相同，显性对数越多，性状越强&#xA;$$ F2=9:6:1 $$&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;冗余作用(Duplicate effect)&#xA;只需要一对基因&#xA;$$ F2=15:1 $$&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;抑制作用(Suppression)&#xA;一个基因没表现性状，但会抑制另一对基因&#xA;$$ F2=13:3 $$&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
