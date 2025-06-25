@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My New Hugo Site | 分子发光分析</title>
+  
+  <link rel="stylesheet" href="https://jeff-linzi.github.io/css/main.min.css">
+  
+  
+
+  <script src="/vendor/mermaid/mermaid.min.js"></script>
+  <script>
+    function getMermaidTheme() {
+      
+      return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default';
+    }
+    mermaid.initialize({ 
+      startOnLoad: true,
+      securityLevel: 'loose',
+      theme: getMermaidTheme()
+    });
+  </script>
+
+  
+  
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<script defer src="/vendor/katex/katex.min.js"></script>
+<script defer src="/vendor/katex/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ],
+      throwOnError: false,
+      output: "html"
+    });
+  });
+</script>
+  
+</head>
+<body>
+  <nav data-no-window>
+    <a href="/">首页</a> | 
+    <button onclick="toggleTheme()">🌓</button>
+  </nav>
+  
+  <main>
+    
+    
+  
+  
+  <article>
+    <h1>分子发光分析</h1>
+    
+    
+    <div class="tags">
+      标签: <a class="tag" href="/tags/%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0">学习笔记</a> <a class="tag" href="/tags/%e5%88%86%e5%ad%90%e5%8f%91%e5%85%89">分子发光</a> 
+    </div>
+    
+    <hr>
+    <div class="content">
+      <div class="mermaid">
+  
+mindmap
+    root(分子发光分析)
+        导论
+            电子的多重态
+            非辐射跃迁
+            3S+2A原则
+        荧光
+            荧光光谱
+                Stokes位移
+                镜像规则
+            荧光量子产率和荧光寿命
+            散射光
+            荧光物质
+                有机分子
+                金属螯合物
+                纳米材料
+                反斯托克斯材料
+            猝灭
+                动态猝灭
+                静态猝灭
+                内滤光效应
+                电荷转移猝灭
+                能量转移猝灭
+                光化学反应猝灭
+                氧的猝灭
+                荧光探针
+            荧光分析方法
+                常规荧光分析方法
+                同步荧光
+                三维荧光
+                时间分辨荧光
+                相分辨荧光
+                荧光动力学
+                荧光偏振
+                荧光免疫
+            荧光显微成像技术
+                超分辨率
+                显微镜
+        磷光
+            低温磷光分析法
+            室温磷光分析法
+        化学发光
+            化学发光剂
+            基本类型
+            定量分析
+        电化学发光
+            湮灭型
+            共反应剂参与型
+
+
+</div>
+<h2 id="导论">导论</h2>
+<p>处于基态的分子吸收能量被激发到激发态，然后从不稳定的激发态回到基态并发射出光子。（辐射跃迁）</p>
+<ol>
+<li>光致发光</li>
+<li>化学发光</li>
+<li>电致发光</li>
+<li>生物发光</li>
+<li>热致发光</li>
+<li>场致发光</li>
+<li>摩擦发光</li>
+</ol>
+<h3 id="电子的多重态">电子的多重态</h3>
+<p>$$ M=2S+1 $$
+其中，$M$为多重态，$S$为总电子自旋量子数，每个电子自旋量子数为$+1/2$或$-1/2$，全部相加。</p>
+<ol>
+<li>单重态（S）：$M=1,S=0$，抗磁性</li>
+<li>三重态（T）：$M=3,S=1$，顺磁性</li>
+</ol>
+<h3 id="非辐射跃迁">非辐射跃迁</h3>
+<ol>
+<li>振动弛豫：同一个电子能级内，电子由高振动能级到低震动能级，释放能量为热。时间$10^{-12}s$</li>
+<li>内转换：相同多重态，能级有重叠，由高电子能级到低电子能级，无辐射。时间$10^{-12}s$，通过振动弛豫和内转换，高激发态电子很快跃迁到第一激发态的最低振动能级。</li>
+<li>外转换：与溶剂分子作用转移能量。</li>
+<li>系间窜跃：电子在不同多重态间跃迁，能级有重叠，禁阻跃迁。时间$10^{-6}s$</li>
+</ol>
+<h3 id="3s2a原则">3S+2A原则</h3>
+<p>$$ Sensitivity, Selectivity, Speed, Automatization, Accuracy $$</p>
+<h2 id="荧光分析">荧光分析</h2>
+<p>光致发光，电子由$S_1 \to S_0$发光。</p>
+<h3 id="激发光谱吸收光谱和发射光谱">激发光谱、吸收光谱和发射光谱</h3>
+<ol>
+<li>激发光谱实际上是荧光物质的吸收光谱</li>
+<li>激发光谱与吸收曲线形状相同，但性质不同。激发光谱是“荧光强度-激发波长”曲线；吸收光谱是“吸光度-波长”曲线</li>
+<li>发射光谱是“荧光强度-发射波长”的曲线，固定激发波长，但形状与激发波长无关（可以据此确定是否为荧光）</li>
+</ol>
+<h4 id="1-stokes位移">1 Stokes位移</h4>
+<p>荧光峰发射波长总是大于激发光波长，斯托克斯位移就是二者波长的差值。内转换和振动弛豫、外转换损失能量。</p>
+<h4 id="2-镜像规则">2 镜像规则</h4>
+<p>荧光激发光谱和发射光谱呈镜像对称，只考虑第一激发态吸收。都是从振动基态跃迁。</p>
+<ol>
+<li>热力学（稳态分布）：假设第一电子激发态和基态电子在各振动能级分布相似。</li>
+<li>Frank-Condon原理：根据分布相似假设，基态（振动基态0）到激发态（振动n能级）的跃迁几率和激发态（振动基态0）到基态（振动n能级）的跃迁几率相似。</li>
+</ol>
+<h3 id="荧光量子产率和荧光寿命">荧光量子产率和荧光寿命</h3>
+
+<div class="highlight" >
+    荧光量子产率($\phi$)：
+$$ \phi = \frac{n_{\text{荧光发射光子}}}{n_{\text{激发光光子}}} = \frac{k_f}{k_f+\sum{k_i}} = \frac{k_f[激发态]}{I_a} $$
+其中，$k_f$为荧光发射速率常数，$k_i$为非辐射跃迁速率常数
+</div>
+<p>参比法测定（正比于荧光强度，反比于吸光度）：</p>
+<p>$$ \phi_s = \frac{A_r I_s n_s^2}{A_s I_r n_r^2}\phi_r $$
+其中，$n$为溶剂折射率，$I$为积分荧光强度，$A&lt;0.05$为吸光度</p>
+
+<div class="highlight" >
+    荧光寿命($\tau$)：
+$$ I_t = I_0 \exp^{-kt} = I_0 \exp^{-t/\tau} $$
+</div>
+<p>荧光寿命：</p>
+<ol>
+<li>发生能量传递会改变</li>
+<li>纳秒级别，可以看到复杂分子间作用过程</li>
+</ol>
+<h3 id="散射光">散射光</h3>
+<ol>
+<li>瑞利散射：与激发光波长相同，强而尖锐。单色器屏蔽。</li>
+<li>拉曼散射：波长通常大于激发光（拉曼位移，为振动能级差），很弱。可能接近发射波长。更换溶剂或使用波长较短的激发光。</li>
+</ol>
+<p>选择合适的激发波长、合适的发射波长、狭缝宽度、空白对照</p>
+<h3 id="荧光物质">荧光物质</h3>
+<h4 id="1-有机分子">1 有机分子</h4>
+<ol>
+<li>$\pi\ast \to \pi$（主要） 或 $\pi\ast \to n$跃迁</li>
+<li>共轭$\pi$键</li>
+<li>刚性共平面：减少分子振动</li>
+<li>取代基效应：给电子基团$p-\pi$共轭；重原子（卤素）使自旋轨道耦合，系间窜跃大大加强</li>
+<li>位阻、立体异构（反式二苯乙烯强荧光）、pH</li>
+</ol>
+<h4 id="2-金属螯合物">2 金属螯合物</h4>
+<ol>
+<li>有机配体——&gt;金属——&gt;刚性结构</li>
+<li>有机配体——&gt;能量转移至金属</li>
+</ol>
+<h4 id="3-纳米材料">3 纳米材料</h4>
+<p>量子点，越小，能级间隙越大，发射光越蓝移</p>
+<ol>
+<li>一激多发</li>
+<li>波长随尺寸可调</li>
+<li>峰窄而对称</li>
+<li>荧光量子产率较高</li>
+<li>光漂白弱</li>
+</ol>
+<h4 id="4-反斯托克斯材料">4 反斯托克斯材料</h4>
+<p>长波激发（近红外），短波发射（可见光）。吸收两个光子。</p>
+<ol>
+<li>上转换发光材料（UCPs）：掺杂稀土离子无机纳米发光材料。连续吸收两个光子，稀土离子提供稳定中间态。发光调控：改变稀土离子种类和浓度，表面改性。缺点是粒径较大。应用：FRET供体、细胞成像、光动力治疗</li>
+<li>双光子激发（TPE）：强脉冲激光激发，同时吸收两个光子，无中间态。发光效率低</li>
+</ol>
+<h3 id="猝灭">猝灭</h3>
+<h4 id="1-动态猝灭">1 动态猝灭</h4>
+<p>$$
+\begin{array}{l c l}
+M+h\nu \to {}^1M^\ast &amp; &amp; u_1 = I_a \\
+{}^1M^\ast \xrightarrow{k_f} M + h\nu' &amp; &amp; u_2 = k_f[{}^1M^\ast] \\
+{}^1M^\ast + Q \xrightarrow{k_q} M + Q + \text{热} &amp; &amp; u_3 = k_q[{}^1M^\ast][Q]
+\end{array}
+$$</p>
+<p>荧光量子产率$\phi$减小，测定吸收曲线不变，测定荧光寿命$\tau$变小</p>
+<p>稳态假设：</p>
+<p>$$ \frac{d[{}^1M^\ast]}{dt}=0=u_1-u_2-u_3 $$</p>
+
+<div class="highlight" >
+    <p>解得：
+$$ [{}^1M^\ast]=\frac{I_a}{k_f+\sum{k_i}+k_q[Q]} $$</p>
+<p>可求$\phi_f=k_f[{}^1M^\ast]/I_a$，得Stern-Volmer方程：
+$$ \frac{F_0}{F}=\frac{\phi_f^0}{\phi_f}=1+\frac{k_q[Q]}{k_f+\sum{k_i}}=\frac{\tau_0}{\tau}=1+k_q\tau_0[Q]=1+K_{SV}[Q] $$
+其中，$K_{SV}$称作Stern-Volmer猝灭常数。</p>
+
+</div>
+<h4 id="2-静态猝灭">2 静态猝灭</h4>
+<p>$$ M + Q \rightleftharpoons MQ \qquad K=\frac{[MQ]}{[M][Q]} $$</p>
+<p>荧光量子产率$\phi$减小，测定吸收曲线会改变，测定荧光寿命$\tau$不变</p>
+
+<div class="highlight" >
+    $$ \frac{F_0}{F} = \frac{[M]_0}{[M]} = \frac{[M]+K[M][Q]}{[M]} = 1+K[Q] $$
+</div>
+<p>与动态猝灭形式相同，辨别：</p>
+<ol>
+<li>荧光寿命变化不同</li>
+<li>猝灭常数与温度，温度升高，动态猝灭常数变大（加速扩散），静态猝灭常数减小（不稳定）</li>
+<li>吸收光谱变化不同</li>
+</ol>
+<h4 id="3-电荷转移猝灭">3 电荷转移猝灭</h4>
+<p>$$ {}^1M^\ast + Q \rightleftharpoons {}^1M^\ast \cdots Q \to (M^+Q^-)^\ast \to M + Q + h\nu $$</p>
+<p>非极性溶剂中，观察到荧光波长变长，无精细结构；极性溶剂中，无发光，变为游离溶剂化离子。
+离子猝灭能力与给电子能力正相关。
+$$ I^- \gt CNS^- \gt Br^- \gt Cl^- \gt C_2O_4^{2-} \gt SO_4^{2-} \gt NO_3^- \gt F^- $$</p>
+<h4 id="4-能量猝灭转移">4 能量猝灭转移</h4>
+<ol>
+<li>辐射能量转移（荧光的再吸收）</li>
+<li>非辐射能量转移：共振能量转移（FRET，长距离，跃迁控制。偶极-偶极耦合作用），交换能量转移（短距离，扩散控制，非跃迁。电子云接触，电子交换作用）</li>
+</ol>
+<p>蛋白质的荧光（分子内能量转移）：</p>
+<p>280nm激发——&gt;340nm发射：苯丙氨酸（282nm）、酪氨酸（303nm）转移给色氨酸（348nm）</p>
+<h4 id="5-光化学反应猝灭">5 光化学反应猝灭</h4>
+<ol>
+<li>光降解（光漂白）：强紫外线照射，分子解离</li>
+<li>光氧化、光还原、光聚合、光异构化、光取代、光加成</li>
+</ol>
+<h4 id="6-氧的猝灭">6 氧的猝灭</h4>
+<p>最普遍存在。溶液中十分有效的磷光猝灭剂，对荧光不同分子敏感性不同。</p>
+<h4 id="7-荧光探针">7 荧光探针</h4>
+<p>R：识别基团；F：荧光基团；S：连接基团</p>
+<ol>
+<li>光诱导电子转移（PET）：识别基团是给电子基团，抑制荧光，识别后给电子能力减弱</li>
+<li>分子内电荷转移（ICT）：F、R共轭，结合后发射光谱移动，荧光强度变化</li>
+<li>共振能量转移（RET）：识别前后改变R、F距离、结构。可以构建比率型探针（两个基团都发光，可以在不同及发光强度，不同探针浓度下比较）</li>
+</ol>
+<h3 id="荧光分析法">荧光分析法</h3>
+<h4 id="1-常规荧光分析">1 常规荧光分析</h4>
+<ol>
+<li>直接测定：绘制工作曲线</li>
+<li>间接测定：荧光衍生法（无荧光物质合成有荧光物质），荧光猝灭法（对象猝灭荧光物质），敏化荧光法（对象作为能量供体增强某荧光物质/使用敏化剂增强待测对象荧光）</li>
+</ol>
+<h4 id="2-同步荧光分析">2 同步荧光分析</h4>
+<p>同时改变激发和发射波长,
+最常用恒波长同步荧光分析：$\Delta{\lambda}$恒定，一般选用Stokes位移。</p>
+<p>$$I_s = KbcE_M(\lambda_{em})E_X(\lambda_{ex})$$</p>
+<ol>
+<li>简化光谱</li>
+<li>窄化光谱</li>
+<li>减小光谱重叠</li>
+<li>消除瑞利散射、拉宽弱化拉曼散射</li>
+<li>选择性改善</li>
+<li>多组分分析</li>
+</ol>
+<h4 id="3-三维荧光光谱">3 三维荧光光谱</h4>
+<p>激发光波长，发射光波长，发光强度三维</p>
+<ol>
+<li>指纹特征：蛋白质、酒</li>
+<li>体积积分提高检测灵敏度</li>
+</ol>
+<h4 id="4-时间分辨荧光">4 时间分辨荧光</h4>
+<p>脉冲激光、延时、门宽</p>
+
+
+
+
+
+  <div class="inline-svg svg-center">
+    <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="510px" height="185px" viewBox="-0.5 -0.5 510 185" content="&lt;mxfile&gt;&lt;diagram id=&quot;mZGb5pxWA_Nv4yCANfAQ&quot; name=&quot;Page-1&quot;&gt;7Vrbkps4EP0aPSYFiOsjeOxsqrJVWzUPedYYjU2CEQH5Mvv1KxkJg8A2MOCNx5lyjXEjtcQ53U1LLQBnm8OXDKXrv0mIY2Bo4QHAJ2AYtuay/1zwVghM1ykEqywKC5F+EjxH/2Ih1IR0G4U4rzWkhMQ0SuvCJUkSvKQ1Gcoysq83eyVxfdQUrXBD8LxEcVP6PQrpupC6lnaS/4Wj1VqOrGvizgbJxkKQr1FI9hURnAM4ywihxdXmMMMxx07iUvRbnLlbTizDCe3SwSg67FC8Fc8m5kXf5MPiJPQ5ZuzXMkZ5Hi0BDNZ0EzOBzi6bQ4pZ4LCGopjAF0w2mGZvrMH+hJ2Ebl2BTcoyHCMa7erYI0HhqlRXjvAPidhMDE1Ym+EIPcLYoNQrVeRkmy2x6FXFSlFkGlcUUZStMG0oYheVxz6JjlS00wL/0NKZFlVR6Vvj02I2aKENXig+0DoTKI5WCaeJMYEzJtjhjEYsmvjixiYKQ9492K8jip9TtOS69ix0MllGtkmI+QS0S6xynfhwkVdxF7pngK/wbrfwDrXzFNcwvQCg3WLXdszxStnFil98lZI8RUkNWvvXlofF4JUk9FN+fCn4rIGupYcjMvK+1MS+0YZDmLzk/ItkrPWMwUlzOQabbzFM2UOK05Ps3gg2NMUh9NsR7PQKXAlJcB3KOhjLbbY7/nisgOYp/HV8zzBU0VulWcob5O8Mee4DE3qNh86Jg65YhvleQtvHgVAZB9aSP3ZRaBxqC14vWzhlJTl7PtohWVF4b7GN38a3tYGmUAaFc4rGS1ak0fVz3RDl69JD74ihBrBDnVVVVEaBCRjSezH0kRzqqh90psu7nUP1Wyzfu0OpwA52KPU1OqFDtayb5xYIAhDYYG4Dz+EX/0dC38jeOzEt3z6uiqB4iBsk9HpzzQvmHkfSdzm2/hwET/cHaZmClZC6t4PUGhJHKljmNCM/8YzEbEXLW8PFArI/+WIQ+6UcqR/bTSp+GvcQc9S3AvQGxhzbqCuSOw8TxJx+WfEjs2m6Q9l0FTa9qdg0BiXNj8GmUydhcD7gmIqTG5Ox2S/BfiQ27bHYdHWFTWsyNgfl3w/BpmOPxaansDnZe7OtxjV3gfsEfIcnli77eFzi6yDQjhIHuItjGs/yedaYJfM+CBYNG/jtk091YxHKTLNiLd5EyWdLDeuSE93l5oJljrR0ta+tgUd0h36LgsfmRVU0Ycm3rWQ5m/MthbsLO/a5LdIbrHlbC4N/Kr8jM2yqRyFuWPmdvlL4CIFNJfDdpd+OE9a1y/OylXmZ41YWe5YWP5bxXOO8c7aiHuyZqMxsqdvRzmXjsZXzKGOXpc2WVX7LSsLiqwdPPxYENOCaH2ElofrlLVcSZr/l+F1mrI2TG0PLlJZ6NGO6MqXZXgTjpu6Lio3nt5XFgrbCTpEWhdGuzIqYtzC/8hdHj2JuZgv/8Quv844exW7NxHjegn/4eGxg52sl06pqbVgOs4lv6AXHQ/0vwyxRRC+x3NIRUY0ptwJgPV3yP3FsXHQG5eqiapaF9Z91zE/aZ2g6Vj1OjmKSag/y+prjnjbDfp6OmBfNT+f04fw/&lt;/diagram&gt;&lt;/mxfile&gt;"><defs/><g><g><path d="M 70 144 L 213.63 144" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 218.88 144 L 211.88 147.5 L 213.63 144 L 211.88 140.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 70 144 L 70 20.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 70 15.12 L 73.5 22.12 L 70 20.37 L 66.5 22.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="180" y="144" width="60" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 159px; margin-left: 181px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">t</div></div></div></foreignObject><text x="210" y="163" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">t</text></switch></g></g><g><rect x="0" y="4" width="60" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 19px; margin-left: 1px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><p>I<span style="font-size: 10px;"> or Counts</span></p></div></div></div></foreignObject><text x="30" y="23" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">I or Counts</text></switch></g></g><g><path d="M 70 144 Q 70 144 90 44" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 90 44 Q 130 124 210 134" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 76.37 94 L 143.63 94" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 71.12 94 L 78.12 90.5 L 76.37 94 L 78.12 97.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 148.88 94 L 141.88 97.5 L 143.63 94 L 141.88 90.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 150 144 L 150 84" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 156.37 94 L 183.63 94" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 151.12 94 L 158.12 90.5 L 156.37 94 L 158.12 97.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 188.88 94 L 181.88 97.5 L 183.63 94 L 181.88 90.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 190 144 L 190 84" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="80" y="90" width="60" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 105px; margin-left: 81px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">延时</div></div></div></foreignObject><text x="110" y="109" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">延时</text></switch></g></g><g><rect x="140" y="92" width="60" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 107px; margin-left: 141px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">门宽</div></div></div></foreignObject><text x="170" y="111" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">门宽</text></switch></g></g><g><path d="M 150 133 L 162 120" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 150 142 L 168 123" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 157 144 L 174 126" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 167 144 L 181 129" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><path d="M 176 144 L 189 130" fill="none" stroke="#ff3333" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(255, 51, 51), rgb(255, 119, 119));"/></g><g><rect x="90" y="154" width="90" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 88px; height: 1px; padding-top: 169px; margin-left: 91px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">荧光衰减曲线</div></div></div></foreignObject><text x="135" y="173" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">荧光衰减曲线</text></switch></g></g><g><path d="M 340 144 L 483.63 144" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 488.88 144 L 481.88 147.5 L 483.63 144 L 481.88 140.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 340 144 L 340 20.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 340 15.12 L 343.5 22.12 L 340 20.37 L 336.5 22.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="450" y="144" width="60" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 159px; margin-left: 451px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">λ</div></div></div></foreignObject><text x="480" y="163" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">λ</text></switch></g></g><g><rect x="270" y="4" width="60" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 19px; margin-left: 271px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; "><p>I<span style="font-size: 10px;"> or Counts</span></p></div></div></div></foreignObject><text x="300" y="23" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">I or Counts</text></switch></g></g><g><path d="M 340 144 Q 340 104 350 69 Q 360 34 370 44" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 370 44 Q 380 64 390 94 Q 400 124 480 134" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="360" y="154" width="90" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 88px; height: 1px; padding-top: 169px; margin-left: 361px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">荧光发射曲线</div></div></div></foreignObject><text x="405" y="173" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">荧光发射曲线</text></switch></g></g><g><path d="M 210 94 L 323.63 94" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 328.88 94 L 321.88 97.5 L 323.63 94 L 321.88 90.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 92px; margin-left: 271px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; background-color: #ffffff; "><div style="display: inline-block; font-size: 11px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); white-space: nowrap; ">固定延时+门宽<div>积分红色区域得I</div></div></div></div></foreignObject><text x="271" y="96" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="11px" text-anchor="middle">固定延时+门宽...</text></switch></g></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg>
+  </div>
+
+<ol>
+<li>荧光衰减曲线获得荧光寿命</li>
+<li>调整延时，对于荧光寿命有差异的混合物，可以消除短寿命物质干扰（一般$\Delta{\tau} \gt 4ns$）</li>
+<li>溶剂松弛时间：荧光团激发偶极矩变化——&gt;溶剂重新排列——&gt;能量减低，激发光红移。红移时间即为溶剂松弛时间</li>
+</ol>
+<h4 id="5-相分辨荧光分析">5 相分辨荧光分析</h4>
+<p>与时间分辨荧光功能类似，通过混合组分中荧光寿命的差异进行荧光光谱分辨，计算荧光寿命</p>
+<h4 id="6-荧光动力学分析法">6 荧光动力学分析法</h4>
+<p>通过发光强度随时间变化，得到荧光物质浓度随时间变化，可以得到待测物的浓度。</p>
+<ol>
+<li>慢反应，半衰期$5ms-1h$，$15s$内使用停流装置</li>
+<li>更好的选择性</li>
+<li>高灵敏度，易于实现自动化</li>
+<li>宽线性范围，不受散射光，背景光干扰</li>
+<li>信噪比小</li>
+<li>环境严格</li>
+</ol>
+<h4 id="7-荧光偏振">7 荧光偏振</h4>
+<p>起偏器入射偏振光，样品池出射平行偏振光和垂直偏振光。</p>
+<p>$$ P=\frac{I_{||}-I_{\perp}}{I_{||}+I_{\perp}} \qquad r=\frac{I_{||}-I_{\perp}}{I_{||}+2I_{\perp}} $$
+偏振值$P$与粘度相关，与分子大小成正比。$r$为各向异性</p>
+<h4 id="8-荧光免疫分析">8 荧光免疫分析</h4>
+<ol>
+<li>夹心型免疫分析：抗体-板子、抗原、抗体+label、洗涤。检测荧光正比于抗原</li>
+<li>竞争性免疫分析：抗原、抗原-label（数量恒定）、抗体-板子、洗涤。检测荧光比例反比于抗原</li>
+</ol>
+<h3 id="荧光显微成像">荧光显微成像</h3>
+<h4 id="1-超分辨率">1 超分辨率</h4>
+<ol>
+<li>受激发射损耗技术（STED）：减少有效荧光发光面积（激光抵消）</li>
+<li>光激活定位显微技术（PALM）：单分子荧光，多次成像叠加</li>
+<li>随机光学重建显微技术（STORM）：每次少量随机离散分子发光，拟合叠加</li>
+</ol>
+<h4 id="2-显微镜">2 显微镜</h4>
+<ol>
+<li>分辨率高于可见光</li>
+<li>高灵敏度和专一性，使用染料少</li>
+<li>直接显示生物化学成分</li>
+<li>透射光路和落射光路</li>
+</ol>
+<p>具体技术：</p>
+<ol>
+<li>共聚焦显微镜（CLSM）：利用针孔聚焦，分辨率很高，但有非焦点光漂白、荧光强度弱和光毒性的问题</li>
+<li>双光子荧光显微技术（TPEM）：无需针孔，无非焦平面光漂白、红外光激发、强荧光。</li>
+</ol>
+<h2 id="磷光分析">磷光分析</h2>
+<p>光致发光，电子由$T_1 \to S_0$发光。</p>
+<h3 id="低温磷光分析法ltp">低温磷光分析法（LTP）</h3>
+<p>低温减少分子间碰撞，防止磷光猝灭。</p>
+<p>有机溶剂，液氮（77K），形成刚性玻璃状物，测量磷光。</p>
+<p>溶剂：</p>
+<ol>
+<li>易于制备和提纯</li>
+<li>能很好溶解被分析物质</li>
+<li>在77K温度下有足够的粘度形成明净的刚性玻璃体</li>
+<li>在所研究光谱区背景低，没有明显光吸收和光发射现象</li>
+</ol>
+<p>优点：灵敏度高、线性范围宽、检测限低、选择性好、光谱精细结构丰富。</p>
+<p>缺点：低温设备、操作复杂、溶剂选择受到限制。</p>
+<h3 id="室温磷光分析法rtp">室温磷光分析法（RTP）</h3>
+<h4 id="1-固体基质室温磷光法ss-rtp">1 固体基质室温磷光法（SS-RTP）</h4>
+<p>吸附固化消除溶剂分子与激发三重态的碰撞，增强了磷光强度。</p>
+<p>固体表面，干燥除去水分</p>
+<h4 id="2-表面活性剂有序介质增稳室温磷光ms-rtp">2 表面活性剂有序介质增稳室温磷光（MS-RTP）</h4>
+<p>胶束增稳、重原子效应、溶剂除氧。</p>
+<h4 id="3-环糊精诱导室温磷光cd-rtp">3 环糊精诱导室温磷光（CD-RTP）</h4>
+<p>CD增溶、增稳、增敏</p>
+<p>优点：制样简单、不易起泡
+缺点：光谱散射干扰严重，受空间位阻限制</p>
+<h4 id="4-敏化猝灭室温磷光sq-rtp">4 敏化/猝灭室温磷光（SQ-RTP）</h4>
+<p>供体给能量，受体发磷光。</p>
+<h2 id="化学发光分析">化学发光分析</h2>
+<h3 id="化学发光剂">化学发光剂</h3>
+<p>反应生成激发态产物并产生发光现象的试剂。氧化剂、还原剂、生成自由基的物质。</p>
+<h3 id="基本类型">基本类型</h3>
+<h4 id="1-直接化学发光">1 直接化学发光</h4>
+<p>最普遍，多数液相反应</p>
+<p>$$ A + B \to C^\ast + D \\
+C^\ast \to C + h\nu $$</p>
+<h4 id="2-间接化学发光">2 间接化学发光</h4>
+<p>能量转移</p>
+<p>$$ A + B \to C^\ast + D \\
+C^\ast + F \to C + F^\ast \\
+F^\ast \to F + h\nu $$</p>
+<h3 id="化学发光效率">化学发光效率</h3>
+<p>$$ \varphi_{CL} = \frac{n_{\text{发射光子}}}{n_{\text{参加反应分子}}} = \varphi_{CE} \times \varphi_{EM} = \frac{n_{\text{激发态分子}}}{n_{\text{参加反应分子}}} \times \frac{n_{\text{发射光子}}}{n_{\text{激发态分子}}} $$
+其中，$\varphi_{CE}$取决于化学反应本身，$\varphi_{EM}$取决于发光体本身结构性质，以及环境</p>
+<h3 id="定量分析">定量分析</h3>
+
+
+
+
+
+  <div class="inline-svg svg-left">
+    <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="220px" height="170px" viewBox="-0.5 -0.5 220 170" content="&lt;mxfile&gt;&lt;diagram id=&quot;mZGb5pxWA_Nv4yCANfAQ&quot; name=&quot;Page-1&quot;&gt;7VZNb5wwEP013FlMNrvHZJumlVqp0h56dvEULBmMjFnY/vqOYxswZBPSL6lKLqvx8/jZfm92TEQOZX+vaF18lgxElMSsj8i7KEnS6z3+GuBsAbJLLZArziy0GYEj/wEOjB3acgZNkKilFJrXIZjJqoJMBxhVSnZh2ncpwl1rmsMCOGZULNGvnOnCorureMQ/AM8Lv/MmdjMl9ckOaArKZDeByF1EDkpKbaOyP4Aw2nld7Lr3F2aHgymo9JoFiV1woqJ1d3Pn0md/WajYjdEMR5mgTcOziNwWuhQIbDC0C4AtJBvPsBluhhUBsgStzpjSjdp56YqJbB5TIKjmp5CeOgvzgW7Y4YvkuHES9764HI8vNs/rKRrZqgzcqqlWM6Ir8gyRpioHvSDCYHLtEXqw4nFbyJstq22ZEw3/rT9vS7qwRS980dDr0AkqeF4Zm1B4UAicQGmO3eTGTZScMbP8tiu4hmNNM8PVYetETMm2YmAOEA+uGgLoX+qr7777C8JPfN8+4juJL1scaPqEgNuFgB+jZCuMYE37DcPchIdPHkS+Cf7/aU1mLWN4wf6B1tcv6iGVrCCUMhQja9XpYfCqeksaz/xb2fJRVXqepNUmoVl/4GQfPNsYWMZfbVy711sLz1q4+vlPZkWV/p1aSNPZPuS3agGH4+ekTR+/ycndTw==&lt;/diagram&gt;&lt;/mxfile&gt;"><defs/><g><g><path d="M 50 140 L 193.63 140" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 198.88 140 L 191.88 143.5 L 193.63 140 L 191.88 136.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 50 140 L 50 16.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/><path d="M 50 11.12 L 53.5 18.12 L 50 16.37 L 46.5 18.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><rect x="160" y="140" width="60" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 155px; margin-left: 161px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">t</div></div></div></foreignObject><text x="190" y="159" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">t</text></switch></g></g><g><rect x="0" y="0" width="60" height="30" fill="none" stroke="none" pointer-events="all"/></g><g><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 15px; margin-left: 1px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; "><div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">I<sub>CL</sub></div></div></div></foreignObject><text x="30" y="19" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">ICL</text></switch></g></g><g><path d="M 50 140 Q 50 80 70 40" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g><g><path d="M 70 40 Q 110 120 190 130" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg>
+  </div>
+
+<ol>
+<li>发光强度$I_{CL}$正比于分析物浓度$c_A$</li>
+<li>发光总强度$S$或峰值光强度定量被测物浓度</li>
+</ol>
+<h4 id="优点">优点</h4>
+<ol>
+<li>仪器简单、分析快、易于实现自动化</li>
+<li>无外源激发光、无散射、无背景荧光</li>
+</ol>
+<h4 id="缺点">缺点</h4>
+<ol>
+<li>选择性差</li>
+<li>依赖于环境，需严格控制环境因素</li>
+</ol>
+<h2 id="电化学发光分析">电化学发光分析</h2>
+<p>电极表面，电子传递形成激发态，激发态回到基态发光</p>
+<ol>
+<li>灵敏度高于CL</li>
+<li>受电化学激发，可控性好</li>
+<li>无需混合反应物，克服背景</li>
+<li>循环再生</li>
+</ol>
+<h3 id="湮灭型ecl">湮灭型ECL</h3>
+<p>$$ \text{反应物} \xrightarrow{\text{交变电压}} \text{氧化态自由基/还原态自由基} \xrightarrow{\text{湮灭反应}} \text{激发态反应物} \to h\nu $$</p>
+<p>湮灭反应能量大，就直接产生单重态；不够大，先产生三重态，两分子三重态产生一分子单重态。</p>
+<ol>
+<li>不稳定</li>
+<li>窗口小</li>
+<li>易被氧气猝灭</li>
+</ol>
+<h3 id="共反应剂参与型ecl">共反应剂参与型ECL</h3>
+<p>共反应剂是在氧化/还原时可以分解产生具有强还原性/强氧化性中间态的物质。</p>
+<p>与ECL试剂在直流电的一个电极上反应，如果ECL氧化态，共反应剂就能生成强还原性物质，二者反应生成ECL试剂激发态。</p>
+
+    </div>
+    <hr>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+    
+      <div class="backlinks">
+        <h2>无其他页面引用</h2>
+      </div>
+    
+  </article>
+
+  </main>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.mermaid').forEach(chart => {
+        if (!chart.dataset.original) {
+          chart.dataset.original = chart.textContent;
+        }
+      });
+    });
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', html.dataset.theme);
+      
+      if (window.mermaid) {
+        const theme = html.dataset.theme === 'dark' ? 'dark' : 'default';
+        mermaid.initialize({ theme });
+        
+        const charts = document.querySelectorAll('.mermaid');
+        charts.forEach(chart => {
+          
+          if (chart.dataset.original) {
+            chart.textContent = chart.dataset.original;
+            chart.removeAttribute('data-processed');
+          }
+            });
+
+        
+        mermaid.init(undefined, charts);
+      }
+    }
+
+    
+    document.documentElement.dataset.theme = localStorage.getItem('theme') || 'light';
+  </script>
+  
+  <script type="module" src="/js/main.js"></script>
+  <div id="window-bar" style="position:fixed;bottom:0;left:0;width:100%;z-index:9999;display:flex;gap:8px;"></div>
+  <div id="window-container" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;"></div>
+  <footer>
+    <p>© My New Hugo Site 2025</p>
+  </footer>
+</body>
+</html>
